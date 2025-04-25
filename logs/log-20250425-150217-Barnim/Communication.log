@@ -1,0 +1,75 @@
+2025-04-25 15:02:18,498 INFO  SnsAmbassador - Init simulation with startTime=0, endTime=1000000000000
+2025-04-25 15:02:18,503 INFO  SnsAmbassador - Initialized SNS
+2025-04-25 15:02:20,425 INFO  SnsAmbassador - Added Vehicle id=veh_1 position=GeoPoint{lat=52.656315,lon=13.569161,alt=0.00} @time=8.000,000,000 s
+2025-04-25 15:02:20,425 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_1 @time=8.000,000,000 s
+2025-04-25 15:02:20,468 INFO  SnsAmbassador - Added Vehicle id=veh_6 position=GeoPoint{lat=52.656314,lon=13.569114,alt=0.00} @time=18.000,000,000 s
+2025-04-25 15:02:20,468 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_6 @time=18.000,000,000 s
+2025-04-25 15:02:20,502 INFO  SnsAmbassador - Added Vehicle id=veh_11 position=GeoPoint{lat=52.656315,lon=13.569161,alt=0.00} @time=28.000,000,000 s
+2025-04-25 15:02:20,502 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_11 @time=28.000,000,000 s
+2025-04-25 15:02:20,544 INFO  SnsAmbassador - Added Vehicle id=veh_16 position=GeoPoint{lat=52.656314,lon=13.569114,alt=0.00} @time=38.000,000,000 s
+2025-04-25 15:02:20,544 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_16 @time=38.000,000,000 s
+2025-04-25 15:02:20,584 INFO  SnsAmbassador - Added Vehicle id=veh_21 position=GeoPoint{lat=52.656315,lon=13.569161,alt=0.00} @time=48.000,000,000 s
+2025-04-25 15:02:20,584 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_21 @time=48.000,000,000 s
+2025-04-25 15:02:20,627 INFO  SnsAmbassador - Added Vehicle id=veh_26 position=GeoPoint{lat=52.656314,lon=13.569114,alt=0.00} @time=58.000,000,000 s
+2025-04-25 15:02:20,628 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_26 @time=58.000,000,000 s
+2025-04-25 15:02:20,674 INFO  SnsAmbassador - Added Vehicle id=veh_31 position=GeoPoint{lat=52.656315,lon=13.569161,alt=0.00} @time=68.000,000,000 s
+2025-04-25 15:02:20,674 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_31 @time=68.000,000,000 s
+2025-04-25 15:02:20,706 INFO  SnsAmbassador - Added Vehicle id=veh_36 position=GeoPoint{lat=52.656314,lon=13.569114,alt=0.00} @time=78.000,000,000 s
+2025-04-25 15:02:20,707 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_36 @time=78.000,000,000 s
+2025-04-25 15:02:20,801 INFO  SnsAmbassador - Added Vehicle id=veh_41 position=GeoPoint{lat=52.656315,lon=13.569161,alt=0.00} @time=88.000,000,000 s
+2025-04-25 15:02:20,802 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_41 @time=88.000,000,000 s
+2025-04-25 15:02:20,904 INFO  SnsAmbassador - Added Vehicle id=veh_46 position=GeoPoint{lat=52.656314,lon=13.569114,alt=0.00} @time=98.000,000,000 s
+2025-04-25 15:02:20,904 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_46 @time=98.000,000,000 s
+2025-04-25 15:02:20,959 INFO  SnsAmbassador - Added Vehicle id=veh_51 position=GeoPoint{lat=52.656315,lon=13.569161,alt=0.00} @time=108.000,000,000 s
+2025-04-25 15:02:20,959 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_51 @time=108.000,000,000 s
+2025-04-25 15:02:21,018 INFO  SnsAmbassador - Added Vehicle id=veh_56 position=GeoPoint{lat=52.656314,lon=13.569114,alt=0.00} @time=118.000,000,000 s
+2025-04-25 15:02:21,018 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_56 @time=118.000,000,000 s
+2025-04-25 15:02:21,152 INFO  SnsAmbassador - Added Vehicle id=veh_61 position=GeoPoint{lat=52.656315,lon=13.569161,alt=0.00} @time=128.000,000,000 s
+2025-04-25 15:02:21,152 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_61 @time=128.000,000,000 s
+2025-04-25 15:02:21,209 INFO  SnsAmbassador - Added Vehicle id=veh_66 position=GeoPoint{lat=52.656314,lon=13.569114,alt=0.00} @time=138.000,000,000 s
+2025-04-25 15:02:21,210 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_66 @time=138.000,000,000 s
+2025-04-25 15:02:21,320 INFO  SnsAmbassador - Added Vehicle id=veh_71 position=GeoPoint{lat=52.656315,lon=13.569161,alt=0.00} @time=148.000,000,000 s
+2025-04-25 15:02:21,321 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_71 @time=148.000,000,000 s
+2025-04-25 15:02:21,415 INFO  SnsAmbassador - Added Vehicle id=veh_77 position=GeoPoint{lat=52.656315,lon=13.569161,alt=0.00} @time=160.000,000,000 s
+2025-04-25 15:02:21,415 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_77 @time=160.000,000,000 s
+2025-04-25 15:02:21,513 INFO  SnsAmbassador - Added Vehicle id=veh_81 position=GeoPoint{lat=52.656315,lon=13.569161,alt=0.00} @time=168.000,000,000 s
+2025-04-25 15:02:21,513 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_81 @time=168.000,000,000 s
+2025-04-25 15:02:21,597 INFO  SnsAmbassador - Added Vehicle id=veh_86 position=GeoPoint{lat=52.656314,lon=13.569114,alt=0.00} @time=178.000,000,000 s
+2025-04-25 15:02:21,597 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_86 @time=178.000,000,000 s
+2025-04-25 15:02:21,735 INFO  SnsAmbassador - Added Vehicle id=veh_91 position=GeoPoint{lat=52.656315,lon=13.569161,alt=0.00} @time=188.000,000,000 s
+2025-04-25 15:02:21,735 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_91 @time=188.000,000,000 s
+2025-04-25 15:02:21,807 INFO  SnsAmbassador - Added Vehicle id=veh_96 position=GeoPoint{lat=52.656314,lon=13.569114,alt=0.00} @time=198.000,000,000 s
+2025-04-25 15:02:21,807 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_96 @time=198.000,000,000 s
+2025-04-25 15:02:21,933 INFO  SnsAmbassador - Added Vehicle id=veh_101 position=GeoPoint{lat=52.656315,lon=13.569161,alt=0.00} @time=208.000,000,000 s
+2025-04-25 15:02:21,933 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_101 @time=208.000,000,000 s
+2025-04-25 15:02:22,015 INFO  SnsAmbassador - Added Vehicle id=veh_107 position=GeoPoint{lat=52.656315,lon=13.569161,alt=0.00} @time=220.000,000,000 s
+2025-04-25 15:02:22,015 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_107 @time=220.000,000,000 s
+2025-04-25 15:02:22,132 INFO  SnsAmbassador - Added Vehicle id=veh_111 position=GeoPoint{lat=52.656315,lon=13.569161,alt=0.00} @time=228.000,000,000 s
+2025-04-25 15:02:22,132 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_111 @time=228.000,000,000 s
+2025-04-25 15:02:22,211 INFO  SnsAmbassador - Added Vehicle id=veh_116 position=GeoPoint{lat=52.656314,lon=13.569114,alt=0.00} @time=238.000,000,000 s
+2025-04-25 15:02:22,211 INFO  SnsAmbassador - Radio configured in mode SINGLE with communication radius 709.4 for node id=veh_116 @time=238.000,000,000 s
+2025-04-25 15:02:23,377 INFO  SnsAmbassador - Removed Node id=veh_21 @time=367.000,000,000 s
+2025-04-25 15:02:23,419 INFO  SnsAmbassador - Removed Node id=veh_26 @time=376.000,000,000 s
+2025-04-25 15:02:23,678 INFO  SnsAmbassador - Removed Node id=veh_1 @time=413.000,000,000 s
+2025-04-25 15:02:23,788 INFO  SnsAmbassador - Removed Node id=veh_31 @time=439.000,000,000 s
+2025-04-25 15:02:23,806 INFO  SnsAmbassador - Removed Node id=veh_36 @time=443.000,000,000 s
+2025-04-25 15:02:23,873 INFO  SnsAmbassador - Removed Node id=veh_6 @time=453.000,000,000 s
+2025-04-25 15:02:23,905 INFO  SnsAmbassador - Removed Node id=veh_11 @time=462.000,000,000 s
+2025-04-25 15:02:23,933 INFO  SnsAmbassador - Removed Node id=veh_16 @time=470.000,000,000 s
+2025-04-25 15:02:23,977 INFO  SnsAmbassador - Removed Node id=veh_41 @time=485.000,000,000 s
+2025-04-25 15:02:23,982 INFO  SnsAmbassador - Removed Node id=veh_61 @time=487.000,000,000 s
+2025-04-25 15:02:23,986 INFO  SnsAmbassador - Removed Node id=veh_66 @time=489.000,000,000 s
+2025-04-25 15:02:23,997 INFO  SnsAmbassador - Removed Node id=veh_71 @time=493.000,000,000 s
+2025-04-25 15:02:24,155 INFO  SnsAmbassador - Removed Node id=veh_46 @time=541.000,000,000 s
+2025-04-25 15:02:24,182 INFO  SnsAmbassador - Removed Node id=veh_51 @time=553.000,000,000 s
+2025-04-25 15:02:24,208 INFO  SnsAmbassador - Removed Node id=veh_77 @time=565.000,000,000 s
+2025-04-25 15:02:24,211 INFO  SnsAmbassador - Removed Node id=veh_81 @time=567.000,000,000 s
+2025-04-25 15:02:24,217 INFO  SnsAmbassador - Removed Node id=veh_101 @time=570.000,000,000 s
+2025-04-25 15:02:24,222 INFO  SnsAmbassador - Removed Node id=veh_107 @time=573.000,000,000 s
+2025-04-25 15:02:24,249 INFO  SnsAmbassador - Removed Node id=veh_56 @time=588.000,000,000 s
+2025-04-25 15:02:24,328 INFO  SnsAmbassador - Removed Node id=veh_86 @time=638.000,000,000 s
+2025-04-25 15:02:24,338 INFO  SnsAmbassador - Removed Node id=veh_111 @time=646.000,000,000 s
+2025-04-25 15:02:24,339 INFO  SnsAmbassador - Removed Node id=veh_116 @time=648.000,000,000 s
+2025-04-25 15:02:24,369 INFO  SnsAmbassador - Removed Node id=veh_91 @time=672.000,000,000 s
+2025-04-25 15:02:24,374 INFO  SnsAmbassador - Removed Node id=veh_96 @time=678.000,000,000 s
+2025-04-25 15:02:24,581 INFO  SnsAmbassador - Finished simulation

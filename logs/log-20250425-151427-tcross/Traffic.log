@@ -1,0 +1,29 @@
+2025-04-25 15:14:28,388 INFO  SumoAmbassador - sumoConfig.updateInterval: 1000
+2025-04-25 15:14:28,388 INFO  SumoAmbassador - sumoConfig.sumoConfigurationFile: tcross.sumocfg
+2025-04-25 15:14:28,388 INFO  SumoAmbassador - sumoConfig.sumoConfigurationFile: tcross.sumocfg
+2025-04-25 15:14:28,400 INFO  SumoAmbassador - Simulation step size is 1.0 sec.
+2025-04-25 15:14:28,886 INFO  SumoVehicleTypesWriter - ./tmp/sumo/mosaic_types.add.xml file successfully written.
+2025-04-25 15:14:28,886 INFO  SumoAmbassador - Start Federate local
+2025-04-25 15:14:28,886 INFO  SumoAmbassador - Directory: ./tmp/sumo
+2025-04-25 15:14:29,895 INFO  SumoAmbassador - Process sumo: Loading net-file from 'tcross-map.net.xml' ... done (1ms).
+2025-04-25 15:14:29,895 INFO  SumoAmbassador - Process sumo: Loading additional-files from 'mosaic_types.add.xml' ... done (0ms).
+2025-04-25 15:14:29,895 INFO  SumoAmbassador - Process sumo: Loading done.
+2025-04-25 15:14:29,895 INFO  SumoAmbassador - Process sumo: Simulation version 1.22.0 started with time: 0.00.
+2025-04-25 15:14:29,903 INFO  SumoAmbassador - Current API version of SUMO is 21 (=SUMO 1.22.*)
+2025-04-25 15:14:29,961 WARN  TrafficLightGetControlledJunctions - Could not return list of controlled junctions for traffic light. Not implemented in SUMO yet.
+2025-04-25 15:14:29,974 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=J1
+2025-04-25 15:14:29,981 INFO  SumoAmbassador - Closing SUMO connection
+2025-04-25 15:14:29,981 INFO  SumoAmbassador - Process sumo: Step #0.00 (0ms ?*RT. ?UPS, TraCI: 71ms, vehicles TOT 0 ACT 0 BUF 0)                      
+2025-04-25 15:14:29,981 INFO  SumoAmbassador - Process sumo: Step #1.00 (0ms ?*RT. ?UPS, TraCI: 15ms, vehicles TOT 0 ACT 0 BUF 0)                      
+2025-04-25 15:14:29,981 INFO  SumoAmbassador - Process sumo: Simulation ended at time: 1.00.
+2025-04-25 15:14:29,981 INFO  SumoAmbassador - Process sumo: Reason: TraCI requested termination.
+2025-04-25 15:14:29,981 INFO  SumoAmbassador - Process sumo: Performance:
+2025-04-25 15:14:29,981 INFO  SumoAmbassador - Process sumo:  Duration: 0.09s
+2025-04-25 15:14:29,981 INFO  SumoAmbassador - Process sumo:  TraCI-Duration: 0.07s
+2025-04-25 15:14:29,981 INFO  SumoAmbassador - Process sumo:  Real time factor: 11.6279
+2025-04-25 15:14:29,981 INFO  SumoAmbassador - Process sumo:  UPS: 0.000000
+2025-04-25 15:14:29,981 INFO  SumoAmbassador - Process sumo: Vehicles:
+2025-04-25 15:14:29,981 INFO  SumoAmbassador - Process sumo:  Inserted: 0
+2025-04-25 15:14:29,982 INFO  SumoAmbassador - Process sumo:  Running: 0
+2025-04-25 15:14:29,982 INFO  SumoAmbassador - Process sumo:  Waiting: 0
+2025-04-25 15:14:29,984 INFO  SumoAmbassador - Finished simulation

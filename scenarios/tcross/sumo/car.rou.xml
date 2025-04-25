@@ -1,0 +1,52 @@
+<routes>
+   <vType id="car"
+   			vClass="passenger" length="2.5" accel="3.5" decel="2.2"
+   			sigma="1.0" maxSpeed="10"/>
+
+   <vType id="bus"
+   			vClass="passenger" length="7.5" accel="3.5" decel="2.2"
+   			sigma="1.0" maxSpeed="10"/>
+
+   <vType id="ev"
+      		vClass="emergency" length="5" accel="5.5" decel="2.2" sigma="1.0"
+      		maxSpeed="20" guiShape="emergency" speedFactor="2.0"
+      		minGapLat="0.2"/>
+
+    <route id="0" edges="-E2 E1 -E4 -E3 -E0"/>
+    <route id="1" edges="E0 E3 E4 -E1 E2" />
+
+    <vehicle id="veh_0" type="car" route="0" depart="0" departLane="random"/>
+    <vehicle id="veh_1" type="car" route="0" depart="3" departLane="random"/>
+    <vehicle id="veh_2" type="bus" route="1" depart="6" departLane="random"/>
+    <vehicle id="veh_3" type="car" route="0" depart="9" departLane="random"/>
+    <vehicle id="veh_4" type="car" route="1" depart="12" departLane="random"/>
+    <vehicle id="veh_ev_0" type="ev" route="0" depart="15" departLane="random"/>
+    <vehicle id="veh_5" type="car" route="0" depart="18" departLane="random"/>
+    <vehicle id="veh_6" type="car" route="1" depart="21" departLane="random"/>
+    <vehicle id="veh_7" type="car" route="0" depart="24" departLane="random"/>
+    <vehicle id="veh_8" type="car" route="1" depart="27" departLane="random"/>
+    <vehicle id="veh_9" type="car" route="0" depart="30" departLane="random"/>
+    <vehicle id="veh_10" type="car" route="1" depart="33" departLane="random"/>
+    <vehicle id="veh_ev_1" type="ev" route="0" depart="36" departLane="random"/>
+    <vehicle id="veh_11" type="car" route="0" depart="39" departLane="random"/>
+    <vehicle id="veh_12" type="car" route="1" depart="42" departLane="random"/>
+    <vehicle id="veh_13" type="car" route="0" depart="45" departLane="random"/>
+    <vehicle id="veh_14" type="car" route="1" depart="48" departLane="random"/>
+    <vehicle id="veh_15" type="car" route="0" depart="51" departLane="random"/>
+    <vehicle id="veh_16" type="car" route="1" depart="54" departLane="random"/>
+    <vehicle id="veh_17" type="car" route="0" depart="57" departLane="random"/>
+    <vehicle id="veh_18" type="car" route="1" depart="60" departLane="random"/>
+    <vehicle id="veh_19" type="car" route="0" depart="63" departLane="random"/>
+    <vehicle id="veh_20" type="car" route="1" depart="66" departLane="random"/>
+    <vehicle id="veh_ev_2" type="ev" route="0" depart="69" departLane="random"/>
+    <vehicle id="veh_21" type="car" route="0" depart="72" departLane="random"/>
+    <vehicle id="veh_22" type="car" route="1" depart="75" departLane="random"/>
+    <vehicle id="veh_23" type="car" route="0" depart="78" departLane="random"/>
+    <vehicle id="veh_24" type="car" route="1" depart="81" departLane="random"/>
+    <vehicle id="veh_25" type="car" route="0" depart="84" departLane="random"/>
+    <vehicle id="veh_26" type="car" route="1" depart="87" departLane="random"/>
+    <vehicle id="veh_27" type="car" route="0" depart="90" departLane="random"/>
+    <vehicle id="veh_28" type="car" route="1" depart="93" departLane="random"/>
+    <vehicle id="veh_29" type="car" route="0" depart="96" departLane="random"/>
+    <vehicle id="veh_30" type="car" route="1" depart="99" departLane="random"/>
+</routes>

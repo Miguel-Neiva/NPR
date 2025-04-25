@@ -1,0 +1,14 @@
+<configuration>
+
+    <input>
+        <net-file value="tcross-map.net.xml"/>
+    </input>
+    
+    <time>
+    <begin value="0"/>
+    <end value="10000"/>
+    </time>   
+
+</configuration>
+
+

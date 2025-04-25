@@ -1,0 +1,42 @@
+20:28:44.537 INFO  - initializing database
+20:28:44.544 INFO  - parsing net file
+20:28:44.550 ERROR - Could not read attribute "origBoundary" in tag "location"
+java.lang.IllegalArgumentException: Invalid latitude: 5789894.65
+	at org.eclipse.mosaic.lib.geo.MutableGeoPoint.validateLatitude(Unknown Source)
+	at org.eclipse.mosaic.lib.geo.MutableGeoPoint.set(Unknown Source)
+	at org.eclipse.mosaic.lib.geo.MutableGeoPoint.<init>(Unknown Source)
+	at org.eclipse.mosaic.lib.geo.GeoPoint.latLon(Unknown Source)
+	at org.eclipse.mosaic.lib.geo.GeoPoint.lonLat(Unknown Source)
+	at com.dcaiti.mosaic.tools.scenarioconvert.importer.sumo.net.UtmProjection.a(Unknown Source)
+	at com.dcaiti.mosaic.tools.scenarioconvert.importer.sumo.net.UtmProjection.<init>(Unknown Source)
+	at com.dcaiti.mosaic.tools.scenarioconvert.importer.sumo.b.a(Unknown Source)
+	at com.dcaiti.mosaic.tools.scenarioconvert.importer.sumo.b.startElement(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.startElement(Unknown Source)
+	at org.apache.xerces.parsers.AbstractXMLDocumentParser.emptyElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanStartElement(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
+	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source)
+	at java.xml/javax.xml.parsers.SAXParser.parse(SAXParser.java:276)
+	at com.dcaiti.mosaic.tools.scenarioconvert.importer.sumo.b.a(Unknown Source)
+	at com.dcaiti.mosaic.tools.scenarioconvert.importer.sumo.a.a(Unknown Source)
+	at com.dcaiti.mosaic.tools.scenarioconvert.core.a.a(Unknown Source)
+	at com.dcaiti.mosaic.tools.scenarioconvert.core.Starter.main(Unknown Source)
+20:28:44.552 WARN  - Could not determine UTM zone letter of zone '32'. Assuming default zone letter 'n'
+20:28:44.567 INFO  - checking existing routes
+20:28:44.567 INFO  - no route file for import given, ignoring!
+20:28:44.728 INFO  - Saving 5 nodes...
+20:28:44.732 INFO  - Saving 10 ways...
+20:28:44.740 INFO  - Saving 10 connections...
+20:28:44.748 INFO  - Saving 10 restrictions...
+20:28:44.752 INFO  - Saving 0 routes...
+20:28:44.752 INFO  - Saving 0 roundabouts...
+20:28:44.752 INFO  - Saving 0 buildings...
+20:28:44.753 INFO  - Create Indices
+20:28:44.760 INFO  - Database saved
+20:28:44.760 INFO  - finished

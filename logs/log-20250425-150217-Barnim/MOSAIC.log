@@ -1,0 +1,20 @@
+2025-04-25 15:02:17,473 INFO  ROOT - Running Eclipse MOSAIC 25.0 on Java JRE v17.0.15 (Eclipse Adoptium)
+2025-04-25 15:02:17,497 INFO  FederationManagement - Start federation with id 'Barnim'
+2025-04-25 15:02:17,599 INFO  MosaicStarter - Federate sumo: No port given. Using free port: 43295
+2025-04-25 15:02:17,607 INFO  FederationManagement - Add ambassador/federate with id 'application'
+2025-04-25 15:02:17,608 INFO  FederationManagement - Add ambassador/federate with id 'environment'
+2025-04-25 15:02:17,608 INFO  FederationManagement - Add ambassador/federate with id 'mapping'
+2025-04-25 15:02:17,608 INFO  FederationManagement - Add ambassador/federate with id 'sns'
+2025-04-25 15:02:17,608 INFO  FederationManagement - Add ambassador/federate with id 'sumo'
+2025-04-25 15:02:17,608 INFO  FederationManagement - Deploying federate 'sumo' locally in ./tmp/sumo
+2025-04-25 15:02:17,620 INFO  FederationManagement - Starting federate 'sumo' locally in ./tmp/sumo
+2025-04-25 15:02:17,621 INFO  FederationManagement - Add ambassador/federate with id 'output'
+2025-04-25 15:02:17,621 INFO  OutputAmbassador - Initialize configuration of OutputAmbassador
+2025-04-25 15:02:17,919 INFO  OutputAmbassador - Registered output generator 'websocket' for messages [RsuRegistration, VehicleRegistration, VehicleUpdates, V2xMessageReception, V2xMessageTransmission]. Update interval=1
+2025-04-25 15:02:17,920 INFO  OutputAmbassador - Registered output generator 'fileoutput' for messages [LanePropertyChange, TrafficLightRegistration, TrafficDetectorUpdates, AdHocCommunicationConfiguration, VehicleRegistration, VehicleSpeedChange, VehicleUpdates, TrafficSignRegistration, ServerRegistration, CellularCommunicationConfiguration, V2xMessageTransmission, V2xMessageReception]. Update interval=5
+2025-04-25 15:02:24,582 INFO  SequentialTimeManagement - Simulation ended after 1000s of 1000s (100%)
+2025-04-25 15:02:24,582 INFO  SequentialTimeManagement - Started: 2025-04-25 15:02:18
+2025-04-25 15:02:24,582 INFO  SequentialTimeManagement - Ended: 2025-04-25 15:02:24
+2025-04-25 15:02:24,583 INFO  SequentialTimeManagement - Duration: 00h 00m 06.010s (RTF: 166.00)
+2025-04-25 15:02:24,583 INFO  SequentialTimeManagement - 
+2025-04-25 15:02:24,583 INFO  SequentialTimeManagement - Simulation finished: 101

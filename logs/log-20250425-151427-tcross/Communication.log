@@ -1,0 +1,5 @@
+2025-04-25 15:14:28,850 INFO  SnsAmbassador - Init simulation with startTime=0, endTime=180000000000
+2025-04-25 15:14:28,850 WARN  SnsAmbassador - The file scenarios/tcross/sns/sns_config.json does not exist.
+2025-04-25 15:14:28,850 INFO  SnsAmbassador - Initialized SNS
+2025-04-25 15:14:29,973 INFO  SnsAmbassador - Added RSU id=rsu_0 position=GeoPoint{lat=52.513061,lon=13.328910,alt=0.00} @time=0.000,000,000 s
+2025-04-25 15:14:29,984 INFO  SnsAmbassador - Finished simulation

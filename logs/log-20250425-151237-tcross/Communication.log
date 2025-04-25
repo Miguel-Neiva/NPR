@@ -1,0 +1,4 @@
+2025-04-25 15:12:38,439 INFO  SnsAmbassador - Init simulation with startTime=0, endTime=180000000000
+2025-04-25 15:12:38,444 INFO  SnsAmbassador - Initialized SNS
+2025-04-25 15:12:39,557 INFO  SnsAmbassador - Added RSU id=rsu_0 position=GeoPoint{lat=52.513061,lon=13.328910,alt=0.00} @time=0.000,000,000 s
+2025-04-25 15:12:39,569 INFO  SnsAmbassador - Finished simulation

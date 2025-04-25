@@ -1,0 +1,38 @@
+2025-04-25 15:12:14,930 INFO  ROOT - Running Eclipse MOSAIC 25.0 on Java JRE v17.0.15 (Eclipse Adoptium)
+2025-04-25 15:12:14,949 INFO  FederationManagement - Start federation with id 'tcross'
+2025-04-25 15:12:15,039 INFO  MosaicStarter - Federate sumo: No port given. Using free port: 40625
+2025-04-25 15:12:15,045 INFO  FederationManagement - Add ambassador/federate with id 'application'
+2025-04-25 15:12:15,046 INFO  FederationManagement - Add ambassador/federate with id 'environment'
+2025-04-25 15:12:15,046 INFO  FederationManagement - Add ambassador/federate with id 'mapping'
+2025-04-25 15:12:15,046 INFO  FederationManagement - Add ambassador/federate with id 'sns'
+2025-04-25 15:12:15,046 INFO  FederationManagement - Add ambassador/federate with id 'sumo'
+2025-04-25 15:12:15,046 INFO  FederationManagement - Deploying federate 'sumo' locally in ./tmp/sumo
+2025-04-25 15:12:15,079 INFO  FederationManagement - Starting federate 'sumo' locally in ./tmp/sumo
+2025-04-25 15:12:15,080 INFO  FederationManagement - Add ambassador/federate with id 'output'
+2025-04-25 15:12:15,080 INFO  OutputAmbassador - Initialize configuration of OutputAmbassador
+2025-04-25 15:12:15,346 INFO  OutputAmbassador - Registered output generator 'websocket' for messages [RsuRegistration, VehicleRegistration, VehicleUpdates, V2xMessageReception, V2xMessageTransmission]. Update interval=1
+2025-04-25 15:12:15,347 INFO  OutputAmbassador - Registered output generator 'fileoutput' for messages [TrafficLightRegistration, RsuRegistration, VehicleRegistration, VehicleUpdates, V2xMessageTransmission, V2xMessageReception]. Update interval=5
+2025-04-25 15:12:16,654 INFO  SequentialTimeManagement - Simulation ended after 0s of 180s (0%)
+2025-04-25 15:12:16,654 INFO  SequentialTimeManagement - Started: 2025-04-25 15:12:15
+2025-04-25 15:12:16,654 INFO  SequentialTimeManagement - Ended: 2025-04-25 15:12:16
+2025-04-25 15:12:16,655 INFO  SequentialTimeManagement - Duration: 00h 00m 01.135s (RTF: 0.00)
+2025-04-25 15:12:16,655 INFO  SequentialTimeManagement - 
+2025-04-25 15:12:16,655 INFO  SequentialTimeManagement - Simulation interrupted: -1
+2025-04-25 15:12:16,867 ERROR MosaicStarter - Stopping simulation due to a critical error.
+java.lang.NoSuchMethodError: 'org.eclipse.mosaic.lib.objects.addressing.AdHocMessageRoutingBuilder org.eclipse.mosaic.lib.objects.addressing.AdHocMessageRoutingBuilder.viaChannel(org.eclipse.mosaic.lib.enums.AdHocChannel)'
+	at org.eclipse.mosaic.app.tutorial.RoadSideUnitApp.sendAdHocBroadcast(RoadSideUnitApp.java:40)
+	at org.eclipse.mosaic.app.tutorial.RoadSideUnitApp.sample(RoadSideUnitApp.java:51)
+	at org.eclipse.mosaic.app.tutorial.RoadSideUnitApp.onStartup(RoadSideUnitApp.java:64)
+	at org.eclipse.mosaic.fed.application.app.AbstractApplication.setUp(AbstractApplication.java:101)
+	at org.eclipse.mosaic.fed.application.ambassador.simulation.AbstractSimulationUnit.setUp(AbstractSimulationUnit.java:244)
+	at org.eclipse.mosaic.fed.application.ambassador.simulation.AbstractSimulationUnit.loadApplications(AbstractSimulationUnit.java:293)
+	at org.eclipse.mosaic.fed.application.ambassador.UnitSimulator.startApplications(UnitSimulator.java:538)
+	at org.eclipse.mosaic.fed.application.ambassador.UnitSimulator.processEvent(UnitSimulator.java:510)
+	at org.eclipse.mosaic.lib.util.scheduling.Event.execute(Event.java:222)
+	at org.eclipse.mosaic.lib.util.scheduling.DefaultEventScheduler.scheduleEvents(DefaultEventScheduler.java:85)
+	at org.eclipse.mosaic.fed.application.ambassador.ApplicationAmbassador.processTimeAdvanceGrant(ApplicationAmbassador.java:255)
+	at org.eclipse.mosaic.rti.api.AbstractFederateAmbassador.advanceTime(AbstractFederateAmbassador.java:110)
+	at org.eclipse.mosaic.rti.time.SequentialTimeManagement.runSimulation(SequentialTimeManagement.java:91)
+	at org.eclipse.mosaic.starter.MosaicSimulation.runSimulation(MosaicSimulation.java:194)
+	at org.eclipse.mosaic.starter.MosaicStarter.execute(MosaicStarter.java:136)
+	at org.eclipse.mosaic.starter.MosaicStarter.main(MosaicStarter.java:76)

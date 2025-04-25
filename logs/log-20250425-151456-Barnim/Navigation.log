@@ -1,0 +1,25 @@
+2025-04-25 15:14:57,513 INFO  CentralNavigationComponent - Initializing CNC-Navigation
+2025-04-25 15:14:57,985 INFO  GraphHopperRouting - nodes: 1721, edges: 4212
+2025-04-25 15:14:57,998 INFO  LocationIndexTree - location index created in 0.010288221s, size:6,520, leafs:504, precision:300, depth:3, checksum:5837, entries:[16, 16, 4], entriesPerLeaf:12.936508
+2025-04-25 15:14:57,999 INFO  PrepareRoutingSubnetworks - Start marking subnetworks, prepare.min_network_size: 200, threads: 1, nodes: 1,721, edges: 4,212, jobs: [car_subnetwork|fastest|car_average_speed, bike_subnetwork|fastest|bike_average_speed], totalMB:145, usedMB:93
+2025-04-25 15:14:58,039 INFO  PrepareRoutingSubnetworks - bike - Found 4377 subnetworks (4375 single edges and 2 components with more than one edge, total nodes: 8424), took: 0.033226497s
+2025-04-25 15:14:58,041 INFO  PrepareRoutingSubnetworks - bike - Marked 4376 subnetworks (biggest: 2 edges) -> 1 components(s) remain (smallest: 4047, biggest: 4047 edges), total marked edges: 29, took: 0.001906256s
+2025-04-25 15:14:58,057 INFO  PrepareRoutingSubnetworks - car - Found 4300 subnetworks (4298 single edges and 2 components with more than one edge, total nodes: 8424), took: 0.015511812s
+2025-04-25 15:14:58,058 INFO  PrepareRoutingSubnetworks - car - Marked 4299 subnetworks (biggest: 2 edges) -> 1 components(s) remain (smallest: 4124, biggest: 4124 edges), total marked edges: 88, took: 0.00101836s
+2025-04-25 15:14:58,060 INFO  PrepareRoutingSubnetworks - Finished finding and marking subnetworks for 2 jobs, took: 0.06158308s, totalMB:145, usedMB:100
+2025-04-25 15:14:58,061 INFO  CentralNavigationComponent - CNC - Navigation-System initialized
+2025-04-25 15:14:58,064 INFO  CentralNavigationComponent - Sending vehicle routes initialization
+2025-04-25 15:15:00,222 INFO  CentralNavigationComponent - Change to route 2 for vehicle veh_21.
+2025-04-25 15:15:00,229 INFO  CentralNavigationComponent - Change to route 3 for vehicle veh_26.
+2025-04-25 15:15:00,233 INFO  CentralNavigationComponent - Change to route 3 for vehicle veh_36.
+2025-04-25 15:15:00,235 INFO  CentralNavigationComponent - Change to route 3 for vehicle veh_31.
+2025-04-25 15:15:00,267 INFO  CentralNavigationComponent - Change to route 3 for vehicle veh_41.
+2025-04-25 15:15:00,681 INFO  CentralNavigationComponent - Change to route 2 for vehicle veh_61.
+2025-04-25 15:15:00,683 INFO  CentralNavigationComponent - Change to route 3 for vehicle veh_66.
+2025-04-25 15:15:00,685 INFO  CentralNavigationComponent - Change to route 3 for vehicle veh_71.
+2025-04-25 15:15:00,687 INFO  CentralNavigationComponent - Change to route 3 for vehicle veh_77.
+2025-04-25 15:15:00,743 INFO  CentralNavigationComponent - Change to route 3 for vehicle veh_81.
+2025-04-25 15:15:01,228 INFO  CentralNavigationComponent - Change to route 2 for vehicle veh_101.
+2025-04-25 15:15:01,231 INFO  CentralNavigationComponent - Change to route 3 for vehicle veh_107.
+2025-04-25 15:15:01,233 INFO  CentralNavigationComponent - Change to route 3 for vehicle veh_111.
+2025-04-25 15:15:01,235 INFO  CentralNavigationComponent - Change to route 3 for vehicle veh_116.

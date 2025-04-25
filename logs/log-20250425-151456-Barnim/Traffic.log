@@ -1,0 +1,705 @@
+2025-04-25 15:14:57,189 INFO  SumoAmbassador - sumoConfig.updateInterval: 1000
+2025-04-25 15:14:57,189 INFO  SumoAmbassador - sumoConfig.sumoConfigurationFile: Barnim.sumocfg
+2025-04-25 15:14:57,189 INFO  SumoAmbassador - sumoConfig.sumoConfigurationFile: Barnim.sumocfg
+2025-04-25 15:14:57,201 INFO  SumoAmbassador - Simulation step size is 1.0 sec.
+2025-04-25 15:14:58,101 INFO  SumoVehicleTypesWriter - ./tmp/sumo/mosaic_types.add.xml file successfully written.
+2025-04-25 15:14:58,101 INFO  SumoAmbassador - Start Federate local
+2025-04-25 15:14:58,101 INFO  SumoAmbassador - Directory: ./tmp/sumo
+2025-04-25 15:14:59,627 INFO  SumoAmbassador - Process sumo: Loading net-file from 'Barnim.net.xml' ... done (518ms).
+2025-04-25 15:14:59,742 INFO  SumoAmbassador - Process sumo: Loading additional-files from 'mosaic_types.add.xml' ... done (0ms).
+2025-04-25 15:14:59,743 INFO  SumoAmbassador - Process sumo: Loading done.
+2025-04-25 15:14:59,746 INFO  SumoAmbassador - Process sumo: Simulation version 1.22.0 started with time: 0.00.
+2025-04-25 15:14:59,754 INFO  SumoAmbassador - Current API version of SUMO is 21 (=SUMO 1.22.*)
+2025-04-25 15:14:59,808 WARN  TrafficLightGetControlledJunctions - Could not return list of controlled junctions for traffic light. Not implemented in SUMO yet.
+2025-04-25 15:14:59,888 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=134859917
+2025-04-25 15:14:59,888 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=135038118
+2025-04-25 15:14:59,889 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=1566370849
+2025-04-25 15:14:59,889 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=1594381971
+2025-04-25 15:14:59,889 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=2477786411
+2025-04-25 15:14:59,889 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=2548923620
+2025-04-25 15:14:59,889 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=279322052
+2025-04-25 15:14:59,890 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=29421312
+2025-04-25 15:14:59,890 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=2945920006
+2025-04-25 15:14:59,890 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=29768633
+2025-04-25 15:14:59,890 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=29768638
+2025-04-25 15:14:59,890 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=29768653
+2025-04-25 15:14:59,891 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=29768656
+2025-04-25 15:14:59,891 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=29768657
+2025-04-25 15:14:59,891 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=29768658
+2025-04-25 15:14:59,891 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=29768666
+2025-04-25 15:14:59,891 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=29768672
+2025-04-25 15:14:59,892 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=29859393
+2025-04-25 15:14:59,892 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=29859450
+2025-04-25 15:14:59,892 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=29859949
+2025-04-25 15:14:59,892 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=29859969
+2025-04-25 15:14:59,892 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=321568014
+2025-04-25 15:14:59,892 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=335376891
+2025-04-25 15:14:59,893 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=394751921
+2025-04-25 15:14:59,893 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=39933917
+2025-04-25 15:14:59,893 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=40447119
+2025-04-25 15:14:59,893 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=4373325780
+2025-04-25 15:14:59,893 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=47966053
+2025-04-25 15:14:59,894 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=47966062
+2025-04-25 15:14:59,894 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=47966078
+2025-04-25 15:14:59,894 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=49832298
+2025-04-25 15:14:59,894 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=64660869
+2025-04-25 15:14:59,894 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=75670662
+2025-04-25 15:14:59,894 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=75679644
+2025-04-25 15:14:59,895 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=76598379
+2025-04-25 15:14:59,895 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=866613506
+2025-04-25 15:14:59,895 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=866614004
+2025-04-25 15:14:59,895 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=866614320
+2025-04-25 15:14:59,895 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=88954025
+2025-04-25 15:14:59,896 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=89988845
+2025-04-25 15:14:59,896 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=89988851
+2025-04-25 15:14:59,896 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=97604536
+2025-04-25 15:14:59,922 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_0" received at simulation time 5000000000 ns (subscribe=true)
+2025-04-25 15:14:59,922 INFO  SumoAmbassador - Adding new vehicle "veh_0" at simulation time 5000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:14:59,930 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_1" received at simulation time 7000000000 ns (subscribe=true)
+2025-04-25 15:14:59,931 INFO  SumoAmbassador - Adding new vehicle "veh_1" at simulation time 7000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:14:59,936 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 8.000,000,000 s
+2025-04-25 15:14:59,941 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_2" received at simulation time 9000000000 ns (subscribe=true)
+2025-04-25 15:14:59,942 INFO  SumoAmbassador - Adding new vehicle "veh_2" at simulation time 9000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:14:59,952 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_3" received at simulation time 11000000000 ns (subscribe=true)
+2025-04-25 15:14:59,952 INFO  SumoAmbassador - Adding new vehicle "veh_3" at simulation time 11000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:14:59,956 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 12.000,000,000 s
+2025-04-25 15:14:59,958 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_4" received at simulation time 13000000000 ns (subscribe=true)
+2025-04-25 15:14:59,958 INFO  SumoAmbassador - Adding new vehicle "veh_4" at simulation time 13000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:14:59,970 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_5" received at simulation time 15000000000 ns (subscribe=true)
+2025-04-25 15:14:59,970 INFO  SumoAmbassador - Adding new vehicle "veh_5" at simulation time 15000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:14:59,974 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_6" received at simulation time 17000000000 ns (subscribe=true)
+2025-04-25 15:14:59,974 INFO  SumoAmbassador - Adding new vehicle "veh_6" at simulation time 17000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:14:59,978 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 18.000,000,000 s
+2025-04-25 15:14:59,981 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_7" received at simulation time 19000000000 ns (subscribe=true)
+2025-04-25 15:14:59,982 INFO  SumoAmbassador - Adding new vehicle "veh_7" at simulation time 19000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:14:59,991 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_8" received at simulation time 21000000000 ns (subscribe=true)
+2025-04-25 15:14:59,991 INFO  SumoAmbassador - Adding new vehicle "veh_8" at simulation time 21000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:14:59,995 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_9" received at simulation time 23000000000 ns (subscribe=true)
+2025-04-25 15:14:59,995 INFO  SumoAmbassador - Adding new vehicle "veh_9" at simulation time 23000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,001 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_10" received at simulation time 25000000000 ns (subscribe=true)
+2025-04-25 15:15:00,002 INFO  SumoAmbassador - Adding new vehicle "veh_10" at simulation time 25000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,006 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_11" received at simulation time 27000000000 ns (subscribe=true)
+2025-04-25 15:15:00,006 INFO  SumoAmbassador - Adding new vehicle "veh_11" at simulation time 27000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,010 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 28.000,000,000 s
+2025-04-25 15:15:00,012 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_12" received at simulation time 29000000000 ns (subscribe=true)
+2025-04-25 15:15:00,012 INFO  SumoAmbassador - Adding new vehicle "veh_12" at simulation time 29000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,019 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_13" received at simulation time 31000000000 ns (subscribe=true)
+2025-04-25 15:15:00,020 INFO  SumoAmbassador - Adding new vehicle "veh_13" at simulation time 31000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,024 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 32.000,000,000 s
+2025-04-25 15:15:00,026 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_14" received at simulation time 33000000000 ns (subscribe=true)
+2025-04-25 15:15:00,026 INFO  SumoAmbassador - Adding new vehicle "veh_14" at simulation time 33000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,034 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_15" received at simulation time 35000000000 ns (subscribe=true)
+2025-04-25 15:15:00,034 INFO  SumoAmbassador - Adding new vehicle "veh_15" at simulation time 35000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,039 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_16" received at simulation time 37000000000 ns (subscribe=true)
+2025-04-25 15:15:00,039 INFO  SumoAmbassador - Adding new vehicle "veh_16" at simulation time 37000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,043 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 38.000,000,000 s
+2025-04-25 15:15:00,046 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_17" received at simulation time 39000000000 ns (subscribe=true)
+2025-04-25 15:15:00,046 INFO  SumoAmbassador - Adding new vehicle "veh_17" at simulation time 39000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,054 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_18" received at simulation time 41000000000 ns (subscribe=true)
+2025-04-25 15:15:00,055 INFO  SumoAmbassador - Adding new vehicle "veh_18" at simulation time 41000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,059 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_19" received at simulation time 43000000000 ns (subscribe=true)
+2025-04-25 15:15:00,059 INFO  SumoAmbassador - Adding new vehicle "veh_19" at simulation time 43000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,066 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_20" received at simulation time 45000000000 ns (subscribe=true)
+2025-04-25 15:15:00,066 INFO  SumoAmbassador - Adding new vehicle "veh_20" at simulation time 45000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,071 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_21" received at simulation time 47000000000 ns (subscribe=true)
+2025-04-25 15:15:00,071 INFO  SumoAmbassador - Adding new vehicle "veh_21" at simulation time 47000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,075 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 48.000,000,000 s
+2025-04-25 15:15:00,078 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_22" received at simulation time 49000000000 ns (subscribe=true)
+2025-04-25 15:15:00,078 INFO  SumoAmbassador - Adding new vehicle "veh_22" at simulation time 49000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,089 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_23" received at simulation time 51000000000 ns (subscribe=true)
+2025-04-25 15:15:00,090 INFO  SumoAmbassador - Adding new vehicle "veh_23" at simulation time 51000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,093 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 52.000,000,000 s
+2025-04-25 15:15:00,095 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_24" received at simulation time 53000000000 ns (subscribe=true)
+2025-04-25 15:15:00,095 INFO  SumoAmbassador - Adding new vehicle "veh_24" at simulation time 53000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,106 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_25" received at simulation time 55000000000 ns (subscribe=true)
+2025-04-25 15:15:00,106 INFO  SumoAmbassador - Adding new vehicle "veh_25" at simulation time 55000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,112 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_26" received at simulation time 57000000000 ns (subscribe=true)
+2025-04-25 15:15:00,112 INFO  SumoAmbassador - Adding new vehicle "veh_26" at simulation time 57000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,116 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 58.000,000,000 s
+2025-04-25 15:15:00,119 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_27" received at simulation time 59000000000 ns (subscribe=true)
+2025-04-25 15:15:00,119 INFO  SumoAmbassador - Adding new vehicle "veh_27" at simulation time 59000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,129 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_28" received at simulation time 61000000000 ns (subscribe=true)
+2025-04-25 15:15:00,130 INFO  SumoAmbassador - Adding new vehicle "veh_28" at simulation time 61000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,134 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_29" received at simulation time 63000000000 ns (subscribe=true)
+2025-04-25 15:15:00,134 INFO  SumoAmbassador - Adding new vehicle "veh_29" at simulation time 63000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,140 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_30" received at simulation time 65000000000 ns (subscribe=true)
+2025-04-25 15:15:00,140 INFO  SumoAmbassador - Adding new vehicle "veh_30" at simulation time 65000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,144 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_31" received at simulation time 67000000000 ns (subscribe=true)
+2025-04-25 15:15:00,144 INFO  SumoAmbassador - Adding new vehicle "veh_31" at simulation time 67000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,147 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 68.000,000,000 s
+2025-04-25 15:15:00,149 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_32" received at simulation time 69000000000 ns (subscribe=true)
+2025-04-25 15:15:00,149 INFO  SumoAmbassador - Adding new vehicle "veh_32" at simulation time 69000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,155 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_33" received at simulation time 71000000000 ns (subscribe=true)
+2025-04-25 15:15:00,155 INFO  SumoAmbassador - Adding new vehicle "veh_33" at simulation time 71000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,159 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 72.000,000,000 s
+2025-04-25 15:15:00,161 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_34" received at simulation time 73000000000 ns (subscribe=true)
+2025-04-25 15:15:00,161 INFO  SumoAmbassador - Adding new vehicle "veh_34" at simulation time 73000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,169 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_35" received at simulation time 75000000000 ns (subscribe=true)
+2025-04-25 15:15:00,169 INFO  SumoAmbassador - Adding new vehicle "veh_35" at simulation time 75000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,174 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_36" received at simulation time 77000000000 ns (subscribe=true)
+2025-04-25 15:15:00,174 INFO  SumoAmbassador - Adding new vehicle "veh_36" at simulation time 77000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,177 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 78.000,000,000 s
+2025-04-25 15:15:00,179 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_37" received at simulation time 79000000000 ns (subscribe=true)
+2025-04-25 15:15:00,180 INFO  SumoAmbassador - Adding new vehicle "veh_37" at simulation time 79000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,187 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 81.000,000,000 s: vehicleId="veh_0", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,188 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_38" received at simulation time 81000000000 ns (subscribe=true)
+2025-04-25 15:15:00,188 INFO  SumoAmbassador - Adding new vehicle "veh_38" at simulation time 81000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,194 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 83.000,000,000 s: vehicleId="veh_1", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,196 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_39" received at simulation time 83000000000 ns (subscribe=true)
+2025-04-25 15:15:00,224 INFO  SumoAmbassador - Receive VehicleRouteChange request at simulation time 83.003,200,000 s: vehicleId="veh_21", newRouteId=2, current edge: 322230107_3290027832_39933927
+2025-04-25 15:15:00,230 INFO  SumoAmbassador - Receive VehicleRouteChange request at simulation time 83.004,200,000 s: vehicleId="veh_26", newRouteId=3, current edge: 4067968_28830219_3290027832
+2025-04-25 15:15:00,233 INFO  SumoAmbassador - Receive VehicleRouteChange request at simulation time 83.004,600,000 s: vehicleId="veh_36", newRouteId=3, current edge: 4067968_28830219_3290027832
+2025-04-25 15:15:00,236 INFO  SumoAmbassador - Receive VehicleRouteChange request at simulation time 83.006,600,000 s: vehicleId="veh_31", newRouteId=3, current edge: 4067968_28830219_3290027832
+2025-04-25 15:15:00,236 INFO  SumoAmbassador - Adding new vehicle "veh_39" at simulation time 83000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,237 INFO  SumoAmbassador - Process sumo: Step #0.00 (0ms ?*RT. ?UPS, TraCI: 124ms, vehicles TOT 0 ACT 0 BUF 0)                     
+2025-04-25 15:15:00,238 ERROR SumoAmbassador - Process sumo: Warning: Vehicle 'veh_21' performs emergency braking on lane '322230107_3290027832_39933927_1' with decel=6.00, wished=4.50, severity=1.00, time=83.00.
+2025-04-25 15:15:00,250 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 85.000,000,000 s: vehicleId="veh_2", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,251 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_40" received at simulation time 85000000000 ns (subscribe=true)
+2025-04-25 15:15:00,252 INFO  SumoAmbassador - Adding new vehicle "veh_40" at simulation time 85000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,258 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 87.000,000,000 s: vehicleId="veh_3", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,259 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_41" received at simulation time 87000000000 ns (subscribe=true)
+2025-04-25 15:15:00,260 INFO  SumoAmbassador - Adding new vehicle "veh_41" at simulation time 87000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,264 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 88.000,000,000 s
+2025-04-25 15:15:00,268 INFO  SumoAmbassador - Receive VehicleRouteChange request at simulation time 88.005,500,000 s: vehicleId="veh_41", newRouteId=3, current edge: 4067968_28830219_3290027832
+2025-04-25 15:15:00,270 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 89.000,000,000 s: vehicleId="veh_4", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,271 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_42" received at simulation time 89000000000 ns (subscribe=true)
+2025-04-25 15:15:00,271 INFO  SumoAmbassador - Adding new vehicle "veh_42" at simulation time 89000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,286 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 91.000,000,000 s: vehicleId="veh_5", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,287 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_43" received at simulation time 91000000000 ns (subscribe=true)
+2025-04-25 15:15:00,287 INFO  SumoAmbassador - Adding new vehicle "veh_43" at simulation time 91000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,292 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 92.000,000,000 s
+2025-04-25 15:15:00,295 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 93.000,000,000 s: vehicleId="veh_6", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,295 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_44" received at simulation time 93000000000 ns (subscribe=true)
+2025-04-25 15:15:00,298 INFO  SumoAmbassador - Adding new vehicle "veh_44" at simulation time 93000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,310 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 95.000,000,000 s: vehicleId="veh_7", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,310 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_45" received at simulation time 95000000000 ns (subscribe=true)
+2025-04-25 15:15:00,311 INFO  SumoAmbassador - Adding new vehicle "veh_45" at simulation time 95000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,317 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 97.000,000,000 s: vehicleId="veh_8", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,318 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_46" received at simulation time 97000000000 ns (subscribe=true)
+2025-04-25 15:15:00,318 INFO  SumoAmbassador - Adding new vehicle "veh_46" at simulation time 97000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,323 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 98.000,000,000 s
+2025-04-25 15:15:00,327 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 99.000,000,000 s: vehicleId="veh_9", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,328 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_47" received at simulation time 99000000000 ns (subscribe=true)
+2025-04-25 15:15:00,329 INFO  SumoAmbassador - Adding new vehicle "veh_47" at simulation time 99000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,341 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 101.000,000,000 s: vehicleId="veh_10", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,342 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_48" received at simulation time 101000000000 ns (subscribe=true)
+2025-04-25 15:15:00,342 INFO  SumoAmbassador - Adding new vehicle "veh_48" at simulation time 101000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,349 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 103.000,000,000 s: vehicleId="veh_11", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,350 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_49" received at simulation time 103000000000 ns (subscribe=true)
+2025-04-25 15:15:00,350 INFO  SumoAmbassador - Adding new vehicle "veh_49" at simulation time 103000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,360 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 105.000,000,000 s: vehicleId="veh_12", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,361 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_50" received at simulation time 105000000000 ns (subscribe=true)
+2025-04-25 15:15:00,361 INFO  SumoAmbassador - Adding new vehicle "veh_50" at simulation time 105000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,369 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 107.000,000,000 s: vehicleId="veh_13", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,369 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_51" received at simulation time 107000000000 ns (subscribe=true)
+2025-04-25 15:15:00,370 INFO  SumoAmbassador - Adding new vehicle "veh_51" at simulation time 107000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,375 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 108.000,000,000 s
+2025-04-25 15:15:00,380 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 109.000,000,000 s: vehicleId="veh_14", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,381 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_52" received at simulation time 109000000000 ns (subscribe=true)
+2025-04-25 15:15:00,381 INFO  SumoAmbassador - Adding new vehicle "veh_52" at simulation time 109000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,393 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 111.000,000,000 s: vehicleId="veh_15", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,393 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_53" received at simulation time 111000000000 ns (subscribe=true)
+2025-04-25 15:15:00,394 INFO  SumoAmbassador - Adding new vehicle "veh_53" at simulation time 111000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,398 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 112.000,000,000 s
+2025-04-25 15:15:00,402 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 113.000,000,000 s: vehicleId="veh_16", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,403 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_54" received at simulation time 113000000000 ns (subscribe=true)
+2025-04-25 15:15:00,403 INFO  SumoAmbassador - Adding new vehicle "veh_54" at simulation time 113000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,415 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 115.000,000,000 s: vehicleId="veh_17", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,416 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_55" received at simulation time 115000000000 ns (subscribe=true)
+2025-04-25 15:15:00,416 INFO  SumoAmbassador - Adding new vehicle "veh_55" at simulation time 115000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,425 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 117.000,000,000 s: vehicleId="veh_18", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,426 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_56" received at simulation time 117000000000 ns (subscribe=true)
+2025-04-25 15:15:00,427 INFO  SumoAmbassador - Adding new vehicle "veh_56" at simulation time 117000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,432 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 118.000,000,000 s
+2025-04-25 15:15:00,437 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 119.000,000,000 s: vehicleId="veh_19", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,437 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_57" received at simulation time 119000000000 ns (subscribe=true)
+2025-04-25 15:15:00,438 INFO  SumoAmbassador - Adding new vehicle "veh_57" at simulation time 119000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,449 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 121.000,000,000 s: vehicleId="veh_20", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,449 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_58" received at simulation time 121000000000 ns (subscribe=true)
+2025-04-25 15:15:00,450 INFO  SumoAmbassador - Adding new vehicle "veh_58" at simulation time 121000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,458 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_59" received at simulation time 123000000000 ns (subscribe=true)
+2025-04-25 15:15:00,459 INFO  SumoAmbassador - Adding new vehicle "veh_59" at simulation time 123000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,471 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 125.000,000,000 s: vehicleId="veh_22", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,472 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_60" received at simulation time 125000000000 ns (subscribe=true)
+2025-04-25 15:15:00,472 INFO  SumoAmbassador - Adding new vehicle "veh_60" at simulation time 125000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,480 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 127.000,000,000 s: vehicleId="veh_23", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,480 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_61" received at simulation time 127000000000 ns (subscribe=true)
+2025-04-25 15:15:00,481 INFO  SumoAmbassador - Adding new vehicle "veh_61" at simulation time 127000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,487 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 128.000,000,000 s
+2025-04-25 15:15:00,492 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 129.000,000,000 s: vehicleId="veh_24", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,493 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_62" received at simulation time 129000000000 ns (subscribe=true)
+2025-04-25 15:15:00,493 INFO  SumoAmbassador - Adding new vehicle "veh_62" at simulation time 129000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,509 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_63" received at simulation time 131000000000 ns (subscribe=true)
+2025-04-25 15:15:00,509 INFO  SumoAmbassador - Adding new vehicle "veh_63" at simulation time 131000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,514 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 132.000,000,000 s
+2025-04-25 15:15:00,514 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 132.000,000,000 s: vehicleId="veh_25", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,518 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_64" received at simulation time 133000000000 ns (subscribe=true)
+2025-04-25 15:15:00,518 INFO  SumoAmbassador - Adding new vehicle "veh_64" at simulation time 133000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,528 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 135.000,000,000 s: vehicleId="veh_27", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,529 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_65" received at simulation time 135000000000 ns (subscribe=true)
+2025-04-25 15:15:00,529 INFO  SumoAmbassador - Adding new vehicle "veh_65" at simulation time 135000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,536 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_66" received at simulation time 137000000000 ns (subscribe=true)
+2025-04-25 15:15:00,537 INFO  SumoAmbassador - Adding new vehicle "veh_66" at simulation time 137000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,541 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 138.000,000,000 s
+2025-04-25 15:15:00,542 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 138.000,000,000 s: vehicleId="veh_28", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,546 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 139.000,000,000 s: vehicleId="veh_29", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,547 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_67" received at simulation time 139000000000 ns (subscribe=true)
+2025-04-25 15:15:00,547 INFO  SumoAmbassador - Adding new vehicle "veh_67" at simulation time 139000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,560 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_68" received at simulation time 141000000000 ns (subscribe=true)
+2025-04-25 15:15:00,560 INFO  SumoAmbassador - Adding new vehicle "veh_68" at simulation time 141000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,564 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 142.000,000,000 s: vehicleId="veh_30", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,567 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_69" received at simulation time 143000000000 ns (subscribe=true)
+2025-04-25 15:15:00,568 INFO  SumoAmbassador - Adding new vehicle "veh_69" at simulation time 143000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,578 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 145.000,000,000 s: vehicleId="veh_32", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,579 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_70" received at simulation time 145000000000 ns (subscribe=true)
+2025-04-25 15:15:00,579 INFO  SumoAmbassador - Adding new vehicle "veh_70" at simulation time 145000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,587 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 147.000,000,000 s: vehicleId="veh_33", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,587 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_71" received at simulation time 147000000000 ns (subscribe=true)
+2025-04-25 15:15:00,588 INFO  SumoAmbassador - Adding new vehicle "veh_71" at simulation time 147000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,593 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 148.000,000,000 s
+2025-04-25 15:15:00,596 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 149.000,000,000 s: vehicleId="veh_34", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,597 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_72" received at simulation time 149000000000 ns (subscribe=true)
+2025-04-25 15:15:00,597 INFO  SumoAmbassador - Adding new vehicle "veh_72" at simulation time 149000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,609 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_73" received at simulation time 151000000000 ns (subscribe=true)
+2025-04-25 15:15:00,610 INFO  SumoAmbassador - Adding new vehicle "veh_73" at simulation time 151000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,615 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 152.000,000,000 s
+2025-04-25 15:15:00,615 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 152.000,000,000 s: vehicleId="veh_35", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,619 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_74" received at simulation time 153000000000 ns (subscribe=true)
+2025-04-25 15:15:00,619 INFO  SumoAmbassador - Adding new vehicle "veh_74" at simulation time 153000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,632 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 155.000,000,000 s: vehicleId="veh_37", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,632 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_75" received at simulation time 155000000000 ns (subscribe=true)
+2025-04-25 15:15:00,633 INFO  SumoAmbassador - Adding new vehicle "veh_75" at simulation time 155000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,640 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 157.000,000,000 s: vehicleId="veh_38", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,641 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_76" received at simulation time 157000000000 ns (subscribe=true)
+2025-04-25 15:15:00,641 INFO  SumoAmbassador - Adding new vehicle "veh_76" at simulation time 157000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,650 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 159.000,000,000 s: vehicleId="veh_39", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,650 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_77" received at simulation time 159000000000 ns (subscribe=true)
+2025-04-25 15:15:00,651 INFO  SumoAmbassador - Adding new vehicle "veh_77" at simulation time 159000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,661 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 160.000,000,000 s
+2025-04-25 15:15:00,665 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_78" received at simulation time 161000000000 ns (subscribe=true)
+2025-04-25 15:15:00,666 INFO  SumoAmbassador - Adding new vehicle "veh_78" at simulation time 161000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,671 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 162.000,000,000 s: vehicleId="veh_40", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,675 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_79" received at simulation time 163000000000 ns (subscribe=true)
+2025-04-25 15:15:00,681 INFO  SumoAmbassador - Receive VehicleRouteChange request at simulation time 163.005,100,000 s: vehicleId="veh_61", newRouteId=2, current edge: 322230107_3290027832_39933927
+2025-04-25 15:15:00,683 INFO  SumoAmbassador - Receive VehicleRouteChange request at simulation time 163.006,600,000 s: vehicleId="veh_66", newRouteId=3, current edge: 4067968_28830219_3290027832
+2025-04-25 15:15:00,685 INFO  SumoAmbassador - Receive VehicleRouteChange request at simulation time 163.007,900,000 s: vehicleId="veh_71", newRouteId=3, current edge: 4067968_28830219_3290027832
+2025-04-25 15:15:00,687 INFO  SumoAmbassador - Receive VehicleRouteChange request at simulation time 163.009,400,000 s: vehicleId="veh_77", newRouteId=3, current edge: 4067968_28830219_3290027832
+2025-04-25 15:15:00,687 INFO  SumoAmbassador - Adding new vehicle "veh_79" at simulation time 163000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,689 INFO  SumoAmbassador - Process sumo: Step #100.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 48 ACT 48 BUF 0)                   
+2025-04-25 15:15:00,689 ERROR SumoAmbassador - Process sumo: Warning: Vehicle 'veh_61' performs emergency braking on lane '322230107_3290027832_39933927_1' with decel=6.00, wished=4.50, severity=1.00, time=163.00.
+2025-04-25 15:15:00,704 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 165.000,000,000 s: vehicleId="veh_42", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,704 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_80" received at simulation time 165000000000 ns (subscribe=true)
+2025-04-25 15:15:00,706 INFO  SumoAmbassador - Adding new vehicle "veh_80" at simulation time 165000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,716 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_81" received at simulation time 167000000000 ns (subscribe=true)
+2025-04-25 15:15:00,718 INFO  SumoAmbassador - Adding new vehicle "veh_81" at simulation time 167000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,723 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 168.000,000,000 s
+2025-04-25 15:15:00,723 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 168.000,000,000 s: vehicleId="veh_43", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,729 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_82" received at simulation time 169000000000 ns (subscribe=true)
+2025-04-25 15:15:00,731 INFO  SumoAmbassador - Adding new vehicle "veh_82" at simulation time 169000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,741 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 170.000,000,000 s: vehicleId="veh_44", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,744 INFO  SumoAmbassador - Receive VehicleRouteChange request at simulation time 170.003,500,000 s: vehicleId="veh_81", newRouteId=3, current edge: 4067968_28830219_3290027832
+2025-04-25 15:15:00,749 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_83" received at simulation time 171000000000 ns (subscribe=true)
+2025-04-25 15:15:00,751 INFO  SumoAmbassador - Adding new vehicle "veh_83" at simulation time 171000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,756 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 172.000,000,000 s
+2025-04-25 15:15:00,756 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 172.000,000,000 s: vehicleId="veh_45", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,762 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_84" received at simulation time 173000000000 ns (subscribe=true)
+2025-04-25 15:15:00,764 INFO  SumoAmbassador - Adding new vehicle "veh_84" at simulation time 173000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,768 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 174.000,000,000 s: vehicleId="veh_46", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,781 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_85" received at simulation time 175000000000 ns (subscribe=true)
+2025-04-25 15:15:00,782 INFO  SumoAmbassador - Adding new vehicle "veh_85" at simulation time 175000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,786 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 176.000,000,000 s: vehicleId="veh_47", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,791 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_86" received at simulation time 177000000000 ns (subscribe=true)
+2025-04-25 15:15:00,792 INFO  SumoAmbassador - Adding new vehicle "veh_86" at simulation time 177000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,797 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 178.000,000,000 s
+2025-04-25 15:15:00,798 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 178.000,000,000 s: vehicleId="veh_48", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,804 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_87" received at simulation time 179000000000 ns (subscribe=true)
+2025-04-25 15:15:00,806 INFO  SumoAmbassador - Adding new vehicle "veh_87" at simulation time 179000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,819 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 180.000,000,000 s: vehicleId="veh_49", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,824 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_88" received at simulation time 181000000000 ns (subscribe=true)
+2025-04-25 15:15:00,825 INFO  SumoAmbassador - Adding new vehicle "veh_88" at simulation time 181000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,829 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 182.000,000,000 s: vehicleId="veh_50", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,834 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_89" received at simulation time 183000000000 ns (subscribe=true)
+2025-04-25 15:15:00,835 INFO  SumoAmbassador - Adding new vehicle "veh_89" at simulation time 183000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,839 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 184.000,000,000 s: vehicleId="veh_51", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,850 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_90" received at simulation time 185000000000 ns (subscribe=true)
+2025-04-25 15:15:00,852 INFO  SumoAmbassador - Adding new vehicle "veh_90" at simulation time 185000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,856 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 186.000,000,000 s: vehicleId="veh_52", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,861 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_91" received at simulation time 187000000000 ns (subscribe=true)
+2025-04-25 15:15:00,863 INFO  SumoAmbassador - Adding new vehicle "veh_91" at simulation time 187000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,868 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 188.000,000,000 s
+2025-04-25 15:15:00,868 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 188.000,000,000 s: vehicleId="veh_53", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,874 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_92" received at simulation time 189000000000 ns (subscribe=true)
+2025-04-25 15:15:00,876 INFO  SumoAmbassador - Adding new vehicle "veh_92" at simulation time 189000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,896 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 190.000,000,000 s: vehicleId="veh_54", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,901 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_93" received at simulation time 191000000000 ns (subscribe=true)
+2025-04-25 15:15:00,902 INFO  SumoAmbassador - Adding new vehicle "veh_93" at simulation time 191000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,908 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 192.000,000,000 s
+2025-04-25 15:15:00,908 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 192.000,000,000 s: vehicleId="veh_55", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,913 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_94" received at simulation time 193000000000 ns (subscribe=true)
+2025-04-25 15:15:00,913 INFO  SumoAmbassador - Adding new vehicle "veh_94" at simulation time 193000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,918 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 194.000,000,000 s: vehicleId="veh_56", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,939 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_95" received at simulation time 195000000000 ns (subscribe=true)
+2025-04-25 15:15:00,940 INFO  SumoAmbassador - Adding new vehicle "veh_95" at simulation time 195000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,944 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 196.000,000,000 s: vehicleId="veh_57", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,948 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_96" received at simulation time 197000000000 ns (subscribe=true)
+2025-04-25 15:15:00,949 INFO  SumoAmbassador - Adding new vehicle "veh_96" at simulation time 197000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,954 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 198.000,000,000 s
+2025-04-25 15:15:00,958 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 199.000,000,000 s: vehicleId="veh_58", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,959 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_97" received at simulation time 199000000000 ns (subscribe=true)
+2025-04-25 15:15:00,960 INFO  SumoAmbassador - Adding new vehicle "veh_97" at simulation time 199000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,973 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 201.000,000,000 s: vehicleId="veh_59", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,973 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_98" received at simulation time 201000000000 ns (subscribe=true)
+2025-04-25 15:15:00,974 INFO  SumoAmbassador - Adding new vehicle "veh_98" at simulation time 201000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:00,981 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 203.000,000,000 s: vehicleId="veh_60", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:00,981 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_99" received at simulation time 203000000000 ns (subscribe=true)
+2025-04-25 15:15:00,982 INFO  SumoAmbassador - Adding new vehicle "veh_99" at simulation time 203000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:00,996 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_100" received at simulation time 205000000000 ns (subscribe=true)
+2025-04-25 15:15:00,997 INFO  SumoAmbassador - Adding new vehicle "veh_100" at simulation time 205000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:01,001 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 206.000,000,000 s: vehicleId="veh_62", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,005 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_101" received at simulation time 207000000000 ns (subscribe=true)
+2025-04-25 15:15:01,006 INFO  SumoAmbassador - Adding new vehicle "veh_101" at simulation time 207000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:01,011 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 208.000,000,000 s
+2025-04-25 15:15:01,011 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 208.000,000,000 s: vehicleId="veh_63", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,016 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_102" received at simulation time 209000000000 ns (subscribe=true)
+2025-04-25 15:15:01,017 INFO  SumoAmbassador - Adding new vehicle "veh_102" at simulation time 209000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:01,027 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 210.000,000,000 s: vehicleId="veh_64", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,031 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_103" received at simulation time 211000000000 ns (subscribe=true)
+2025-04-25 15:15:01,032 INFO  SumoAmbassador - Adding new vehicle "veh_103" at simulation time 211000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:01,037 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 212.000,000,000 s
+2025-04-25 15:15:01,042 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 213.000,000,000 s: vehicleId="veh_65", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,043 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_104" received at simulation time 213000000000 ns (subscribe=true)
+2025-04-25 15:15:01,044 INFO  SumoAmbassador - Adding new vehicle "veh_104" at simulation time 213000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:01,060 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_105" received at simulation time 215000000000 ns (subscribe=true)
+2025-04-25 15:15:01,061 INFO  SumoAmbassador - Adding new vehicle "veh_105" at simulation time 215000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:01,065 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 216.000,000,000 s: vehicleId="veh_67", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,070 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_106" received at simulation time 217000000000 ns (subscribe=true)
+2025-04-25 15:15:01,071 INFO  SumoAmbassador - Adding new vehicle "veh_106" at simulation time 217000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:01,076 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 218.000,000,000 s: vehicleId="veh_68", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,080 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_107" received at simulation time 219000000000 ns (subscribe=true)
+2025-04-25 15:15:01,081 INFO  SumoAmbassador - Adding new vehicle "veh_107" at simulation time 219000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:01,096 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 220.000,000,000 s
+2025-04-25 15:15:01,096 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 220.000,000,000 s: vehicleId="veh_69", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,100 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_108" received at simulation time 221000000000 ns (subscribe=true)
+2025-04-25 15:15:01,101 INFO  SumoAmbassador - Adding new vehicle "veh_108" at simulation time 221000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:01,105 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 222.000,000,000 s: vehicleId="veh_70", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,109 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_109" received at simulation time 223000000000 ns (subscribe=true)
+2025-04-25 15:15:01,110 INFO  SumoAmbassador - Adding new vehicle "veh_109" at simulation time 223000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:01,123 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_110" received at simulation time 225000000000 ns (subscribe=true)
+2025-04-25 15:15:01,124 INFO  SumoAmbassador - Adding new vehicle "veh_110" at simulation time 225000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:01,128 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 226.000,000,000 s: vehicleId="veh_72", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,133 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_111" received at simulation time 227000000000 ns (subscribe=true)
+2025-04-25 15:15:01,134 INFO  SumoAmbassador - Adding new vehicle "veh_111" at simulation time 227000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:01,139 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 228.000,000,000 s
+2025-04-25 15:15:01,139 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 228.000,000,000 s: vehicleId="veh_73", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,143 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_112" received at simulation time 229000000000 ns (subscribe=true)
+2025-04-25 15:15:01,144 INFO  SumoAmbassador - Adding new vehicle "veh_112" at simulation time 229000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:01,154 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 230.000,000,000 s: vehicleId="veh_74", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,158 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_113" received at simulation time 231000000000 ns (subscribe=true)
+2025-04-25 15:15:01,159 INFO  SumoAmbassador - Adding new vehicle "veh_113" at simulation time 231000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:01,163 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 232.000,000,000 s
+2025-04-25 15:15:01,163 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 232.000,000,000 s: vehicleId="veh_75", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,167 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_114" received at simulation time 233000000000 ns (subscribe=true)
+2025-04-25 15:15:01,169 INFO  SumoAmbassador - Adding new vehicle "veh_114" at simulation time 233000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:01,173 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 234.000,000,000 s: vehicleId="veh_76", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,184 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_115" received at simulation time 235000000000 ns (subscribe=true)
+2025-04-25 15:15:01,185 INFO  SumoAmbassador - Adding new vehicle "veh_115" at simulation time 235000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:01,193 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_116" received at simulation time 237000000000 ns (subscribe=true)
+2025-04-25 15:15:01,193 INFO  SumoAmbassador - Adding new vehicle "veh_116" at simulation time 237000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:01,198 INFO  SumoAmbassador - Receive VehicleParameterChange request at simulation time 238.000,000,000 s
+2025-04-25 15:15:01,198 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 238.000,000,000 s: vehicleId="veh_78", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,203 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_117" received at simulation time 239000000000 ns (subscribe=true)
+2025-04-25 15:15:01,204 INFO  SumoAmbassador - Adding new vehicle "veh_117" at simulation time 239000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:01,214 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 240.000,000,000 s: vehicleId="veh_79", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,219 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_118" received at simulation time 241000000000 ns (subscribe=true)
+2025-04-25 15:15:01,220 INFO  SumoAmbassador - Adding new vehicle "veh_118" at simulation time 241000000000 ns (type=Car, routeId=1, laneId=0, departPos=1417.00)
+2025-04-25 15:15:01,224 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 242.000,000,000 s: vehicleId="veh_80", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,228 INFO  SumoAmbassador - Receive VehicleRouteChange request at simulation time 242.002,200,000 s: vehicleId="veh_101", newRouteId=2, current edge: 322230107_3290027832_39933927
+2025-04-25 15:15:01,232 INFO  SumoAmbassador - Receive VehicleRouteChange request at simulation time 242.004,100,000 s: vehicleId="veh_107", newRouteId=3, current edge: 4067968_28830219_3290027832
+2025-04-25 15:15:01,233 INFO  SumoAmbassador - Receive VehicleRouteChange request at simulation time 242.004,600,000 s: vehicleId="veh_111", newRouteId=3, current edge: 4067968_28830219_3290027832
+2025-04-25 15:15:01,235 INFO  SumoAmbassador - Receive VehicleRouteChange request at simulation time 242.006,500,000 s: vehicleId="veh_116", newRouteId=3, current edge: 4067968_28830219_3290027832
+2025-04-25 15:15:01,236 ERROR SumoAmbassador - Process sumo: Warning: Vehicle 'veh_101' performs emergency braking on lane '322230107_3290027832_39933927_1' with decel=6.00, wished=4.50, severity=1.00, time=242.00.
+2025-04-25 15:15:01,236 INFO  SumoAmbassador - Process sumo: Step #200.00 (1ms ~= 1000.00*RT, ~98000.00UPS, TraCI: 9ms, vehicles TOT 98 ACT 98 BUF 0)  
+2025-04-25 15:15:01,240 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_119" received at simulation time 243000000000 ns (subscribe=true)
+2025-04-25 15:15:01,242 INFO  SumoAmbassador - Adding new vehicle "veh_119" at simulation time 243000000000 ns (type=Car, routeId=1, laneId=1, departPos=1417.00)
+2025-04-25 15:15:01,265 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 246.000,000,000 s: vehicleId="veh_82", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,277 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 248.000,000,000 s: vehicleId="veh_83", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,301 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 250.000,000,000 s: vehicleId="veh_84", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,313 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 252.000,000,000 s: vehicleId="veh_85", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,326 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 254.000,000,000 s: vehicleId="veh_86", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,349 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 256.000,000,000 s: vehicleId="veh_87", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,363 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 258.000,000,000 s: vehicleId="veh_88", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,388 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 260.000,000,000 s: vehicleId="veh_89", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,402 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 262.000,000,000 s: vehicleId="veh_90", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,417 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 264.000,000,000 s: vehicleId="veh_91", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,445 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 266.000,000,000 s: vehicleId="veh_92", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,464 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 268.000,000,000 s: vehicleId="veh_93", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,489 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 270.000,000,000 s: vehicleId="veh_94", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,506 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 272.000,000,000 s: vehicleId="veh_95", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,522 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 274.000,000,000 s: vehicleId="veh_96", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,548 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 277.000,000,000 s: vehicleId="veh_97", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,559 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 279.000,000,000 s: vehicleId="veh_98", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,572 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 280.000,000,000 s: vehicleId="veh_0", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,578 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 281.000,000,000 s: vehicleId="veh_99", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,589 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 283.000,000,000 s: vehicleId="veh_100", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,606 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 285.000,000,000 s: vehicleId="veh_1", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,611 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 286.000,000,000 s: vehicleId="veh_2", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,611 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 286.000,000,000 s: vehicleId="veh_102", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,623 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 288.000,000,000 s: vehicleId="veh_103", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,641 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 290.000,000,000 s: vehicleId="veh_104", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,647 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 291.000,000,000 s: vehicleId="veh_3", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,647 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 291.000,000,000 s: vehicleId="veh_4", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,658 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 293.000,000,000 s: vehicleId="veh_105", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,675 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 295.000,000,000 s: vehicleId="veh_106", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,684 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 297.000,000,000 s: vehicleId="veh_5", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,684 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 297.000,000,000 s: vehicleId="veh_6", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,689 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 298.000,000,000 s: vehicleId="veh_108", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,705 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 300.000,000,000 s: vehicleId="veh_109", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,714 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 302.000,000,000 s: vehicleId="veh_110", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,719 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 303.000,000,000 s: vehicleId="veh_7", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,719 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 303.000,000,000 s: vehicleId="veh_8", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,740 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 306.000,000,000 s: vehicleId="veh_112", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,749 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 308.000,000,000 s: vehicleId="veh_9", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,749 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 308.000,000,000 s: vehicleId="veh_10", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,749 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 308.000,000,000 s: vehicleId="veh_113", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,765 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 310.000,000,000 s: vehicleId="veh_114", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,774 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 312.000,000,000 s: vehicleId="veh_115", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,778 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 313.000,000,000 s: vehicleId="veh_11", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,778 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 313.000,000,000 s: vehicleId="veh_12", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,800 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 316.000,000,000 s: vehicleId="veh_117", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,806 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 317.000,000,000 s: vehicleId="veh_13", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,812 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 318.000,000,000 s: vehicleId="veh_14", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,812 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 318.000,000,000 s: vehicleId="veh_118", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,828 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 320.000,000,000 s: vehicleId="veh_119", targetSpeed=6.94444465637207m/s, interval=5000000000ms
+2025-04-25 15:15:01,838 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 322.000,000,000 s: vehicleId="veh_15", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,849 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 324.000,000,000 s: vehicleId="veh_16", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,874 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 327.000,000,000 s: vehicleId="veh_17", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,880 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 328.000,000,000 s: vehicleId="veh_18", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,906 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 332.000,000,000 s: vehicleId="veh_19", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,911 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 333.000,000,000 s: vehicleId="veh_20", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,943 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 337.000,000,000 s: vehicleId="veh_22", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,953 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 339.000,000,000 s: vehicleId="veh_23", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,973 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 342.000,000,000 s: vehicleId="veh_24", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,976 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 343.000,000,000 s: vehicleId="veh_25", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:01,999 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 347.000,000,000 s: vehicleId="veh_27", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,009 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 349.000,000,000 s: vehicleId="veh_28", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,029 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 352.000,000,000 s: vehicleId="veh_29", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,034 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 353.000,000,000 s: vehicleId="veh_30", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,059 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 357.000,000,000 s: vehicleId="veh_32", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,071 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 359.000,000,000 s: vehicleId="veh_33", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,090 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 362.000,000,000 s: vehicleId="veh_34", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,095 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 363.000,000,000 s: vehicleId="veh_35", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,117 INFO  SimulationFacade - Removed vehicle "veh_21" at simulation time 367000000000ns
+2025-04-25 15:15:02,118 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 367.000,000,000 s: vehicleId="veh_37", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,121 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 368.000,000,000 s: vehicleId="veh_38", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,141 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 372.000,000,000 s: vehicleId="veh_39", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,145 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 373.000,000,000 s: vehicleId="veh_40", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,167 INFO  SimulationFacade - Removed vehicle "veh_26" at simulation time 376000000000ns
+2025-04-25 15:15:02,173 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 377.000,000,000 s: vehicleId="veh_42", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,178 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 378.000,000,000 s: vehicleId="veh_43", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,208 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 382.000,000,000 s: vehicleId="veh_44", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,213 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 383.000,000,000 s: vehicleId="veh_45", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,245 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 387.000,000,000 s: vehicleId="veh_46", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,250 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 388.000,000,000 s: vehicleId="veh_47", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,275 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 391.000,000,000 s: vehicleId="veh_48", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,281 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 392.000,000,000 s: vehicleId="veh_49", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,301 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 396.000,000,000 s: vehicleId="veh_50", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,305 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 397.000,000,000 s: vehicleId="veh_51", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,322 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 400.000,000,000 s: vehicleId="veh_52", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,325 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 401.000,000,000 s: vehicleId="veh_53", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,344 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 405.000,000,000 s: vehicleId="veh_54", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,349 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 406.000,000,000 s: vehicleId="veh_55", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,357 INFO  SimulationFacade - Removed vehicle "veh_0" at simulation time 408000000000ns
+2025-04-25 15:15:02,363 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 409.000,000,000 s: vehicleId="veh_56", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,373 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 410.000,000,000 s: vehicleId="veh_57", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,386 INFO  SimulationFacade - Removed vehicle "veh_1" at simulation time 413000000000ns
+2025-04-25 15:15:02,391 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 414.000,000,000 s: vehicleId="veh_58", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,394 INFO  SimulationFacade - Removed vehicle "veh_2" at simulation time 415000000000ns
+2025-04-25 15:15:02,402 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 415.000,000,000 s: vehicleId="veh_59", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,417 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 418.000,000,000 s: vehicleId="veh_60", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,421 INFO  SimulationFacade - Removed vehicle "veh_3" at simulation time 419000000000ns
+2025-04-25 15:15:02,422 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 419.000,000,000 s: vehicleId="veh_62", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,435 INFO  SimulationFacade - Removed vehicle "veh_4" at simulation time 421000000000ns
+2025-04-25 15:15:02,445 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 423.000,000,000 s: vehicleId="veh_63", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,449 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 424.000,000,000 s: vehicleId="veh_64", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,466 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 427.000,000,000 s: vehicleId="veh_65", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,469 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 428.000,000,000 s: vehicleId="veh_67", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,487 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 432.000,000,000 s: vehicleId="veh_68", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,490 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 433.000,000,000 s: vehicleId="veh_69", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,504 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 436.000,000,000 s: vehicleId="veh_70", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,508 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 437.000,000,000 s: vehicleId="veh_72", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,514 INFO  SimulationFacade - Removed vehicle "veh_31" at simulation time 439000000000ns
+2025-04-25 15:15:02,527 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 441.000,000,000 s: vehicleId="veh_73", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,530 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 442.000,000,000 s: vehicleId="veh_74", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,532 INFO  SimulationFacade - Removed vehicle "veh_36" at simulation time 443000000000ns
+2025-04-25 15:15:02,547 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 446.000,000,000 s: vehicleId="veh_75", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,550 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 447.000,000,000 s: vehicleId="veh_76", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,555 INFO  SimulationFacade - Removed vehicle "veh_5" at simulation time 449000000000ns
+2025-04-25 15:15:02,563 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 450.000,000,000 s: vehicleId="veh_78", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,566 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 451.000,000,000 s: vehicleId="veh_79", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,571 INFO  SimulationFacade - Removed vehicle "veh_6" at simulation time 453000000000ns
+2025-04-25 15:15:02,576 INFO  SimulationFacade - Removed vehicle "veh_8" at simulation time 455000000000ns
+2025-04-25 15:15:02,582 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 455.000,000,000 s: vehicleId="veh_80", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,584 INFO  SimulationFacade - Removed vehicle "veh_7" at simulation time 456000000000ns
+2025-04-25 15:15:02,585 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 456.000,000,000 s: vehicleId="veh_82", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,590 INFO  SimulationFacade - Removed vehicle "veh_9" at simulation time 458000000000ns
+2025-04-25 15:15:02,595 INFO  SimulationFacade - Removed vehicle "veh_10" at simulation time 460000000000ns
+2025-04-25 15:15:02,601 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 460.000,000,000 s: vehicleId="veh_83", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,605 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 461.000,000,000 s: vehicleId="veh_84", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,608 INFO  SimulationFacade - Removed vehicle "veh_11" at simulation time 462000000000ns
+2025-04-25 15:15:02,613 INFO  SimulationFacade - Removed vehicle "veh_12" at simulation time 464000000000ns
+2025-04-25 15:15:02,613 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 464.000,000,000 s: vehicleId="veh_85", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,622 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 465.000,000,000 s: vehicleId="veh_86", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,624 INFO  SimulationFacade - Removed vehicle "veh_13" at simulation time 466000000000ns
+2025-04-25 15:15:02,630 INFO  SimulationFacade - Removed vehicle "veh_14" at simulation time 468000000000ns
+2025-04-25 15:15:02,633 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 469.000,000,000 s: vehicleId="veh_87", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,635 INFO  SimulationFacade - Removed vehicle "veh_16" at simulation time 470000000000ns
+2025-04-25 15:15:02,639 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 470.000,000,000 s: vehicleId="veh_88", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,644 INFO  SimulationFacade - Removed vehicle "veh_15" at simulation time 472000000000ns
+2025-04-25 15:15:02,647 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 473.000,000,000 s: vehicleId="veh_89", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,649 INFO  SimulationFacade - Removed vehicle "veh_17" at simulation time 474000000000ns
+2025-04-25 15:15:02,652 INFO  SimulationFacade - Removed vehicle "veh_19" at simulation time 475000000000ns
+2025-04-25 15:15:02,656 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 475.000,000,000 s: vehicleId="veh_90", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,660 INFO  SimulationFacade - Removed vehicle "veh_18" at simulation time 477000000000ns
+2025-04-25 15:15:02,663 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 478.000,000,000 s: vehicleId="veh_91", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,666 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 479.000,000,000 s: vehicleId="veh_92", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,683 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 483.000,000,000 s: vehicleId="veh_93", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,686 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 484.000,000,000 s: vehicleId="veh_94", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,687 INFO  SimulationFacade - Removed vehicle "veh_41" at simulation time 485000000000ns
+2025-04-25 15:15:02,696 INFO  SimulationFacade - Removed vehicle "veh_61" at simulation time 487000000000ns
+2025-04-25 15:15:02,697 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 487.000,000,000 s: vehicleId="veh_95", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,699 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 488.000,000,000 s: vehicleId="veh_96", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,701 INFO  SimulationFacade - Removed vehicle "veh_66" at simulation time 489000000000ns
+2025-04-25 15:15:02,713 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 492.000,000,000 s: vehicleId="veh_97", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,713 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 492.000,000,000 s: vehicleId="veh_98", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,715 INFO  SimulationFacade - Removed vehicle "veh_71" at simulation time 493000000000ns
+2025-04-25 15:15:02,727 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 496.000,000,000 s: vehicleId="veh_99", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,729 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 497.000,000,000 s: vehicleId="veh_100", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,735 INFO  SimulationFacade - Removed vehicle "veh_22" at simulation time 500000000000ns
+2025-04-25 15:15:02,739 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 500.000,000,000 s: vehicleId="veh_102", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,743 INFO  SimulationFacade - Removed vehicle "veh_20" at simulation time 502000000000ns
+2025-04-25 15:15:02,744 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 502.000,000,000 s: vehicleId="veh_103", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,748 INFO  SimulationFacade - Removed vehicle "veh_24" at simulation time 504000000000ns
+2025-04-25 15:15:02,753 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 505.000,000,000 s: vehicleId="veh_104", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,756 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 506.000,000,000 s: vehicleId="veh_105", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,758 INFO  SimulationFacade - Removed vehicle "veh_23" at simulation time 507000000000ns
+2025-04-25 15:15:02,763 INFO  SimulationFacade - Removed vehicle "veh_25" at simulation time 509000000000ns
+2025-04-25 15:15:02,763 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 509.000,000,000 s: vehicleId="veh_106", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,772 INFO  SimulationFacade - Removed vehicle "veh_27" at simulation time 511000000000ns
+2025-04-25 15:15:02,772 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 511.000,000,000 s: vehicleId="veh_108", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,779 INFO  SimulationFacade - Removed vehicle "veh_28" at simulation time 514000000000ns
+2025-04-25 15:15:02,780 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 514.000,000,000 s: vehicleId="veh_109", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,782 INFO  SimulationFacade - Removed vehicle "veh_29" at simulation time 515000000000ns
+2025-04-25 15:15:02,786 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 515.000,000,000 s: vehicleId="veh_110", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,790 INFO  SimulationFacade - Removed vehicle "veh_30" at simulation time 517000000000ns
+2025-04-25 15:15:02,795 INFO  SimulationFacade - Removed vehicle "veh_32" at simulation time 519000000000ns
+2025-04-25 15:15:02,795 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 519.000,000,000 s: vehicleId="veh_112", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,797 INFO  SimulationFacade - Removed vehicle "veh_33" at simulation time 520000000000ns
+2025-04-25 15:15:02,801 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 520.000,000,000 s: vehicleId="veh_113", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,806 INFO  SimulationFacade - Removed vehicle "veh_34" at simulation time 522000000000ns
+2025-04-25 15:15:02,808 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 523.000,000,000 s: vehicleId="veh_114", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,811 INFO  SimulationFacade - Removed vehicle "veh_35" at simulation time 524000000000ns
+2025-04-25 15:15:02,811 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 524.000,000,000 s: vehicleId="veh_115", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,821 INFO  SimulationFacade - Removed vehicle "veh_37" at simulation time 526000000000ns
+2025-04-25 15:15:02,826 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 528.000,000,000 s: vehicleId="veh_117", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,828 INFO  SimulationFacade - Removed vehicle "veh_38" at simulation time 529000000000ns
+2025-04-25 15:15:02,828 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 529.000,000,000 s: vehicleId="veh_118", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,830 INFO  SimulationFacade - Removed vehicle "veh_39" at simulation time 530000000000ns
+2025-04-25 15:15:02,837 INFO  SimulationFacade - Removed vehicle "veh_40" at simulation time 532000000000ns
+2025-04-25 15:15:02,839 INFO  SumoAmbassador - Receive VehicleSpeedChange request at simulation time 533.000,000,000 s: vehicleId="veh_119", targetSpeed=0.0m/s, interval=0ms
+2025-04-25 15:15:02,841 INFO  SimulationFacade - Removed vehicle "veh_42" at simulation time 534000000000ns
+2025-04-25 15:15:02,851 INFO  SimulationFacade - Removed vehicle "veh_44" at simulation time 537000000000ns
+2025-04-25 15:15:02,853 INFO  SimulationFacade - Removed vehicle "veh_43" at simulation time 538000000000ns
+2025-04-25 15:15:02,862 INFO  SimulationFacade - Removed vehicle "veh_46" at simulation time 541000000000ns
+2025-04-25 15:15:02,864 INFO  SimulationFacade - Removed vehicle "veh_45" at simulation time 542000000000ns
+2025-04-25 15:15:02,868 INFO  SimulationFacade - Removed vehicle "veh_47" at simulation time 544000000000ns
+2025-04-25 15:15:02,876 INFO  SimulationFacade - Removed vehicle "veh_48" at simulation time 546000000000ns
+2025-04-25 15:15:02,880 INFO  SimulationFacade - Removed vehicle "veh_49" at simulation time 548000000000ns
+2025-04-25 15:15:02,885 INFO  SimulationFacade - Removed vehicle "veh_50" at simulation time 550000000000ns
+2025-04-25 15:15:02,894 INFO  SimulationFacade - Removed vehicle "veh_51" at simulation time 553000000000ns
+2025-04-25 15:15:02,896 INFO  SimulationFacade - Removed vehicle "veh_52" at simulation time 554000000000ns
+2025-04-25 15:15:02,903 INFO  SimulationFacade - Removed vehicle "veh_53" at simulation time 556000000000ns
+2025-04-25 15:15:02,924 INFO  SimulationFacade - Removed vehicle "veh_77" at simulation time 565000000000ns
+2025-04-25 15:15:02,932 INFO  SimulationFacade - Removed vehicle "veh_81" at simulation time 567000000000ns
+2025-04-25 15:15:02,936 INFO  SimulationFacade - Removed vehicle "veh_101" at simulation time 570000000000ns
+2025-04-25 15:15:02,943 INFO  SimulationFacade - Removed vehicle "veh_107" at simulation time 573000000000ns
+2025-04-25 15:15:02,961 INFO  SimulationFacade - Removed vehicle "veh_55" at simulation time 582000000000ns
+2025-04-25 15:15:02,964 INFO  SimulationFacade - Removed vehicle "veh_54" at simulation time 584000000000ns
+2025-04-25 15:15:02,970 INFO  SimulationFacade - Removed vehicle "veh_57" at simulation time 586000000000ns
+2025-04-25 15:15:02,974 INFO  SimulationFacade - Removed vehicle "veh_56" at simulation time 588000000000ns
+2025-04-25 15:15:02,977 INFO  SimulationFacade - Removed vehicle "veh_59" at simulation time 590000000000ns
+2025-04-25 15:15:02,982 INFO  SimulationFacade - Removed vehicle "veh_58" at simulation time 592000000000ns
+2025-04-25 15:15:02,987 INFO  SimulationFacade - Removed vehicle "veh_62" at simulation time 595000000000ns
+2025-04-25 15:15:02,990 INFO  SimulationFacade - Removed vehicle "veh_60" at simulation time 596000000000ns
+2025-04-25 15:15:02,993 INFO  SimulationFacade - Removed vehicle "veh_64" at simulation time 598000000000ns
+2025-04-25 15:15:02,996 INFO  SimulationFacade - Removed vehicle "veh_63" at simulation time 600000000000ns
+2025-04-25 15:15:03,001 INFO  SimulationFacade - Removed vehicle "veh_67" at simulation time 602000000000ns
+2025-04-25 15:15:03,004 INFO  SimulationFacade - Removed vehicle "veh_65" at simulation time 604000000000ns
+2025-04-25 15:15:03,009 INFO  SimulationFacade - Removed vehicle "veh_69" at simulation time 607000000000ns
+2025-04-25 15:15:03,012 INFO  SimulationFacade - Removed vehicle "veh_68" at simulation time 609000000000ns
+2025-04-25 15:15:03,016 INFO  SimulationFacade - Removed vehicle "veh_72" at simulation time 611000000000ns
+2025-04-25 15:15:03,018 INFO  SimulationFacade - Removed vehicle "veh_70" at simulation time 613000000000ns
+2025-04-25 15:15:03,021 INFO  SimulationFacade - Removed vehicle "veh_74" at simulation time 615000000000ns
+2025-04-25 15:15:03,026 INFO  SimulationFacade - Removed vehicle "veh_73" at simulation time 617000000000ns
+2025-04-25 15:15:03,029 INFO  SimulationFacade - Removed vehicle "veh_76" at simulation time 619000000000ns
+2025-04-25 15:15:03,034 INFO  SimulationFacade - Removed vehicle "veh_75" at simulation time 621000000000ns
+2025-04-25 15:15:03,035 INFO  SimulationFacade - Removed vehicle "veh_78" at simulation time 622000000000ns
+2025-04-25 15:15:03,039 INFO  SimulationFacade - Removed vehicle "veh_79" at simulation time 625000000000ns
+2025-04-25 15:15:03,042 INFO  SimulationFacade - Removed vehicle "veh_80" at simulation time 627000000000ns
+2025-04-25 15:15:03,045 INFO  SimulationFacade - Removed vehicle "veh_82" at simulation time 630000000000ns
+2025-04-25 15:15:03,049 INFO  SimulationFacade - Removed vehicle "veh_83" at simulation time 632000000000ns
+2025-04-25 15:15:03,052 INFO  SimulationFacade - Removed vehicle "veh_84" at simulation time 634000000000ns
+2025-04-25 15:15:03,057 INFO  SimulationFacade - Removed vehicle "veh_85" at simulation time 637000000000ns
+2025-04-25 15:15:03,058 INFO  SimulationFacade - Removed vehicle "veh_86" at simulation time 638000000000ns
+2025-04-25 15:15:03,071 INFO  SimulationFacade - Removed vehicle "veh_111" at simulation time 646000000000ns
+2025-04-25 15:15:03,075 INFO  SimulationFacade - Removed vehicle "veh_116" at simulation time 648000000000ns
+2025-04-25 15:15:03,096 INFO  SimulationFacade - Removed vehicle "veh_87" at simulation time 661000000000ns
+2025-04-25 15:15:03,100 INFO  SimulationFacade - Removed vehicle "veh_88" at simulation time 664000000000ns
+2025-04-25 15:15:03,103 INFO  SimulationFacade - Removed vehicle "veh_90" at simulation time 666000000000ns
+2025-04-25 15:15:03,106 INFO  SimulationFacade - Removed vehicle "veh_89" at simulation time 669000000000ns
+2025-04-25 15:15:03,108 INFO  SimulationFacade - Removed vehicle "veh_92" at simulation time 670000000000ns
+2025-04-25 15:15:03,112 INFO  SimulationFacade - Removed vehicle "veh_91" at simulation time 672000000000ns
+2025-04-25 15:15:03,116 INFO  SimulationFacade - Removed vehicle "veh_94" at simulation time 674000000000ns
+2025-04-25 15:15:03,121 INFO  SimulationFacade - Removed vehicle "veh_93" at simulation time 677000000000ns
+2025-04-25 15:15:03,122 INFO  SimulationFacade - Removed vehicle "veh_96" at simulation time 678000000000ns
+2025-04-25 15:15:03,125 INFO  SimulationFacade - Removed vehicle "veh_95" at simulation time 680000000000ns
+2025-04-25 15:15:03,129 INFO  SimulationFacade - Removed vehicle "veh_98" at simulation time 682000000000ns
+2025-04-25 15:15:03,132 INFO  SimulationFacade - Removed vehicle "veh_97" at simulation time 684000000000ns
+2025-04-25 15:15:03,135 INFO  SimulationFacade - Removed vehicle "veh_100" at simulation time 686000000000ns
+2025-04-25 15:15:03,136 INFO  SimulationFacade - Removed vehicle "veh_99" at simulation time 688000000000ns
+2025-04-25 15:15:03,138 INFO  SimulationFacade - Removed vehicle "veh_103" at simulation time 690000000000ns
+2025-04-25 15:15:03,140 INFO  SimulationFacade - Removed vehicle "veh_102" at simulation time 692000000000ns
+2025-04-25 15:15:03,142 INFO  SimulationFacade - Removed vehicle "veh_105" at simulation time 694000000000ns
+2025-04-25 15:15:03,144 INFO  SimulationFacade - Removed vehicle "veh_104" at simulation time 696000000000ns
+2025-04-25 15:15:03,147 INFO  SimulationFacade - Removed vehicle "veh_106" at simulation time 699000000000ns
+2025-04-25 15:15:03,150 INFO  SimulationFacade - Removed vehicle "veh_108" at simulation time 702000000000ns
+2025-04-25 15:15:03,151 INFO  SimulationFacade - Removed vehicle "veh_109" at simulation time 703000000000ns
+2025-04-25 15:15:03,152 INFO  SimulationFacade - Removed vehicle "veh_110" at simulation time 705000000000ns
+2025-04-25 15:15:03,155 INFO  SimulationFacade - Removed vehicle "veh_112" at simulation time 708000000000ns
+2025-04-25 15:15:03,156 INFO  SimulationFacade - Removed vehicle "veh_113" at simulation time 710000000000ns
+2025-04-25 15:15:03,157 INFO  SimulationFacade - Removed vehicle "veh_114" at simulation time 712000000000ns
+2025-04-25 15:15:03,158 INFO  SimulationFacade - Removed vehicle "veh_115" at simulation time 714000000000ns
+2025-04-25 15:15:03,160 INFO  SimulationFacade - Removed vehicle "veh_117" at simulation time 717000000000ns
+2025-04-25 15:15:03,171 INFO  SimulationFacade - Removed vehicle "veh_118" at simulation time 739000000000ns
+2025-04-25 15:15:03,172 INFO  SimulationFacade - Removed vehicle "veh_119" at simulation time 741000000000ns
+2025-04-25 15:15:03,269 INFO  SumoAmbassador - Closing SUMO connection
+2025-04-25 15:15:03,269 INFO  SumoAmbassador - Process sumo: Step #300.00 (1ms ~= 1000.00*RT, ~120000.00UPS, TraCI: 10ms, vehicles TOT 120 ACT 120 BUF 
+2025-04-25 15:15:03,269 INFO  SumoAmbassador - Process sumo: Step #400.00 (1ms ~= 1000.00*RT, ~118000.00UPS, TraCI: 9ms, vehicles TOT 120 ACT 118 BUF 0
+2025-04-25 15:15:03,269 INFO  SumoAmbassador - Process sumo: Step #500.00 (0ms ?*RT. ?UPS, TraCI: 5ms, vehicles TOT 120 ACT 91 BUF 0)                  
+2025-04-25 15:15:03,269 INFO  SumoAmbassador - Process sumo: Step #600.00 (0ms ?*RT. ?UPS, TraCI: 3ms, vehicles TOT 120 ACT 49 BUF 0)                  
+2025-04-25 15:15:03,269 INFO  SumoAmbassador - Process sumo: Step #700.00 (0ms ?*RT. ?UPS, TraCI: 2ms, vehicles TOT 120 ACT 10 BUF 0)                  
+2025-04-25 15:15:03,269 INFO  SumoAmbassador - Process sumo: Step #800.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 120 ACT 0 BUF 0)                   
+2025-04-25 15:15:03,269 INFO  SumoAmbassador - Process sumo: Step #900.00 (0ms ?*RT. ?UPS, TraCI: 0ms, vehicles TOT 120 ACT 0 BUF 0)                   
+2025-04-25 15:15:03,269 INFO  SumoAmbassador - Process sumo: Step #1000.00 (0ms ?*RT. ?UPS, TraCI: 1ms, vehicles TOT 120 ACT 0 BUF 0)                   
+2025-04-25 15:15:03,269 INFO  SumoAmbassador - Process sumo: Simulation ended at time: 1000.00.
+2025-04-25 15:15:03,270 INFO  SumoAmbassador - Process sumo: Reason: TraCI requested termination.
+2025-04-25 15:15:03,270 INFO  SumoAmbassador - Process sumo: Performance:
+2025-04-25 15:15:03,270 INFO  SumoAmbassador - Process sumo:  Duration: 3.53s
+2025-04-25 15:15:03,270 INFO  SumoAmbassador - Process sumo:  TraCI-Duration: 3.16s
+2025-04-25 15:15:03,270 INFO  SumoAmbassador - Process sumo:  Real time factor: 283.366
+2025-04-25 15:15:03,270 INFO  SumoAmbassador - Process sumo:  UPS: 15203.740436
+2025-04-25 15:15:03,270 INFO  SumoAmbassador - Process sumo: Vehicles:
+2025-04-25 15:15:03,270 INFO  SumoAmbassador - Process sumo:  Inserted: 120
+2025-04-25 15:15:03,270 INFO  SumoAmbassador - Process sumo:  Running: 0
+2025-04-25 15:15:03,270 INFO  SumoAmbassador - Process sumo:  Waiting: 0
+2025-04-25 15:15:03,270 INFO  SumoAmbassador - Process sumo:  Emergency Braking: 3
+2025-04-25 15:15:03,342 INFO  SumoAmbassador - Finished simulation
