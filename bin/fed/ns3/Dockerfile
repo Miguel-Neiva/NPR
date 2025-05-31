@@ -2,7 +2,7 @@ FROM ubuntu:jammy
 
 LABEL \
     description="Docker image containing the MOSAIC adapted ns-3 federate" \
-    version="25.0" \
+    version="24.0" \
     maintainer="mosaic@fokus.fraunhofer.de"
 
 RUN \

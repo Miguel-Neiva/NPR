@@ -11,7 +11,6 @@
             "deploy": false,
             "start": false,
             "subscriptions": [
-                "AgentRegistration",
                 "RsuRegistration",
                 "TmcRegistration",
                 "ServerRegistration",

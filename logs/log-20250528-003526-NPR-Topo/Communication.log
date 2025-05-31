@@ -1,0 +1,5 @@
+2025-05-28 00:35:27,332 INFO  SnsAmbassador - Init simulation with startTime=0, endTime=1000000000000
+2025-05-28 00:35:27,338 INFO  SnsAmbassador - Initialized SNS
+2025-05-28 00:35:28,453 INFO  SnsAmbassador - Added TrafficLight id=tl_0 position=GeoPoint{lat=41.004719,lon=-8.642415,alt=0.00} @time=0.000,000,000 s
+2025-05-28 00:35:28,453 INFO  SnsAmbassador - Added RSU id=rsu_0 position=GeoPoint{lat=41.004708,lon=-8.642474,alt=0.00} @time=0.000,000,000 s
+2025-05-28 00:35:28,463 INFO  SnsAmbassador - Finished simulation

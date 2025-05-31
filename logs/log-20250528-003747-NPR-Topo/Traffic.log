@@ -1,0 +1,35 @@
+2025-05-28 00:37:47,957 WARN  SumoAmbassador - The file scenarios/NPR-Topo-2/sumo/sumo_config.json does not exist.
+2025-05-28 00:37:47,958 INFO  SumoAmbassador - sumoConfig.updateInterval: 1000
+2025-05-28 00:37:47,958 INFO  SumoAmbassador - sumoConfig.sumoConfigurationFile: null
+2025-05-28 00:37:47,960 INFO  SumoAmbassador - Found a SUMO configuration file: scenarios/NPR-Topo-2/sumo/highway.sumocfg
+2025-05-28 00:37:47,961 INFO  SumoAmbassador - sumoConfig.sumoConfigurationFile: highway.sumocfg
+2025-05-28 00:37:47,969 INFO  SumoAmbassador - Simulation step size is 1.0 sec.
+2025-05-28 00:37:48,473 INFO  SumoVehicleTypesWriter - ./tmp/sumo/mosaic_types.add.xml file successfully written.
+2025-05-28 00:37:48,474 INFO  SumoAmbassador - Start Federate local
+2025-05-28 00:37:48,474 INFO  SumoAmbassador - Directory: ./tmp/sumo
+2025-05-28 00:37:49,482 INFO  SumoAmbassador - Process sumo: Loading net-file from 'highway.net.xml' ... done (1ms).
+2025-05-28 00:37:49,482 INFO  SumoAmbassador - Process sumo: Loading additional-files from 'mosaic_types.add.xml' ... done (0ms).
+2025-05-28 00:37:49,482 INFO  SumoAmbassador - Process sumo: Loading additional-files from 'prog_semafores.add.xml' ... done (0ms).
+2025-05-28 00:37:49,482 INFO  SumoAmbassador - Process sumo: Loading done.
+2025-05-28 00:37:49,482 ERROR SumoAmbassador - Process sumo: Warning: Missing green phase in tlLogic '443800958', program '0' for tl-index 3.
+2025-05-28 00:37:49,482 INFO  SumoAmbassador - Process sumo: Simulation version 1.22.0 started with time: 0.00.
+2025-05-28 00:37:49,482 ERROR SumoAmbassador - Process sumo: Warning: Missing green phase in tlLogic '443800958', program '2' for tl-index 0.
+2025-05-28 00:37:49,485 WARN  TraciClientBridge - This SUMO Version SUMO 1.22.0 is currently not supported (but might work anyhow).
+2025-05-28 00:37:49,490 INFO  SumoAmbassador - Current API version of SUMO is 21 (=SUMO 1.19.*)
+2025-05-28 00:37:49,551 WARN  TrafficLightGetControlledJunctions - Could not return list of controlled junctions for traffic light. Not implemented in SUMO yet.
+2025-05-28 00:37:49,561 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=443800958
+2025-05-28 00:37:49,566 INFO  SumoAmbassador - Closing SUMO connection
+2025-05-28 00:37:49,567 INFO  SumoAmbassador - Process sumo: Step #0.00 (0ms ?*RT. ?UPS, TraCI: 73ms, vehicles TOT 0 ACT 0 BUF 0)                      
+2025-05-28 00:37:49,567 INFO  SumoAmbassador - Process sumo: Step #1.00 (0ms ?*RT. ?UPS, TraCI: 12ms, vehicles TOT 0 ACT 0 BUF 0)                      
+2025-05-28 00:37:49,567 INFO  SumoAmbassador - Process sumo: Simulation ended at time: 1.00.
+2025-05-28 00:37:49,567 INFO  SumoAmbassador - Process sumo: Reason: TraCI requested termination.
+2025-05-28 00:37:49,567 INFO  SumoAmbassador - Process sumo: Performance:
+2025-05-28 00:37:49,567 INFO  SumoAmbassador - Process sumo:  Duration: 0.09s
+2025-05-28 00:37:49,567 INFO  SumoAmbassador - Process sumo:  TraCI-Duration: 0.07s
+2025-05-28 00:37:49,567 INFO  SumoAmbassador - Process sumo:  Real time factor: 11.7647
+2025-05-28 00:37:49,567 INFO  SumoAmbassador - Process sumo:  UPS: 0.000000
+2025-05-28 00:37:49,567 INFO  SumoAmbassador - Process sumo: Vehicles:
+2025-05-28 00:37:49,567 INFO  SumoAmbassador - Process sumo:  Inserted: 0
+2025-05-28 00:37:49,567 INFO  SumoAmbassador - Process sumo:  Running: 0
+2025-05-28 00:37:49,567 INFO  SumoAmbassador - Process sumo:  Waiting: 0
+2025-05-28 00:37:49,570 INFO  SumoAmbassador - Finished simulation

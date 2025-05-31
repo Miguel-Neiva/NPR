@@ -1,0 +1,4 @@
+NA PASTA DA APP
+
+mvn compile
+mvn package

@@ -1,0 +1,293 @@
+2025-05-28 00:19:33,062 WARN  SumoAmbassador - The file scenarios/NPR-Topo-2/sumo/sumo_config.json does not exist.
+2025-05-28 00:19:33,063 INFO  SumoAmbassador - sumoConfig.updateInterval: 1000
+2025-05-28 00:19:33,063 INFO  SumoAmbassador - sumoConfig.sumoConfigurationFile: null
+2025-05-28 00:19:33,066 INFO  SumoAmbassador - Found a SUMO configuration file: scenarios/NPR-Topo-2/sumo/highway.sumocfg
+2025-05-28 00:19:33,066 INFO  SumoAmbassador - sumoConfig.sumoConfigurationFile: highway.sumocfg
+2025-05-28 00:19:33,074 INFO  SumoAmbassador - Simulation step size is 1.0 sec.
+2025-05-28 00:19:33,594 INFO  SumoVehicleTypesWriter - ./tmp/sumo/mosaic_types.add.xml file successfully written.
+2025-05-28 00:19:33,594 INFO  SumoAmbassador - Start Federate local
+2025-05-28 00:19:33,594 INFO  SumoAmbassador - Directory: ./tmp/sumo
+2025-05-28 00:19:34,602 INFO  SumoAmbassador - Process sumo: Loading net-file from 'highway.net.xml' ... done (1ms).
+2025-05-28 00:19:34,603 INFO  SumoAmbassador - Process sumo: Loading additional-files from 'mosaic_types.add.xml' ... done (1ms).
+2025-05-28 00:19:34,603 INFO  SumoAmbassador - Process sumo: Loading additional-files from 'prog_semafores.add.xml' ... done (0ms).
+2025-05-28 00:19:34,603 INFO  SumoAmbassador - Process sumo: Loading done.
+2025-05-28 00:19:34,603 ERROR SumoAmbassador - Process sumo: Warning: Missing green phase in tlLogic '443800958', program '0' for tl-index 3.
+2025-05-28 00:19:34,603 ERROR SumoAmbassador - Process sumo: Warning: Missing green phase in tlLogic '443800958', program '2' for tl-index 0.
+2025-05-28 00:19:34,603 INFO  SumoAmbassador - Process sumo: Simulation version 1.22.0 started with time: 0.00.
+2025-05-28 00:19:34,605 WARN  TraciClientBridge - This SUMO Version SUMO 1.22.0 is currently not supported (but might work anyhow).
+2025-05-28 00:19:34,611 INFO  SumoAmbassador - Current API version of SUMO is 21 (=SUMO 1.19.*)
+2025-05-28 00:19:34,674 WARN  TrafficLightGetControlledJunctions - Could not return list of controlled junctions for traffic light. Not implemented in SUMO yet.
+2025-05-28 00:19:34,685 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=443800958
+2025-05-28 00:19:34,696 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:34,696 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '3'
+2025-05-28 00:19:34,703 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_0" received at simulation time 5000000000 ns (subscribe=true)
+2025-05-28 00:19:34,703 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_1" received at simulation time 5000000000 ns (subscribe=true)
+2025-05-28 00:19:34,704 INFO  SumoAmbassador - Adding new vehicle "veh_0" at simulation time 5000000000 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:34,705 INFO  SumoAmbassador - Adding new vehicle "veh_1" at simulation time 5000000000 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:34,790 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_2" received at simulation time 15285714285 ns (subscribe=true)
+2025-05-28 00:19:34,790 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_3" received at simulation time 15285714285 ns (subscribe=true)
+2025-05-28 00:19:34,798 INFO  SumoAmbassador - Adding new vehicle "veh_2" at simulation time 15285714285 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:34,799 INFO  SumoAmbassador - Adding new vehicle "veh_3" at simulation time 15285714285 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:34,912 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_4" received at simulation time 25571428570 ns (subscribe=true)
+2025-05-28 00:19:34,912 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_5" received at simulation time 25571428570 ns (subscribe=true)
+2025-05-28 00:19:34,924 INFO  SumoAmbassador - Adding new vehicle "veh_4" at simulation time 25571428570 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:34,925 INFO  SumoAmbassador - Adding new vehicle "veh_5" at simulation time 25571428570 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:35,081 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_6" received at simulation time 35857142855 ns (subscribe=true)
+2025-05-28 00:19:35,081 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_7" received at simulation time 35857142855 ns (subscribe=true)
+2025-05-28 00:19:35,108 INFO  SumoAmbassador - Adding new vehicle "veh_6" at simulation time 35857142855 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:35,109 INFO  SumoAmbassador - Adding new vehicle "veh_7" at simulation time 35857142855 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:35,286 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_8" received at simulation time 46142857140 ns (subscribe=true)
+2025-05-28 00:19:35,286 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_9" received at simulation time 46142857140 ns (subscribe=true)
+2025-05-28 00:19:35,302 INFO  SumoAmbassador - Adding new vehicle "veh_8" at simulation time 46142857140 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:35,303 INFO  SumoAmbassador - Adding new vehicle "veh_9" at simulation time 46142857140 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:35,495 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_10" received at simulation time 56428571425 ns (subscribe=true)
+2025-05-28 00:19:35,495 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_11" received at simulation time 56428571425 ns (subscribe=true)
+2025-05-28 00:19:35,517 INFO  SumoAmbassador - Adding new vehicle "veh_10" at simulation time 56428571425 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:35,518 INFO  SumoAmbassador - Adding new vehicle "veh_11" at simulation time 56428571425 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:35,768 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_12" received at simulation time 66714285710 ns (subscribe=true)
+2025-05-28 00:19:35,768 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_13" received at simulation time 66714285710 ns (subscribe=true)
+2025-05-28 00:19:35,796 INFO  SumoAmbassador - Adding new vehicle "veh_12" at simulation time 66714285710 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:35,797 INFO  SumoAmbassador - Adding new vehicle "veh_13" at simulation time 66714285710 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:36,093 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_14" received at simulation time 76999999995 ns (subscribe=true)
+2025-05-28 00:19:36,093 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_15" received at simulation time 76999999995 ns (subscribe=true)
+2025-05-28 00:19:36,141 INFO  SumoAmbassador - Adding new vehicle "veh_14" at simulation time 76999999995 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:36,142 INFO  SumoAmbassador - Adding new vehicle "veh_15" at simulation time 76999999995 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:36,567 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_16" received at simulation time 87285714280 ns (subscribe=true)
+2025-05-28 00:19:36,567 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_17" received at simulation time 87285714280 ns (subscribe=true)
+2025-05-28 00:19:36,607 INFO  SumoAmbassador - Adding new vehicle "veh_16" at simulation time 87285714280 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:36,608 INFO  SumoAmbassador - Adding new vehicle "veh_17" at simulation time 87285714280 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:36,721 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:36,721 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '2'
+2025-05-28 00:19:37,109 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_18" received at simulation time 97571428565 ns (subscribe=true)
+2025-05-28 00:19:37,109 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_19" received at simulation time 97571428565 ns (subscribe=true)
+2025-05-28 00:19:37,163 INFO  SumoAmbassador - Adding new vehicle "veh_18" at simulation time 97571428565 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:37,164 INFO  SumoAmbassador - Adding new vehicle "veh_19" at simulation time 97571428565 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:37,294 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:37,294 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '3'
+2025-05-28 00:19:37,772 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_20" received at simulation time 107857142850 ns (subscribe=true)
+2025-05-28 00:19:37,772 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_21" received at simulation time 107857142850 ns (subscribe=true)
+2025-05-28 00:19:37,839 INFO  SumoAmbassador - Adding new vehicle "veh_20" at simulation time 107857142850 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:37,840 INFO  SumoAmbassador - Adding new vehicle "veh_21" at simulation time 107857142850 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:38,590 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_22" received at simulation time 118142857135 ns (subscribe=true)
+2025-05-28 00:19:38,590 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_23" received at simulation time 118142857135 ns (subscribe=true)
+2025-05-28 00:19:38,591 INFO  SimulationFacade - Removed vehicle "veh_3" at simulation time 119000000000ns
+2025-05-28 00:19:38,663 INFO  SumoAmbassador - Adding new vehicle "veh_22" at simulation time 118142857135 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:38,664 INFO  SumoAmbassador - Adding new vehicle "veh_23" at simulation time 118142857135 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:38,753 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:38,753 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '0'
+2025-05-28 00:19:38,833 INFO  SimulationFacade - Removed vehicle "veh_1" at simulation time 122000000000ns
+2025-05-28 00:19:38,833 INFO  SimulationFacade - Removed vehicle "veh_7" at simulation time 122000000000ns
+2025-05-28 00:19:38,971 INFO  SimulationFacade - Removed vehicle "veh_5" at simulation time 124000000000ns
+2025-05-28 00:19:38,971 INFO  SimulationFacade - Removed vehicle "veh_11" at simulation time 124000000000ns
+2025-05-28 00:19:39,107 INFO  SimulationFacade - Removed vehicle "veh_9" at simulation time 126000000000ns
+2025-05-28 00:19:39,218 INFO  SimulationFacade - Removed vehicle "veh_15" at simulation time 128000000000ns
+2025-05-28 00:19:39,218 INFO  SimulationFacade - Removed vehicle "veh_13" at simulation time 128000000000ns
+2025-05-28 00:19:39,270 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_24" received at simulation time 128428571420 ns (subscribe=true)
+2025-05-28 00:19:39,270 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_25" received at simulation time 128428571420 ns (subscribe=true)
+2025-05-28 00:19:39,321 INFO  SumoAmbassador - Adding new vehicle "veh_24" at simulation time 128428571420 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:39,321 INFO  SumoAmbassador - Adding new vehicle "veh_25" at simulation time 128428571420 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:39,377 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:39,377 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '3'
+2025-05-28 00:19:39,840 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_26" received at simulation time 138714285705 ns (subscribe=true)
+2025-05-28 00:19:39,840 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_27" received at simulation time 138714285705 ns (subscribe=true)
+2025-05-28 00:19:39,902 INFO  SumoAmbassador - Adding new vehicle "veh_26" at simulation time 138714285705 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:39,902 INFO  SumoAmbassador - Adding new vehicle "veh_27" at simulation time 138714285705 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:40,522 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_28" received at simulation time 148999999990 ns (subscribe=true)
+2025-05-28 00:19:40,522 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_29" received at simulation time 148999999990 ns (subscribe=true)
+2025-05-28 00:19:40,596 INFO  SumoAmbassador - Adding new vehicle "veh_28" at simulation time 148999999990 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:40,596 INFO  SumoAmbassador - Adding new vehicle "veh_29" at simulation time 148999999990 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:40,749 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:40,749 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '2'
+2025-05-28 00:19:41,399 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_30" received at simulation time 159285714275 ns (subscribe=true)
+2025-05-28 00:19:41,399 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_31" received at simulation time 159285714275 ns (subscribe=true)
+2025-05-28 00:19:41,483 INFO  SumoAmbassador - Adding new vehicle "veh_30" at simulation time 159285714275 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:41,483 INFO  SumoAmbassador - Adding new vehicle "veh_31" at simulation time 159285714275 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:41,574 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:41,574 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '3'
+2025-05-28 00:19:42,321 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_32" received at simulation time 169571428560 ns (subscribe=true)
+2025-05-28 00:19:42,321 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_33" received at simulation time 169571428560 ns (subscribe=true)
+2025-05-28 00:19:42,419 INFO  SumoAmbassador - Adding new vehicle "veh_32" at simulation time 169571428560 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:42,419 INFO  SumoAmbassador - Adding new vehicle "veh_33" at simulation time 169571428560 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:42,729 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:42,729 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '0'
+2025-05-28 00:19:43,321 INFO  SimulationFacade - Removed vehicle "veh_17" at simulation time 179000000000ns
+2025-05-28 00:19:43,432 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_34" received at simulation time 179857142845 ns (subscribe=true)
+2025-05-28 00:19:43,432 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_35" received at simulation time 179857142845 ns (subscribe=true)
+2025-05-28 00:19:43,544 INFO  SumoAmbassador - Adding new vehicle "veh_34" at simulation time 179857142845 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:43,545 INFO  SumoAmbassador - Adding new vehicle "veh_35" at simulation time 179857142845 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:43,548 INFO  SimulationFacade - Removed vehicle "veh_19" at simulation time 181000000000ns
+2025-05-28 00:19:43,548 INFO  SimulationFacade - Removed vehicle "veh_21" at simulation time 181000000000ns
+2025-05-28 00:19:43,871 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:43,871 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '3'
+2025-05-28 00:19:43,872 INFO  SimulationFacade - Removed vehicle "veh_23" at simulation time 184000000000ns
+2025-05-28 00:19:44,078 INFO  SimulationFacade - Removed vehicle "veh_27" at simulation time 186000000000ns
+2025-05-28 00:19:44,289 INFO  SimulationFacade - Removed vehicle "veh_25" at simulation time 188000000000ns
+2025-05-28 00:19:44,489 INFO  SimulationFacade - Removed vehicle "veh_4" at simulation time 190000000000ns
+2025-05-28 00:19:44,586 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_36" received at simulation time 190142857130 ns (subscribe=true)
+2025-05-28 00:19:44,586 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_37" received at simulation time 190142857130 ns (subscribe=true)
+2025-05-28 00:19:44,678 INFO  SumoAmbassador - Adding new vehicle "veh_36" at simulation time 190142857130 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:44,679 INFO  SumoAmbassador - Adding new vehicle "veh_37" at simulation time 190142857130 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:44,778 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:44,778 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '2'
+2025-05-28 00:19:45,604 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_38" received at simulation time 200428571415 ns (subscribe=true)
+2025-05-28 00:19:45,604 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_39" received at simulation time 200428571415 ns (subscribe=true)
+2025-05-28 00:19:45,605 INFO  SimulationFacade - Removed vehicle "veh_2" at simulation time 201000000000ns
+2025-05-28 00:19:45,705 INFO  SumoAmbassador - Adding new vehicle "veh_38" at simulation time 200428571415 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:45,706 INFO  SumoAmbassador - Adding new vehicle "veh_39" at simulation time 200428571415 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:45,809 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:45,809 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '3'
+2025-05-28 00:19:46,013 INFO  SimulationFacade - Removed vehicle "veh_10" at simulation time 205000000000ns
+2025-05-28 00:19:46,105 INFO  SimulationFacade - Removed vehicle "veh_0" at simulation time 206000000000ns
+2025-05-28 00:19:46,191 INFO  SimulationFacade - Removed vehicle "veh_6" at simulation time 207000000000ns
+2025-05-28 00:19:46,507 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_40" received at simulation time 210714285700 ns (subscribe=true)
+2025-05-28 00:19:46,507 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_41" received at simulation time 210714285700 ns (subscribe=true)
+2025-05-28 00:19:46,507 INFO  SimulationFacade - Removed vehicle "veh_8" at simulation time 211000000000ns
+2025-05-28 00:19:46,578 INFO  SumoAmbassador - Adding new vehicle "veh_40" at simulation time 210714285700 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:46,579 INFO  SumoAmbassador - Adding new vehicle "veh_41" at simulation time 210714285700 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:46,740 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:46,740 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '0'
+2025-05-28 00:19:46,895 INFO  SimulationFacade - Removed vehicle "veh_14" at simulation time 216000000000ns
+2025-05-28 00:19:47,119 INFO  SimulationFacade - Removed vehicle "veh_29" at simulation time 219000000000ns
+2025-05-28 00:19:47,257 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_42" received at simulation time 220999999985 ns (subscribe=true)
+2025-05-28 00:19:47,257 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_43" received at simulation time 220999999985 ns (subscribe=true)
+2025-05-28 00:19:47,257 INFO  SimulationFacade - Removed vehicle "veh_33" at simulation time 221000000000ns
+2025-05-28 00:19:47,257 INFO  SimulationFacade - Removed vehicle "veh_31" at simulation time 221000000000ns
+2025-05-28 00:19:47,323 INFO  SumoAmbassador - Adding new vehicle "veh_42" at simulation time 220999999985 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:47,324 INFO  SumoAmbassador - Adding new vehicle "veh_43" at simulation time 220999999985 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:47,397 INFO  SimulationFacade - Removed vehicle "veh_12" at simulation time 223000000000ns
+2025-05-28 00:19:47,455 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:47,455 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '3'
+2025-05-28 00:19:47,643 INFO  SimulationFacade - Removed vehicle "veh_35" at simulation time 227000000000ns
+2025-05-28 00:19:47,963 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_44" received at simulation time 231285714270 ns (subscribe=true)
+2025-05-28 00:19:47,963 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_45" received at simulation time 231285714270 ns (subscribe=true)
+2025-05-28 00:19:48,028 INFO  SumoAmbassador - Adding new vehicle "veh_44" at simulation time 231285714270 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:48,028 INFO  SumoAmbassador - Adding new vehicle "veh_45" at simulation time 231285714270 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:48,674 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_46" received at simulation time 241571428555 ns (subscribe=true)
+2025-05-28 00:19:48,674 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_47" received at simulation time 241571428555 ns (subscribe=true)
+2025-05-28 00:19:48,749 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:48,749 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '2'
+2025-05-28 00:19:48,750 INFO  SumoAmbassador - Adding new vehicle "veh_46" at simulation time 241571428555 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:48,751 INFO  SumoAmbassador - Adding new vehicle "veh_47" at simulation time 241571428555 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:49,237 INFO  SimulationFacade - Removed vehicle "veh_20" at simulation time 249000000000ns
+2025-05-28 00:19:49,457 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_48" received at simulation time 251857142840 ns (subscribe=true)
+2025-05-28 00:19:49,457 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_49" received at simulation time 251857142840 ns (subscribe=true)
+2025-05-28 00:19:49,458 INFO  SimulationFacade - Removed vehicle "veh_18" at simulation time 252000000000ns
+2025-05-28 00:19:49,458 INFO  SimulationFacade - Removed vehicle "veh_24" at simulation time 252000000000ns
+2025-05-28 00:19:49,522 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:49,522 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '3'
+2025-05-28 00:19:49,523 INFO  SumoAmbassador - Adding new vehicle "veh_48" at simulation time 251857142840 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:49,523 INFO  SumoAmbassador - Adding new vehicle "veh_49" at simulation time 251857142840 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:49,666 INFO  SimulationFacade - Removed vehicle "veh_28" at simulation time 255000000000ns
+2025-05-28 00:19:49,726 INFO  SimulationFacade - Removed vehicle "veh_16" at simulation time 256000000000ns
+2025-05-28 00:19:49,778 INFO  SimulationFacade - Removed vehicle "veh_26" at simulation time 257000000000ns
+2025-05-28 00:19:49,828 INFO  SimulationFacade - Removed vehicle "veh_22" at simulation time 258000000000ns
+2025-05-28 00:19:50,055 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_50" received at simulation time 262142857125 ns (subscribe=true)
+2025-05-28 00:19:50,055 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_51" received at simulation time 262142857125 ns (subscribe=true)
+2025-05-28 00:19:50,104 INFO  SumoAmbassador - Adding new vehicle "veh_50" at simulation time 262142857125 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:50,104 INFO  SumoAmbassador - Adding new vehicle "veh_51" at simulation time 262142857125 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:50,593 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_52" received at simulation time 272428571410 ns (subscribe=true)
+2025-05-28 00:19:50,593 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_53" received at simulation time 272428571410 ns (subscribe=true)
+2025-05-28 00:19:50,594 INFO  SimulationFacade - Removed vehicle "veh_39" at simulation time 273000000000ns
+2025-05-28 00:19:50,647 INFO  SumoAmbassador - Adding new vehicle "veh_52" at simulation time 272428571410 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:50,647 INFO  SumoAmbassador - Adding new vehicle "veh_53" at simulation time 272428571410 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:50,706 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:50,706 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '0'
+2025-05-28 00:19:50,899 INFO  SimulationFacade - Removed vehicle "veh_37" at simulation time 278000000000ns
+2025-05-28 00:19:50,899 INFO  SimulationFacade - Removed vehicle "veh_43" at simulation time 278000000000ns
+2025-05-28 00:19:51,006 INFO  SimulationFacade - Removed vehicle "veh_41" at simulation time 280000000000ns
+2025-05-28 00:19:51,006 INFO  SimulationFacade - Removed vehicle "veh_45" at simulation time 280000000000ns
+2025-05-28 00:19:51,147 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_54" received at simulation time 282714285695 ns (subscribe=true)
+2025-05-28 00:19:51,147 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_55" received at simulation time 282714285695 ns (subscribe=true)
+2025-05-28 00:19:51,195 INFO  SumoAmbassador - Adding new vehicle "veh_54" at simulation time 282714285695 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:51,196 INFO  SumoAmbassador - Adding new vehicle "veh_55" at simulation time 282714285695 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:51,249 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:51,249 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '3'
+2025-05-28 00:19:51,693 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_56" received at simulation time 292999999980 ns (subscribe=true)
+2025-05-28 00:19:51,693 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_57" received at simulation time 292999999980 ns (subscribe=true)
+2025-05-28 00:19:51,759 INFO  SumoAmbassador - Adding new vehicle "veh_56" at simulation time 292999999980 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:51,760 INFO  SumoAmbassador - Adding new vehicle "veh_57" at simulation time 292999999980 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:51,825 INFO  SimulationFacade - Removed vehicle "veh_34" at simulation time 295000000000ns
+2025-05-28 00:19:51,936 INFO  SimulationFacade - Removed vehicle "veh_32" at simulation time 297000000000ns
+2025-05-28 00:19:52,047 INFO  SimulationFacade - Removed vehicle "veh_36" at simulation time 299000000000ns
+2025-05-28 00:19:52,099 INFO  SimulationFacade - Removed vehicle "veh_30" at simulation time 300000000000ns
+2025-05-28 00:19:52,269 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_58" received at simulation time 303285714265 ns (subscribe=true)
+2025-05-28 00:19:52,269 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_59" received at simulation time 303285714265 ns (subscribe=true)
+2025-05-28 00:19:52,313 INFO  SumoAmbassador - Adding new vehicle "veh_58" at simulation time 303285714265 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:52,314 INFO  SumoAmbassador - Adding new vehicle "veh_59" at simulation time 303285714265 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:52,723 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:52,723 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '2'
+2025-05-28 00:19:52,777 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_60" received at simulation time 313571428550 ns (subscribe=true)
+2025-05-28 00:19:52,777 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_61" received at simulation time 313571428550 ns (subscribe=true)
+2025-05-28 00:19:52,831 INFO  SumoAmbassador - Adding new vehicle "veh_60" at simulation time 313571428550 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:52,832 INFO  SumoAmbassador - Adding new vehicle "veh_61" at simulation time 313571428550 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:53,321 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:53,321 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '3'
+2025-05-28 00:19:53,390 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_62" received at simulation time 323857142835 ns (subscribe=true)
+2025-05-28 00:19:53,390 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_63" received at simulation time 323857142835 ns (subscribe=true)
+2025-05-28 00:19:53,454 INFO  SumoAmbassador - Adding new vehicle "veh_62" at simulation time 323857142835 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:53,455 INFO  SumoAmbassador - Adding new vehicle "veh_63" at simulation time 323857142835 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:54,180 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_64" received at simulation time 334142857120 ns (subscribe=true)
+2025-05-28 00:19:54,180 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_65" received at simulation time 334142857120 ns (subscribe=true)
+2025-05-28 00:19:54,253 INFO  SumoAmbassador - Adding new vehicle "veh_64" at simulation time 334142857120 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:54,254 INFO  SumoAmbassador - Adding new vehicle "veh_65" at simulation time 334142857120 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:54,759 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:54,759 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '0'
+2025-05-28 00:19:54,846 INFO  SimulationFacade - Removed vehicle "veh_44" at simulation time 343000000000ns
+2025-05-28 00:19:54,929 INFO  SimulationFacade - Removed vehicle "veh_49" at simulation time 344000000000ns
+2025-05-28 00:19:54,929 INFO  SimulationFacade - Removed vehicle "veh_47" at simulation time 344000000000ns
+2025-05-28 00:19:55,001 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_66" received at simulation time 344428571405 ns (subscribe=true)
+2025-05-28 00:19:55,001 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_67" received at simulation time 344428571405 ns (subscribe=true)
+2025-05-28 00:19:55,002 INFO  SimulationFacade - Removed vehicle "veh_40" at simulation time 345000000000ns
+2025-05-28 00:19:55,063 INFO  SumoAmbassador - Adding new vehicle "veh_66" at simulation time 344428571405 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:55,064 INFO  SumoAmbassador - Adding new vehicle "veh_67" at simulation time 344428571405 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:55,066 INFO  SimulationFacade - Removed vehicle "veh_51" at simulation time 346000000000ns
+2025-05-28 00:19:55,198 INFO  SimulationFacade - Removed vehicle "veh_55" at simulation time 348000000000ns
+2025-05-28 00:19:55,260 INFO  SimulationFacade - Removed vehicle "veh_38" at simulation time 349000000000ns
+2025-05-28 00:19:55,260 INFO  SimulationFacade - Removed vehicle "veh_57" at simulation time 349000000000ns
+2025-05-28 00:19:55,260 INFO  SimulationFacade - Removed vehicle "veh_42" at simulation time 349000000000ns
+2025-05-28 00:19:55,404 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:55,404 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '3'
+2025-05-28 00:19:55,406 INFO  SimulationFacade - Removed vehicle "veh_53" at simulation time 352000000000ns
+2025-05-28 00:19:55,544 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_68" received at simulation time 354714285690 ns (subscribe=true)
+2025-05-28 00:19:55,544 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_69" received at simulation time 354714285690 ns (subscribe=true)
+2025-05-28 00:19:55,593 INFO  SumoAmbassador - Adding new vehicle "veh_68" at simulation time 354714285690 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:55,594 INFO  SumoAmbassador - Adding new vehicle "veh_69" at simulation time 354714285690 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:56,054 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_70" received at simulation time 364999999975 ns (subscribe=true)
+2025-05-28 00:19:56,054 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_71" received at simulation time 364999999975 ns (subscribe=true)
+2025-05-28 00:19:56,107 INFO  SumoAmbassador - Adding new vehicle "veh_70" at simulation time 364999999975 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:56,108 INFO  SumoAmbassador - Adding new vehicle "veh_71" at simulation time 364999999975 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:56,727 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:56,727 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '2'
+2025-05-28 00:19:56,728 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_72" received at simulation time 375285714260 ns (subscribe=true)
+2025-05-28 00:19:56,728 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_73" received at simulation time 375285714260 ns (subscribe=true)
+2025-05-28 00:19:56,795 INFO  SumoAmbassador - Adding new vehicle "veh_72" at simulation time 375285714260 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:56,796 INFO  SumoAmbassador - Adding new vehicle "veh_73" at simulation time 375285714260 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:57,447 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:57,447 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '3'
+2025-05-28 00:19:57,448 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_74" received at simulation time 385571428545 ns (subscribe=true)
+2025-05-28 00:19:57,448 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_75" received at simulation time 385571428545 ns (subscribe=true)
+2025-05-28 00:19:57,523 INFO  SumoAmbassador - Adding new vehicle "veh_74" at simulation time 385571428545 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:57,524 INFO  SumoAmbassador - Adding new vehicle "veh_75" at simulation time 385571428545 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:58,172 INFO  SumoAmbassador - Process sumo: Step #0.00 (0ms ?*RT. ?UPS, TraCI: 75ms, vehicles TOT 0 ACT 0 BUF 0)                      
+2025-05-28 00:19:58,172 INFO  SumoAmbassador - Process sumo: Step #100.00 (0ms ?*RT. ?UPS, TraCI: 58ms, vehicles TOT 20 ACT 20 BUF 0)                  
+2025-05-28 00:19:58,172 INFO  SumoAmbassador - Process sumo: Step #200.00 (0ms ?*RT. ?UPS, TraCI: 107ms, vehicles TOT 38 ACT 22 BUF 0)                 
+2025-05-28 00:19:58,172 INFO  SumoAmbassador - Process sumo: Step #300.00 (0ms ?*RT. ?UPS, TraCI: 41ms, vehicles TOT 58 ACT 16 BUF 0)                  
+2025-05-28 00:19:58,172 INFO  SumoAmbassador - Process sumo: Interrupt signal received, trying to exit gracefully.
+2025-05-28 00:19:58,293 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_76" received at simulation time 395857142830 ns (subscribe=true)
+2025-05-28 00:19:58,293 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_77" received at simulation time 395857142830 ns (subscribe=true)
+2025-05-28 00:19:58,385 INFO  SumoAmbassador - Adding new vehicle "veh_76" at simulation time 395857142830 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:58,386 INFO  SumoAmbassador - Adding new vehicle "veh_77" at simulation time 395857142830 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:58,765 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:58,765 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '0'
+2025-05-28 00:19:59,291 INFO  SimulationFacade - Removed vehicle "veh_63" at simulation time 406000000000ns
+2025-05-28 00:19:59,291 INFO  SimulationFacade - Removed vehicle "veh_61" at simulation time 406000000000ns
+2025-05-28 00:19:59,387 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_78" received at simulation time 406142857115 ns (subscribe=true)
+2025-05-28 00:19:59,387 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_79" received at simulation time 406142857115 ns (subscribe=true)
+2025-05-28 00:19:59,485 INFO  SumoAmbassador - Adding new vehicle "veh_78" at simulation time 406142857115 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-05-28 00:19:59,486 INFO  SumoAmbassador - Adding new vehicle "veh_79" at simulation time 406142857115 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-05-28 00:19:59,688 INFO  SimulationFacade - Removed vehicle "veh_59" at simulation time 410000000000ns
+2025-05-28 00:19:59,785 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-05-28 00:19:59,785 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '3'
+2025-05-28 00:19:59,791 INFO  SimulationFacade - Removed vehicle "veh_67" at simulation time 411000000000ns
+2025-05-28 00:19:59,884 INFO  SimulationFacade - Removed vehicle "veh_65" at simulation time 412000000000ns
+2025-05-28 00:19:59,973 INFO  SimulationFacade - Removed vehicle "veh_69" at simulation time 413000000000ns

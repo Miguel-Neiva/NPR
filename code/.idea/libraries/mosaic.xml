@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="mosaic">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../../../eclipse-mosaic-23.1/lib/mosaic" />
+      <root url="file://$PROJECT_DIR$/../../../eclipse-mosaic-23.1/lib/third-party" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../eclipse-mosaic-23.1/lib/mosaic" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../../eclipse-mosaic-23.1/lib/third-party" recursive="false" />
+  </library>
+</component>

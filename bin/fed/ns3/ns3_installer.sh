@@ -44,10 +44,8 @@ arg_ns3_file=""
 arg_federate_file=""
 arg_integration_testing=false
 arg_make_parallel=""
-arg_dev=false
 
-required_programs_display=( python3 gcc unzip tar protobuf-compiler )
-required_programs_test=( python3 gcc unzip tar protoc )
+required_programs=( python3 gcc unzip tar )
 required_libraries=( "libprotobuf-dev >= 3.7.0" "libxml2-dev" "libsqlite3-dev" )
 
 ####### configurable parameters ##########
@@ -71,11 +69,11 @@ ns3_scratch="${ns3_simulator_folder}/scratch"
 ns3_source="${ns3_simulator_folder}/src"
 
 ####### semi automatic parameters ########
-ns3_federate_url="https://github.com/mosaic-addons/ns3-federate/archive/refs/tags/25.0.zip"
+ns3_federate_url="https://github.com/mosaic-addons/ns3-federate/archive/refs/tags/24.0.zip"
 ns3_url="https://www.nsnam.org/releases/$ns3_version_affix.tar.bz2"
 
 ###### more automatic parameters #########
-ns3_federate_filename="ns3-federate-$(basename "$ns3_federate_url")"
+ns3_federate_filename="$(basename "$ns3_federate_url")"
 ns3_filename="$(basename "$ns3_url")"
 
 temporary_files=""
@@ -89,11 +87,10 @@ print_help() {
     log "   -q --quiet\t\t\t\tThe script will not give any output but run silently instead."
     log "   -c --no-clean-on-failure\t\tDo not remove installation files when install fails."
     log "   -d --no-deploy\t\t\tDo not extract binary data from ns3 (useful for development)."
-    log "   -k --keep-src\t\t\tSource code is not removed after installation."
     log "   -p --regen-protobuf\ŧ\tRegenerate Protobuf c++ source, when using a different version of protobuf 3."
     log "   -h --help\t\t\t\tPrint this help"
     log "   -j --parallel <n>\t\t\tUse n threads for compilation "
-    log "   -u --uninstall       Remove the ns-3 federate"
+    log "   -u --uninstall			Remove the ns-3 federate"
     log "\n"
 }
 
@@ -114,13 +111,13 @@ get_arguments() {
           -d|--no-deploy)
               arg_deploy=false
               ;;
-          -p|--skip-gen-protobuf)
-              arg_regen_protobuf=false
+          -p|--gen-protobuf)
+              arg_regen_protobuf=true
               ;;
           -f|--federate)
               arg_federate_file="$2"
               ns3_federate_filename="$2"
-              shift # past argument
+              shift #past argument
               ;;
           -s|--simulator)
               arg_ns3_file="$2"
@@ -130,9 +127,6 @@ get_arguments() {
           -it|--integration_testing)
               arg_integration_testing=true
               arg_quiet=true
-              ;;
-          -k|--keep-src)
-              arg_dev=true
               ;;
           -j|--parallel)
               arg_make_parallel="-j $2"
@@ -231,9 +225,9 @@ check_directory() {
 }
 
 check_nslog() {
-   if [[ ! $NS_LOG =~ .*level.* ]]; then
-      log "Logging probably not correctly initialized"
-   fi
+	if [[ ! $NS_LOG =~ .*level.* ]]; then
+		log "Logging probably not correctly initialized"
+	fi
 }
 
 ask_dependencies()
@@ -249,7 +243,7 @@ ask_dependencies()
         log "${bold}${cyan} $lib ${restore}"
       done
       log "\n${bold}Programs:${restore}"
-      for prog in "${required_programs_display[@]}"; do
+      for prog in "${required_programs[@]}"; do
         log "${bold}${cyan} $prog ${restore}"
       done
       printf "\n[y/n] "
@@ -267,28 +261,19 @@ ask_dependencies()
 ################### Downloading and installing ##########
 
 download() {
-   if [ "$#" -eq 1 ]; then
-      # basename of url and downloaded file have to be identical
-      filename=$(basename "$1")
-      url=$1
-   fi
-   if [ "$#" -eq 2 ]; then
-      filename=$(basename "$1")
-      url=$2
-   fi
-
-   if [ ! -f "$filename" ]; then
+   if [ ! -f "$(basename "$1")" ]; then
+      basen=$(basename "$1")
       if has wget; then
-         wget --no-check-certificate -q "$url" || fail "The server is not reachable or the download URL has changed. File not found: "$url"";
-         temporary_files="$temporary_files $filename"
+         wget --no-check-certificate -q "$1" || fail "The download URL seems to have changed. File not found: "$1"";
+         temporary_files="$temporary_files $basen"
       elif has curl; then
-         curl -s -O "$url" || fail "The server is not reachable or the download URL has changed. File not found: "$url"";
-         temporary_files="$temporary_files $filename"
+         curl -s -O "$1" || fail "The download URL seems to have changed. File not found: "$1"";
+         temporary_files="$temporary_files $basen"
       else
-         fail "Can't download "$url".";
+         fail "Can't download "$1".";
       fi
    else
-      warn "File $filename already exists. Skipping download."
+      warn "File $(basename "$1") already exists. Skipping download."
    fi
 }
 
@@ -331,16 +316,18 @@ extract_ns3()
 
 extract_ns3_federate()
 {
+    arg1="$1"
+
     if [ -d "./federate" ]; then
         fail "Directory federate in "." already exists.";
     fi
 
     temporary_files="$temporary_files federate"
 
-    unzip --qq -o "$(basename "$ns3_federate_url")"
+    unzip --qq -o "$arg1"
     # The archive should have contained the folder "ns3-federate-xxx".
     # Rename it to "federate":
-    mv $(basename -s .zip $ns3_federate_filename) federate
+    mv ns3-federate-* federate
 }
 
 extract_premake() {
@@ -360,42 +347,38 @@ extract_premake() {
   cd "$oldpwd"
 }
 
-copy_runfile()
+patch_ns3()
 {
+   ### copy the run file
    cp -f "./federate/run.sh" "$ns3_installation_path/run.sh"
    chmod +x "$ns3_installation_path/run.sh"
-
-   if [ "$arg_dev" == "true" ]; then
-      sed -i -e 's|LD_LIBRARY_PATH=../ns-allinone-$ns3Version/ns-$ns3Version/build|LD_LIBRARY_PATH=../ns-allinone-$ns3Version/ns-$ns3Version/build/lib|' "$ns3_installation_path/run.sh"
-   fi
 }
 
 build_ns3()
 {
-  log "Build ns3 version ${ns3_version}"
+  current_dir=`pwd`
+  log "BUILD ns3 version ${ns3_version}"
   cd "${ns3_installation_path}/ns-allinone-${ns3_version}"
+
   # ns-3 prior to 3.28.1 does not compile without warnings using g++ 10.2.0
   CXXFLAGS="-Wno-error" python3 ./build.py --disable-netanim
-}
 
-build_ns3_federate()
-{
   log "Build ns3-federate"
-  cd ${ns3_installation_path}/federate
+  cd ${current_dir}/federate
   mv src/ClientServerChannel.h .
   mv src/ClientServerChannel.cc .
+  if [ -f src/ClientServerChannelMessages.pb.h ]; then
+    rm src/ClientServerChannelMessages.pb.h
+  fi
+  if [ -f src/ClientServerChannelMessages.pb.cc ]; then
+    rm src/ClientServerChannelMessages.pb.cc
+  fi
 
   # adjust build instruction to cover scrambled files
   sed -i -e "s|/usr/local|.|" premake5.lua
   sed -i -e "s|\"/usr/include\"|\"../ns-allinone-${ns3_version}/ns-${ns3_version}/build/include\"|" premake5.lua
   sed -i -e "s|\"/usr/lib\"|\"../ns-allinone-${ns3_version}/ns-${ns3_version}/build/lib\"|" premake5.lua
   if [ "${arg_regen_protobuf}" == "true" ]; then
-     if [ -f src/ClientServerChannelMessages.pb.h ]; then
-       rm src/ClientServerChannelMessages.pb.h
-     fi
-     if [ -f src/ClientServerChannelMessages.pb.cc ]; then
-       rm src/ClientServerChannelMessages.pb.cc
-     fi
     ./premake5 gmake --generate-protobuf --install
   else
     ./premake5 gmake --install
@@ -409,27 +392,22 @@ deploy_ns3()
 {
     if [ "$arg_deploy" == "true" ]; then
         log "Deploying ns3 binaries"
-        if [ "$arg_dev" == "true" ]; then
-            # will copy 1.8GB instead of 470MB at beginning of each simulation run
-            cd "${ns3_installation_path}"
-            cp federate/bin/ns3-federate "$ns3_simulator_folder/build/scratch/mosaic_starter"
-        else
-            cd "${ns3_installation_path}"
+        cd "${ns3_installation_path}"
 
-            mkdir -p "$ns3_deploy_folder/build/scratch/"
+        mkdir -p "$ns3_deploy_folder/build/scratch/"
 
 
-            for i in $(find "${ns3_simulator_folder}/build/" -name "*.so"); do
-                cp "$i" "$ns3_deploy_folder/build/"
-            done
+        for i in $(find "${ns3_simulator_folder}/build/" -name "*.so"); do
+            cp "$i" "$ns3_deploy_folder/build/"
+        done
 
-            cp federate/bin/ns3-federate "$ns3_deploy_folder/build/scratch/mosaic_starter"
+        cp federate/bin/ns3-federate "$ns3_deploy_folder/build/scratch/mosaic_starter"
 
-            mkdir "${ns3_deploy_folder}/scratch"
+        mkdir "${ns3_deploy_folder}/scratch"
 
-            rm -rf ${ns3_simulator_folder}
-            mv "${ns3_deploy_folder}" "${ns3_simulator_folder}"
-        fi
+        rm -rf ${ns3_simulator_folder}
+        mv "${ns3_deploy_folder}" "${ns3_simulator_folder}"
+
     fi
 }
 
@@ -460,7 +438,7 @@ clean_up()
    if [ "$arg_integration_testing" = false ]; then
       while  [ true ]; do
          log "Do you want to remove the following files and folders? ${bold}${red} $temporary_files ${restore} \n[y/n] "
-       if $arg_quiet; then
+		 if $arg_quiet; then
             answer=Y
          else
             read answer
@@ -478,7 +456,7 @@ clean_up()
 
 # Workaround for integration testing
 set_nslog() {
-   export NS_LOG="'*=level_all|prefix'"
+	export NS_LOG="'*=level_all|prefix'"
 }
 
 ##################                   #################
@@ -495,7 +473,7 @@ print_info
 ask_dependencies
 
 log "Preparing installation..."
-check_required_programs "${required_programs_test[*]}"
+check_required_programs "${required_programs[*]}"
 check_directory
 
 download_ns3
@@ -507,18 +485,17 @@ download_premake5
 log "Extracting "$ns3_filename"..."
 extract_ns3 "$ns3_filename" .
 
-log "Extracting "$(basename "$ns3_federate_url")"..."
-extract_ns3_federate
+log "Extracting "$ns3_federate_filename"..."
+extract_ns3_federate "$ns3_federate_filename"
 
 extract_premake
 
-copy_runfile
+log "Applying patch for ns-3..."
+patch_ns3
 
 log "Building ns-3..."
 build_ns3
-build_ns3_federate
 
-log "Deploying ns-3..."
 deploy_ns3
 
 log "Set ns-3 debug-levels..."

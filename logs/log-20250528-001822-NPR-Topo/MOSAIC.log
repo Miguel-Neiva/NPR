@@ -1,0 +1,24 @@
+2025-05-28 00:18:23,001 INFO  ROOT - Running Eclipse MOSAIC 24.0 on Java JRE v17.0.15 (Eclipse Adoptium)
+2025-05-28 00:18:23,080 INFO  MosaicStarter - Federate sumo: No port given. Using free port: 35471
+2025-05-28 00:18:23,117 INFO  FederationManagement - Start federation with id 'NPR-Topo'
+2025-05-28 00:18:23,118 INFO  FederationManagement - Add ambassador/federate with id 'application'
+2025-05-28 00:18:23,119 INFO  FederationManagement - Add ambassador/federate with id 'mapping'
+2025-05-28 00:18:23,119 INFO  FederationManagement - Add ambassador/federate with id 'sns'
+2025-05-28 00:18:23,119 INFO  FederationManagement - Add ambassador/federate with id 'sumo'
+2025-05-28 00:18:23,119 INFO  FederationManagement - Deploying federate 'sumo' locally in ./tmp/sumo
+2025-05-28 00:18:23,122 INFO  FederationManagement - Starting federate 'sumo' locally in ./tmp/sumo
+2025-05-28 00:18:23,123 INFO  FederationManagement - Add ambassador/federate with id 'output'
+2025-05-28 00:18:23,123 INFO  OutputAmbassador - Initialize configuration of OutputAmbassador
+2025-05-28 00:18:23,137 WARN  FileOutputLoader - decimalSeparator is required to be one character, defaulting to '.' as decimal separator.
+2025-05-28 00:18:23,405 INFO  OutputAmbassador - Registered output generator 'websocket' for messages [RsuRegistration, VehicleRegistration, VehicleUpdates, V2xMessageReception, V2xMessageTransmission]. Update interval=1
+2025-05-28 00:18:23,405 INFO  OutputAmbassador - Registered output generator 'fileoutput' for messages [VehicleRegistration, VehicleUpdates]. Update interval=5
+2025-05-28 00:18:23,409 ERROR WebsocketVisualizerServer - WebsocketError
+java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:81)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:330)
+	at java.base/java.lang.Thread.run(Thread.java:840)

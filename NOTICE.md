@@ -11,7 +11,7 @@ Eclipse, and the Eclipse Logo are registered trademarks of the Eclipse Foundatio
 
 ## Copyright
 
-* Copyright 2020-2025 Fraunhofer FOKUS
+* Copyright 2020-2024 Fraunhofer FOKUS
 
 All rights reserved. All content is the property of the respective authors or their employers.
 For more information regarding authorship of content, please consult the listed source code repository logs.
@@ -28,7 +28,7 @@ SPDX-License-Identifier: EPL-2.0
 
 The project maintains the following source code repositories:
 
-* https://github.com/eclipse-mosaic/mosaic
+* https://github.com/eclipse/mosaic
 
 ## Third-party Content
 

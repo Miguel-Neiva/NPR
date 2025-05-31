@@ -1,0 +1,58 @@
+2025-05-28 00:37:47,882 INFO  ROOT - Running Eclipse MOSAIC 24.0 on Java JRE v17.0.15 (Eclipse Adoptium)
+2025-05-28 00:37:47,965 INFO  MosaicStarter - Federate sumo: No port given. Using free port: 40679
+2025-05-28 00:37:47,985 INFO  FederationManagement - Start federation with id 'NPR-Topo'
+2025-05-28 00:37:47,986 INFO  FederationManagement - Add ambassador/federate with id 'application'
+2025-05-28 00:37:47,987 INFO  FederationManagement - Add ambassador/federate with id 'mapping'
+2025-05-28 00:37:47,987 INFO  FederationManagement - Add ambassador/federate with id 'sns'
+2025-05-28 00:37:47,987 INFO  FederationManagement - Add ambassador/federate with id 'sumo'
+2025-05-28 00:37:47,988 INFO  FederationManagement - Deploying federate 'sumo' locally in ./tmp/sumo
+2025-05-28 00:37:47,993 INFO  FederationManagement - Starting federate 'sumo' locally in ./tmp/sumo
+2025-05-28 00:37:47,993 INFO  FederationManagement - Add ambassador/federate with id 'output'
+2025-05-28 00:37:47,994 INFO  OutputAmbassador - Initialize configuration of OutputAmbassador
+2025-05-28 00:37:48,004 WARN  FileOutputLoader - decimalSeparator is required to be one character, defaulting to '.' as decimal separator.
+2025-05-28 00:37:48,266 INFO  OutputAmbassador - Registered output generator 'websocket' for messages [RsuRegistration, VehicleRegistration, VehicleUpdates, V2xMessageReception, V2xMessageTransmission]. Update interval=1
+2025-05-28 00:37:48,267 INFO  OutputAmbassador - Registered output generator 'fileoutput' for messages [VehicleRegistration, VehicleUpdates]. Update interval=5
+2025-05-28 00:37:48,270 ERROR WebsocketVisualizerServer - WebsocketError
+java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:555)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:337)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:294)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:81)
+	at org.java_websocket.server.WebSocketServer.run(WebSocketServer.java:330)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-05-28 00:37:49,571 INFO  SequentialTimeManagement - Simulation ended after 0s of 1000s (0%)
+2025-05-28 00:37:49,571 INFO  SequentialTimeManagement - Started: 2025-05-28 00:37:48
+2025-05-28 00:37:49,571 INFO  SequentialTimeManagement - Ended: 2025-05-28 00:37:49
+2025-05-28 00:37:49,572 INFO  SequentialTimeManagement - Duration: 00h 00m 01.123s (RTF: 0.00)
+2025-05-28 00:37:49,572 INFO  SequentialTimeManagement - 
+2025-05-28 00:37:49,572 INFO  SequentialTimeManagement - Simulation interrupted: -1
+2025-05-28 00:37:49,775 ERROR MosaicStarter - Stopping simulation due to a critical error.
+org.eclipse.mosaic.rti.api.InternalFederateException: Error code: 0x01000013: There was an error during an advance time.
+	at org.eclipse.mosaic.fed.application.ambassador.ApplicationAmbassador.processTimeAdvanceGrant(ApplicationAmbassador.java:247)
+	at org.eclipse.mosaic.rti.api.AbstractFederateAmbassador.advanceTime(AbstractFederateAmbassador.java:110)
+	at org.eclipse.mosaic.rti.time.SequentialTimeManagement.runSimulation(SequentialTimeManagement.java:91)
+	at org.eclipse.mosaic.starter.MosaicSimulation.runSimulation(MosaicSimulation.java:193)
+	at org.eclipse.mosaic.starter.MosaicStarter.execute(MosaicStarter.java:136)
+	at org.eclipse.mosaic.starter.MosaicStarter.main(MosaicStarter.java:76)
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: Error code: 0x01000041: Class could not be found.
+	at org.eclipse.mosaic.lib.util.scheduling.Event.execute(Event.java:225)
+	at org.eclipse.mosaic.lib.util.scheduling.DefaultEventScheduler.scheduleEvents(DefaultEventScheduler.java:85)
+	at org.eclipse.mosaic.fed.application.ambassador.ApplicationAmbassador.processTimeAdvanceGrant(ApplicationAmbassador.java:241)
+	... 5 common frames omitted
+Caused by: java.lang.RuntimeException: Error code: 0x01000041: Class could not be found.
+	at org.eclipse.mosaic.fed.application.ambassador.util.ClassNameParser.createInstanceFromClassName(ClassNameParser.java:117)
+	at org.eclipse.mosaic.fed.application.ambassador.simulation.AbstractSimulationUnit.loadApplications(AbstractSimulationUnit.java:275)
+	at org.eclipse.mosaic.fed.application.ambassador.UnitSimulator.startApplications(UnitSimulator.java:493)
+	at org.eclipse.mosaic.fed.application.ambassador.UnitSimulator.processEvent(UnitSimulator.java:465)
+	at org.eclipse.mosaic.lib.util.scheduling.Event.execute(Event.java:222)
+	... 7 common frames omitted
+Caused by: java.lang.ClassNotFoundException: src.main.java.TrafficLightApp
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:592)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:467)
+	at org.eclipse.mosaic.fed.application.ambassador.util.ClassNameParser.createInstanceFromClassName(ClassNameParser.java:101)
+	... 11 common frames omitted
