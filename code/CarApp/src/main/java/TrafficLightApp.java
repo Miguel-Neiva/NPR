@@ -1,4 +1,3 @@
-package src.main.java;
 
 import org.apache.commons.lang3.Validate;
 import org.eclipse.mosaic.fed.application.ambassador.simulation.communication.CamBuilder;

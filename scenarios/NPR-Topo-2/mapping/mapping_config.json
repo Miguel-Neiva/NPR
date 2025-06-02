@@ -44,7 +44,7 @@
     {
         "name": "TrafficLight",
         "applications": [
-                "src.main.java.TrafficLightApp"
+                "TrafficLightApp"
          ]
     }
   ],

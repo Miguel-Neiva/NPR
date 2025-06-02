@@ -1,4 +1,3 @@
-package src.main.java;
 
 /**
  * Example class used to demonstrate the communication

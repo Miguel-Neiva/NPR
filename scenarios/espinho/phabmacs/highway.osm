@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version='0.6' generator='MOSAIC OSM-Export'>
+	<node id="441803460" lat="41.001206" lon="-8.641534" version="1"/>
+	<node id="11363257387" lat="41.006560" lon="-8.642339" version="1"/>
+	<node id="441803022" lat="41.004678" lon="-8.639915" version="1"/>
+	<node id="441803462" lat="41.000591" lon="-8.641533" version="1"/>
+	<node id="441803441" lat="41.005954" lon="-8.641436" version="1"/>
+	<node id="1259665639" lat="41.000510" lon="-8.642360" version="1"/>
+	<node id="441803444" lat="41.005337" lon="-8.641450" version="1"/>
+	<node id="11140037367" lat="41.003885" lon="-8.641477" version="1"/>
+	<node id="441803347" lat="41.002191" lon="-8.642394" version="1"/>
+	<node id="441803349" lat="41.001133" lon="-8.642411" version="1"/>
+	<node id="443800959" lat="41.003972" lon="-8.642371" version="1"/>
+	<node id="443817424" lat="41.004692" lon="-8.643359" version="1"/>
+	<node id="11363255367" lat="41.006020" lon="-8.642345" version="1"/>
+	<node id="11363255366" lat="41.006027" lon="-8.641434" version="1"/>
+	<node id="443800958" lat="41.004683" lon="-8.642359" version="1"/>
+	<node id="443813185" lat="41.000423" lon="-8.642239" version="1"/>
+	<node id="443800957" lat="41.005338" lon="-8.642351" version="1"/>
+	<node id="8623708051" lat="41.004691" lon="-8.643650" version="1"/>
+	<node id="443800956" lat="41.005951" lon="-8.642345" version="1"/>
+	<node id="443813084" lat="41.003096" lon="-8.642379" version="1"/>
+	<node id="443800955" lat="41.006630" lon="-8.642339" version="1"/>
+	<node id="768203712" lat="41.000008" lon="-8.641745" version="1"/>
+	<node id="11363255353" lat="41.003919" lon="-8.642372" version="1"/>
+	<node id="441803451" lat="41.004685" lon="-8.641458" version="1"/>
+	<node id="11363255350" lat="41.004045" lon="-8.641474" version="1"/>
+	<node id="441803453" lat="41.003969" lon="-8.641476" version="1"/>
+	<node id="441803356" lat="41.000578" lon="-8.642410" version="1"/>
+	<node id="441803456" lat="41.003103" lon="-8.641495" version="1"/>
+	<node id="11363257391" lat="41.006558" lon="-8.641423" version="1"/>
+	<node id="441803458" lat="41.002227" lon="-8.641506" version="1"/>
+	<node id="441803339" lat="41.004693" lon="-8.644080" version="1"/>
+	<node id="441803439" lat="41.006625" lon="-8.641422" version="1"/>
+	<node id="10018638224" lat="41.004691" lon="-8.643710" version="1"/>
+	<node id="443817435" lat="41.004691" lon="-8.643048" version="1"/>
+	<node id="443813070" lat="41.004682" lon="-8.640834" version="1"/>
+	<node id="11363255354" lat="41.004042" lon="-8.642370" version="1"/>
+	<node id="11363257434" lat="41.003034" lon="-8.641496" version="1"/>
+	<node id="768203708" lat="40.999878" lon="-8.641704" version="1"/>
+	<way id="37843944" version="1">
+		<nd ref="443800955" version="1"/>
+		<nd ref="11363257387" version="1"/>
+		<nd ref="11363255367" version="1"/>
+		<nd ref="443800956" version="1"/>
+		<nd ref="443800957" version="1"/>
+		<nd ref="443800958" version="1"/>
+		<nd ref="11363255354" version="1"/>
+		<nd ref="443800959" version="1"/>
+		<nd ref="11363255353" version="1"/>
+		<nd ref="443813084" version="1"/>
+		<nd ref="441803347" version="1"/>
+		<nd ref="441803349" version="1"/>
+		<nd ref="441803356" version="1"/>
+		<nd ref="1259665639" version="1"/>
+		<nd ref="443813185" version="1"/>
+		<nd ref="768203712" version="1"/>
+		<nd ref="768203708" version="1"/>
+	</way>
+	<way id="37842092" version="1">
+		<nd ref="441803339" version="1"/>
+		<nd ref="10018638224" version="1"/>
+		<nd ref="8623708051" version="1"/>
+		<nd ref="443817424" version="1"/>
+		<nd ref="443817435" version="1"/>
+		<nd ref="443800958" version="1"/>
+		<nd ref="441803451" version="1"/>
+		<nd ref="443813070" version="1"/>
+		<nd ref="441803022" version="1"/>
+	</way>
+	<way id="1113136056" version="1">
+		<nd ref="441803462" version="1"/>
+		<nd ref="441803460" version="1"/>
+		<nd ref="441803458" version="1"/>
+		<nd ref="11363257434" version="1"/>
+		<nd ref="441803456" version="1"/>
+		<nd ref="11140037367" version="1"/>
+		<nd ref="441803453" version="1"/>
+		<nd ref="11363255350" version="1"/>
+		<nd ref="441803451" version="1"/>
+		<nd ref="441803444" version="1"/>
+		<nd ref="441803441" version="1"/>
+		<nd ref="11363255366" version="1"/>
+		<nd ref="11363257391" version="1"/>
+		<nd ref="441803439" version="1"/>
+	</way>
+</osm>
