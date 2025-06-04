@@ -3,9 +3,9 @@
     {
       "name": "Car",
       "applications": [
-        "CarSendsCamAPP",
-        "EventProcessingApp",
-        "MainCarApp"
+                "CarSendsCamAPP",
+		"EventProcessingApp",
+		"MainCarApp"
       ],
       "length": "4.0 m",
       "minGap": "2.5 m",
@@ -29,51 +29,57 @@
       }
     },
     {
-      "name": "TrafficLightCar",
-      "applications": [
-        "MainCarApp"
-      ],
-      "color": "green"
+            "name": "TrafficLightCar",
+            "applications": [
+                "MainCarApp"
+            ],
+            "color": "green"
     },
     {
-      "name": "RSU",
-      "applications": [
-        "RSUProgram"
-      ]
+       "name": "RSU",
+       "applications": [
+                "RSUProgram"
+       ]
     },
     {
-      "name": "FogNode",
-      "applications": [
-        "FogNodeApp"
-      ]
+        "name": "TrafficLight",
+        "applications": [
+                "TrafficLightApp"
+         ]
     },
-    {
-      "name": "TrafficLight",
-      "applications": [
-        "TrafficLightApp"
-      ]
+     {
+        "name": "FogNode",
+        "applications": [
+                "FogNodeApp"
+         ]
     }
   ],
-"rsus": [
-  {
-    "name": "RSU_0",
-    "position": { "latitude": 41.004708, "longitude": -8.642474 }
-  },
-  {
-    "name": "RSU_1",
-    "position": { "latitude": 41.005000, "longitude": -8.643000 }
-  },
-  {
-    "name": "FogNode_0",
-    "position": { "latitude": 41.004900, "longitude": -8.642600 }
-  }
+  "rsus": [
+        {
+            "name": "RSU",
+            "position": {
+                "latitude": 41.004708,
+                "longitude": -8.642474
+            }
+          },
+          {
+            "name": "FogNode",
+            "position": {
+                "latitude": 41.004708,
+                "longitude": -8.642284,
+              "color": "blue"
+            }
+        }
   ],
+  
   "trafficLights": [
-    {
-      "name": "TrafficLight",
-      "tlGroupId": "443800958"
-    }
-  ],
+        {
+            "name": "TrafficLight",
+            "tlGroupId": "443800958"
+        }
+
+        ],
+
   "vehicles": [
     {
       "startingTime": "5 s",
@@ -108,7 +114,7 @@
         {
           "name": "Car",
           "weight": 1.0,
-          "color": "yellow"
+	  "color": "yellow"
         }
       ],
       "departConnectionIndex": 0,

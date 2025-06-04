@@ -11,7 +11,7 @@ import org.eclipse.mosaic.lib.util.scheduling.Event;
 import org.eclipse.mosaic.rti.TIME;
 
 public final class TrafficLightApp extends AbstractApplication<TrafficLightOperatingSystem> implements CommunicationApplication {
-    public final static String SECRET = "ABRE!";
+    public final static String SECRET = "OPEN!";
     private final static short GREEN_DURATION = 10;
 
     static final String DEFAULT_PROGRAM = "3";
@@ -103,6 +103,12 @@ public final class TrafficLightApp extends AbstractApplication<TrafficLightOpera
     @Override
     public void onMessageReceived(ReceivedV2xMessage receivedV2xMessage) {
 
+    if (!(receivedV2xMessage.getMessage() instanceof RSUMsg)) return;
+    RSUMsg msg = (RSUMsg) receivedV2xMessage.getMessage();
+
+    if (!msg.getId_final_receiver().equals(getOs().getId()) && !msg.getId_final_receiver().equals("TrafficLight")) return;
+
+
         if (!(receivedV2xMessage.getMessage() instanceof RSUMsg)) {
             return;
         }
@@ -113,6 +119,7 @@ public final class TrafficLightApp extends AbstractApplication<TrafficLightOpera
 
         Validate.notNull(receivedV2xMessage.getMessage().getRouting().getSource().getSourcePosition(),
                 "The source position of the sender cannot be null");
+                
         if (!(receivedV2xMessage.getMessage().getRouting().getSource().getSourcePosition()
                 .distanceTo(getOs().getPosition()) <= MIN_DISTANCE)) {
             getLog().infoSimTime(this, "Vehicle that sent message is too far away.");

@@ -9,8 +9,5 @@
         <net-file value="highway.net.xml"/>
         <additional-files value="prog_semafores.add.xml"/>
     </input>
-    <time>
-    <step-length value="5.0"/>
-</time>
 
 </configuration>

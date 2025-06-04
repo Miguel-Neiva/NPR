@@ -1,4 +1,3 @@
-
 import org.eclipse.mosaic.fed.application.ambassador.simulation.communication.*;
 import org.eclipse.mosaic.fed.application.app.AbstractApplication;
 import org.eclipse.mosaic.fed.application.app.api.CommunicationApplication;
@@ -15,23 +14,27 @@ import java.util.*;
 public final class RSUProgram extends AbstractApplication<RoadSideUnitOperatingSystem> implements CommunicationApplication {
 
     // Constants
-    private static final int LIMIAR_CONGESTIONAMENTO = 3; // número de carros para considerar congestionamento
-
+    private static final int LIMIAR_CONGESTIONAMENTO = 6;
     private static final long SAMPLE_INTERVAL = 2 * TIME.SECOND;
     private static final long FOG_SEND_INTERVAL = 10 * TIME.SECOND;
-    private static final int RSU_RECEIVE_DISTANCE = 100;
-    private static final String SECRET_KEY = "ABRE";
+    private static final String SECRET_KEY = "OPEN!";
 
-    // Position of RSU
     private CartesianPoint rsuPosition;
 
     // State
     private final Map<String, Set<String>> vehicleRoutes = new HashMap<>();
-    private final Set<String> seenGreenWaveMessages = new HashSet<>();
+    private final Map<String, Double> vehicleSpeeds = new HashMap<>(); // <ID do veículo, velocidade>
 
     @Override
     public void onStartup() {
         log("Initializing RSU application...");
+        rsuPosition = getOs().getPosition().toCartesian();
+        getLog().infoSimTime(this, "My position is: {}", rsuPosition);
+
+        // Envia a posição da RSU para todos os carros
+        MessageRouting routing = getOs().getAdHocModule().createMessageRouting().topoBroadCast();
+        RSUMsg msg = new RSUMsg(routing, "RSU_POS|" + rsuPosition.getX() + "|" + rsuPosition.getY(), "ALL");
+        getOs().getAdHocModule().sendV2xMessage(msg);
 
         // Enable AdHoc communication
         getOs().getAdHocModule().enable(
@@ -42,8 +45,6 @@ public final class RSUProgram extends AbstractApplication<RoadSideUnitOperatingS
                 .create()
         );
 
-        rsuPosition = getOs().getPosition().toCartesian();
-
         vehicleRoutes.put("r_0", new HashSet<>());
         vehicleRoutes.put("r_1", new HashSet<>());
 
@@ -51,40 +52,49 @@ public final class RSUProgram extends AbstractApplication<RoadSideUnitOperatingS
         scheduleFogUpdate();
     }
 
-@Override
-public void onMessageReceived(ReceivedV2xMessage receivedMessage) {
-    if (!(receivedMessage.getMessage() instanceof GreenWaveMsg)) return;
+    @Override
+    public void onMessageReceived(ReceivedV2xMessage receivedMessage) {
+        // Recebe dados dos carros
+        if (receivedMessage.getMessage() instanceof GreenWaveMsg) {
+            GreenWaveMsg msg = (GreenWaveMsg) receivedMessage.getMessage();
 
-    GreenWaveMsg msg = (GreenWaveMsg) receivedMessage.getMessage();
-    String messageId = msg.getSegredo() + "|" + msg.getRota() + "|" + msg.getId_carro();
+            // Verifica o segredo antes de processar
+            if (!SECRET_KEY.equals(msg.getSegredo())) {
+                log("Message Ignored Invalid Secret: " + msg.getSegredo());
+                return;
+            }
 
-    // Verifica o segredo antes de processar
-    if (!SECRET_KEY.equals(msg.getSegredo())) {
-        log("Message Ignored Invalid Secret: " + msg.getSegredo());
-        return;
-    }
+            // Adiciona o carro à rota
+            vehicleRoutes.computeIfAbsent(msg.getRota(), k -> new HashSet<>()).add(msg.getId_carro());
+            // Guarda a velocidade do veículo
+            vehicleSpeeds.put(msg.getId_carro(), msg.getVelocidade());
 
-    if (seenGreenWaveMessages.contains(messageId)) return;
-    seenGreenWaveMessages.add(messageId);
+            Set<String> carrosNaRota = vehicleRoutes.get(msg.getRota());
+            if (carrosNaRota.size() >= LIMIAR_CONGESTIONAMENTO) {
+                String program = msg.getRota().equals("r_0") ? "0" : "2";
+                MessageRouting routing = getOs().getAdHocModule()
+                    .createMessageRouting()
+                    .topoBroadCast();
+                getOs().getAdHocModule().sendV2xMessage(new RSUMsg(routing, program, "TrafficLight"));
+                carrosNaRota.forEach(vehicleSpeeds::remove); // Limpa velocidades dos carros dessa rota
+                carrosNaRota.clear();
+            }
 
-    // Adiciona o carro à rota
-    vehicleRoutes.computeIfAbsent(msg.getRota(), k -> new HashSet<>()).add(msg.getId_carro());
+            // Envia ACK normalmente
+            sendAck(msg.getId_carro(), msg.getRouting().getSource().getSourceName());
+        }
 
-    // Verifica se há congestionamento
-    Set<String> carrosNaRota = vehicleRoutes.get(msg.getRota());
-    if (carrosNaRota.size() >= LIMIAR_CONGESTIONAMENTO) {
-        // Envia comando para o semáforo mudar para verde nesta rota
-        MessageRouting routing = getOs().getAdHocModule()
-            .createMessageRouting()
-            .topoCast("trafficlight_0", 1);
-        String program = msg.getRota().equals("r_0") ? "0" : "2";
-        getOs().getAdHocModule().sendV2xMessage(new RSUMsg(routing, program, "trafficlight_0"));
-        carrosNaRota.clear(); // Limpa para não enviar várias vezes seguidas
+        // Recebe métricas do FogNode e envia para veículos
+        if (receivedMessage.getMessage() instanceof FogMetricsMsg) {
+            FogMetricsMsg metrics = (FogMetricsMsg) receivedMessage.getMessage();
+            MessageRouting routing = getOs().getAdHocModule().createMessageRouting().topoBroadCast();
+            String metricsPayload = "METRICS|" + metrics.getAvgR0() + "|" + metrics.getAvgR1();
+            getOs().getAdHocModule().sendV2xMessage(new RSUMsg(routing, metricsPayload, "FogNode"));
+            log("Forwarded metrics to vehicles: avgR0=" + metrics.getAvgR0() + ", avgR1=" + metrics.getAvgR1());
+        }
     }
 
     // Envia ACK normalmente
-    sendAck(msg.getId_carro(), msg.getRouting().getSource().getSourceName());
-}
     private void sendAck(String carId, String recipientName) {
         MessageRouting routing = getOs().getAdHocModule()
             .createMessageRouting()
@@ -112,25 +122,45 @@ public void onMessageReceived(ReceivedV2xMessage receivedMessage) {
         int r0Count = vehicleRoutes.getOrDefault("r_0", Collections.emptySet()).size();
         int r1Count = vehicleRoutes.getOrDefault("r_1", Collections.emptySet()).size();
 
+        double r0AvgSpeed = calculateAvgSpeed("r_0");
+        double r1AvgSpeed = calculateAvgSpeed("r_1");
+
         MessageRouting routing = getOs().getAdHocModule()
             .createMessageRouting()
-            .topoCast("FogNode_0", 1);
+            .topoBroadCast();
 
-        AggregatedTrafficMsg aggMsg = new AggregatedTrafficMsg(routing, r0Count, r1Count);
+        AggregatedTrafficMsg aggMsg = new AggregatedTrafficMsg(routing, r0Count, r1Count, r0AvgSpeed, r1AvgSpeed);
         getOs().getAdHocModule().sendV2xMessage(aggMsg);
 
-        log("Sent aggregated data: r_0=" + r0Count + ", r_1=" + r1Count);
+        log(String.format("Sent aggregated data: r_0=%d (%.2f m/s), r_1=%d (%.2f m/s)", r0Count, r0AvgSpeed, r1Count, r1AvgSpeed));
 
+        // Limpa velocidades e carros das rotas
+        vehicleRoutes.get("r_0").forEach(vehicleSpeeds::remove);
         vehicleRoutes.get("r_0").clear();
+        vehicleRoutes.get("r_1").forEach(vehicleSpeeds::remove);
         vehicleRoutes.get("r_1").clear();
 
         scheduleFogUpdate();
     }
 
-    @Override
-    public void processEvent(Event event) {
-        // Called periodically to sample or maintain activity
-        scheduleNextSample();
+    private double calculateAvgSpeed(String route) {
+        Set<String> vehicles = vehicleRoutes.getOrDefault(route, Collections.emptySet());
+        if (vehicles.isEmpty()) return 0.0;
+
+        double totalSpeed = 0.0;
+        int count = 0;
+        for (String vehicleId : vehicles) {
+            Double speed = getVehicleSpeed(vehicleId);
+            if (speed != null) {
+                totalSpeed += speed;
+                count++;
+            }
+        }
+        return count > 0 ? totalSpeed / count : 0.0;
+    }
+
+    private Double getVehicleSpeed(String vehicleId) {
+        return vehicleSpeeds.get(vehicleId);
     }
 
     @Override
@@ -149,5 +179,11 @@ public void onMessageReceived(ReceivedV2xMessage receivedMessage) {
 
     private void log(String message) {
         getLog().infoSimTime(this, message);
+    }
+
+    @Override
+    public void processEvent(Event event) {
+
+        scheduleNextSample();
     }
 }

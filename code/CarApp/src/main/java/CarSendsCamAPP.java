@@ -42,8 +42,9 @@ public class CarSendsCamAPP extends AbstractApplication<VehicleOperatingSystem> 
                 .create());
     }
 
+
     @Override
-    public void onVehicleUpdated(VehicleData previousVehicleData, VehicleData updatedVehicleData) {
+    public void onVehicleUpdated(VehicleData previousVehicleData, @org.jetbrains.annotations.Nullable VehicleData updatedVehicleData) {
         long now = getOs().getSimulationTime();
         if (now - lastBroadcastTime >= BROADCAST_INTERVAL) {
             lastBroadcastTime = now;
@@ -65,8 +66,8 @@ public class CarSendsCamAPP extends AbstractApplication<VehicleOperatingSystem> 
             if (!processedMsgIds.contains(msgId)) {
                 getOs().getAdHocModule().sendV2xMessage(msg);
                 processedMsgIds.add(msgId);
-                // Só faz log a cada broadcast
-                getLog().infoSimTime(this, "Sent InterVehicleMsg: {} | {}", name, position);
+                double speed = data.getSpeed();
+                getLog().infoSimTime(this, "Sent InterVehicleMsg: {} | {} | {} m/s", name, position, String.format("%.2f", speed));
             }
         }
 

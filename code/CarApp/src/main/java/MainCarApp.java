@@ -20,11 +20,11 @@ import java.util.*;
 
 public final class MainCarApp extends AbstractApplication<VehicleOperatingSystem> implements VehicleApplication, CommunicationApplication {
 
-    // Define a posição da RSU e distância mínima aqui!
-    public static final CartesianPoint RSU_pos = new MutableCartesianPoint(0, 0, 0); // Atualiza para a posição real
+    private MutableCartesianPoint rsuPos = null;
+
     public static final double MIN_DISTANCE_RSU = 100.0;
 
-    private static final long GREENWAVE_INTERVAL = 5 * TIME.SECOND; // Adjust interval as needed
+    private static final long GREENWAVE_INTERVAL = 5 * TIME.SECOND;
     private long lastGreenWaveSent = 0L;
     private final static long TIME_INTERVAL = TIME.SECOND;
     private boolean ackRSU = false;
@@ -39,13 +39,15 @@ public final class MainCarApp extends AbstractApplication<VehicleOperatingSystem
     }
 
     public boolean inRangeRSU() {
+        if (rsuPos == null) return false;
         CartesianPoint mypos = Objects.requireNonNull(getOs().getVehicleData()).getPosition().toCartesian();
-        getLog().infoSimTime(this, "distance to RSU = {}", RSU_pos.distanceTo(mypos));
-        return mypos.distanceTo(RSU_pos) <= MIN_DISTANCE_RSU;
+        getLog().infoSimTime(this, "distance to RSU = {}", rsuPos.distanceTo(mypos));
+        return mypos.distanceTo(rsuPos) <= MIN_DISTANCE_RSU;
     }
 
     private double distanceToRSU(CartesianPoint otherPos) {
-        return otherPos.distanceTo(RSU_pos);
+        if (rsuPos == null) return Double.MAX_VALUE;
+        return otherPos.distanceTo(rsuPos);
     }
 
     private void sendMsgToRSU(String segredo, String rota, String id_Carro) {
@@ -53,7 +55,7 @@ public final class MainCarApp extends AbstractApplication<VehicleOperatingSystem
         final MessageRouting routing = getOperatingSystem()
                 .getAdHocModule()
                 .createMessageRouting()
-                .topoCast("rsu_0", 1);
+                .topoBroadCast();
         GreenWaveMsg message_to_send = new GreenWaveMsg(routing, segredo, rota, id_Carro, velocidade);
         getOs().getAdHocModule().sendV2xMessage(message_to_send);
         getLog().infoSimTime(this, "Sent to RSU = '{}'", message_to_send.toString());
@@ -99,7 +101,18 @@ public final class MainCarApp extends AbstractApplication<VehicleOperatingSystem
 
     @Override
     public void onMessageReceived(ReceivedV2xMessage receivedV2xMessage) {
+        // Recebe posição do RSU
         if (receivedV2xMessage.getMessage() instanceof RSUMsg) {
+            String msg = ((RSUMsg) receivedV2xMessage.getMessage()).getMessage();
+            if (msg.startsWith("RSU_POS|")) {
+                String[] parts = msg.split("\\|");
+                double x = Double.parseDouble(parts[1]);
+                double y = Double.parseDouble(parts[2]);
+                rsuPos = new MutableCartesianPoint(x, y, 0);
+                getLog().infoSimTime(this, "RSU position received: {}, {}", x, y);
+                return;
+            }
+
             String myID = getOs().getId();
             String receiver_id = ((RSUMsg) receivedV2xMessage.getMessage()).getId_final_receiver();
             String ACKmessage = ((RSUMsg) receivedV2xMessage.getMessage()).getMessage();
@@ -119,6 +132,13 @@ public final class MainCarApp extends AbstractApplication<VehicleOperatingSystem
             String rota = ((GreenWaveMsg) receivedV2xMessage.getMessage()).getRota();
             String id = ((GreenWaveMsg) receivedV2xMessage.getMessage()).getId_carro();
             String msgId = segredo + "|" + rota + "|" + id;
+
+            // *** FILTRO: só processa mensagens da minha rota ***
+            VehicleRoute myRoute = getOs().getNavigationModule().getCurrentRoute();
+            if (myRoute == null || !rota.equals(myRoute.getId())) {
+                return; // Ignora mensagens de outras rotas
+            }
+
             if (processedGreenWaveIds.contains(msgId)) return;
             processedGreenWaveIds.add(msgId);
 
@@ -130,6 +150,11 @@ public final class MainCarApp extends AbstractApplication<VehicleOperatingSystem
                     sendMsgToCars(segredo, rota, id);
                 }
             }
+              if (receivedV2xMessage.getMessage() instanceof FogMetricsMsg) {
+        FogMetricsMsg metrics = (FogMetricsMsg) receivedV2xMessage.getMessage();
+        getLog().infoSimTime(this, "Received metrics from FogNode: avgR0={}, avgR1={}", metrics.getAvgR0(), metrics.getAvgR1());
+    }
+
         }
 
         if (receivedV2xMessage.getMessage() instanceof InterVehicleMsg) {
@@ -193,7 +218,7 @@ public final class MainCarApp extends AbstractApplication<VehicleOperatingSystem
                 getLog().infoSimTime(this, "Sent periodic GreenWaveMsg: {} on route {}", id_carro, route_id);
             }
         }
-    
+
         sample();
     }
 
@@ -215,7 +240,7 @@ public final class MainCarApp extends AbstractApplication<VehicleOperatingSystem
     }
 
     @Override
-    public void processEvent(Event event) throws Exception { 
+    public void processEvent(Event event) throws Exception {
         sample();
     }
 

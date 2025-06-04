@@ -1,8 +1,9 @@
 {
     "simulation": {
         "id": "Espinho",
-        "duration": "200s",
+        "duration": "1000s",
         "randomSeed": 268965854,
+        "realTimeFactor": 5000,
         "projection": {
             "centerCoordinates": {
                 "latitude": 41.0012057,

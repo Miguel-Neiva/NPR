@@ -1,0 +1,6 @@
+2025-06-04 14:57:56,316 INFO  - Initialize veh_0 application (at simulation time 6.000,000,000 s)
+2025-06-04 14:57:56,324 INFO  - Sent InterVehicleMsg: veh_0 | CartesianPoint{x=140.74,y=749.35,z=0.00} | {:.2f} m/s (at simulation time 7.333446498626015)
+2025-06-04 14:57:56,327 INFO  - Sent InterVehicleMsg: veh_0 | CartesianPoint{x=140.72,y=743.09,z=0.00} | {:.2f} m/s (at simulation time 6.261728133043377)
+2025-06-04 14:57:56,329 INFO  - Sent InterVehicleMsg: veh_0 | CartesianPoint{x=140.70,y=736.98,z=0.00} | {:.2f} m/s (at simulation time 6.108390218407019)
+2025-06-04 14:57:56,332 INFO  - Sent InterVehicleMsg: veh_0 | CartesianPoint{x=140.68,y=729.99,z=0.00} | {:.2f} m/s (at simulation time 6.9865093237404805)
+2025-06-04 14:57:56,337 INFO  - Sent InterVehicleMsg: veh_0 | CartesianPoint{x=140.66,y=723.11,z=0.00} | {:.2f} m/s (at simulation time 6.881193879494546)

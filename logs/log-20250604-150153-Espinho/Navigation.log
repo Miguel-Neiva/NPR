@@ -1,0 +1,11 @@
+2025-06-04 15:01:54,603 INFO  CentralNavigationComponent - Initializing CNC-Navigation
+2025-06-04 15:01:54,733 INFO  GraphHopperRouting - nodes: 8, edges: 7
+2025-06-04 15:01:54,741 INFO  LocationIndexTree - location index created in 0.004860426s, size:11, leafs:4, precision:300, depth:1, checksum:15, entries:[4], entriesPerLeaf:2.75
+2025-06-04 15:01:54,742 INFO  PrepareRoutingSubnetworks - Start marking subnetworks, prepare.min_network_size: 200, threads: 1, nodes: 8, edges: 7, jobs: [car_subnetwork|fastest|car_average_speed, bike_subnetwork|fastest|bike_average_speed], totalMB:37, usedMB:21
+2025-06-04 15:01:54,755 INFO  PrepareRoutingSubnetworks - bike - Found 14 subnetworks (14 single edges and 0 components with more than one edge, total nodes: 14), took: 0.00367172s
+2025-06-04 15:01:54,755 INFO  PrepareRoutingSubnetworks - bike - Marked 14 subnetworks (biggest: 1 edges) -> 0 components(s) remain (smallest: 0, biggest: 0 edges), total marked edges: 7, took: 3.90555E-4s
+2025-06-04 15:01:54,756 INFO  PrepareRoutingSubnetworks - car - Found 14 subnetworks (14 single edges and 0 components with more than one edge, total nodes: 14), took: 5.31845E-4s
+2025-06-04 15:01:54,756 INFO  PrepareRoutingSubnetworks - car - Marked 14 subnetworks (biggest: 1 edges) -> 0 components(s) remain (smallest: 0, biggest: 0 edges), total marked edges: 7, took: 7.8852E-5s
+2025-06-04 15:01:54,757 INFO  PrepareRoutingSubnetworks - Finished finding and marking subnetworks for 2 jobs, took: 0.014768943s, totalMB:40, usedMB:22
+2025-06-04 15:01:54,757 INFO  CentralNavigationComponent - CNC - Navigation-System initialized
+2025-06-04 15:01:54,760 INFO  CentralNavigationComponent - Sending vehicle routes initialization

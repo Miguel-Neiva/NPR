@@ -1,0 +1,40 @@
+2025-06-04 14:57:54,641 WARN  SumoAmbassador - The file scenarios/espinho/sumo/sumo_config.json does not exist.
+2025-06-04 14:57:54,641 INFO  SumoAmbassador - sumoConfig.updateInterval: 1000
+2025-06-04 14:57:54,642 INFO  SumoAmbassador - sumoConfig.sumoConfigurationFile: null
+2025-06-04 14:57:54,644 INFO  SumoAmbassador - Found a SUMO configuration file: scenarios/espinho/sumo/highway.sumocfg
+2025-06-04 14:57:54,644 INFO  SumoAmbassador - sumoConfig.sumoConfigurationFile: highway.sumocfg
+2025-06-04 14:57:54,653 INFO  SumoAmbassador - Simulation step size is 1.0 sec.
+2025-06-04 14:57:55,196 INFO  SumoVehicleTypesWriter - ./tmp/sumo/mosaic_types.add.xml file successfully written.
+2025-06-04 14:57:55,196 INFO  SumoAmbassador - Start Federate local
+2025-06-04 14:57:55,196 INFO  SumoAmbassador - Directory: ./tmp/sumo
+2025-06-04 14:57:56,211 INFO  SumoAmbassador - Process sumo: Loading net-file from 'highway.net.xml' ... done (6ms).
+2025-06-04 14:57:56,211 INFO  SumoAmbassador - Process sumo: Loading additional-files from 'mosaic_types.add.xml' ... done (0ms).
+2025-06-04 14:57:56,211 INFO  SumoAmbassador - Process sumo: Loading additional-files from 'prog_semafores.add.xml' ... done (0ms).
+2025-06-04 14:57:56,212 INFO  SumoAmbassador - Process sumo: Loading done.
+2025-06-04 14:57:56,212 ERROR SumoAmbassador - Process sumo: Warning: Missing green phase in tlLogic '443800958', program '0' for tl-index 3.
+2025-06-04 14:57:56,212 INFO  SumoAmbassador - Process sumo: Simulation version 1.18.0 started with time: 0.00.
+2025-06-04 14:57:56,220 INFO  SumoAmbassador - Current API version of SUMO is 20 (=SUMO 1.18.*)
+2025-06-04 14:57:56,273 WARN  TrafficLightGetControlledJunctions - Could not return list of controlled junctions for traffic light. Not implemented in SUMO yet.
+2025-06-04 14:57:56,284 INFO  SumoAmbassador - TrafficLightSubscription interaction received at simulation time 0.000,000,000 s: Subscribe to Traffic light group with ID=443800958
+2025-06-04 14:57:56,301 INFO  SumoAmbassador - Receive TrafficLightStateChange request
+2025-06-04 14:57:56,301 INFO  SumoAmbassador - Changing program of traffic light group '443800958' to program id '3'
+2025-06-04 14:57:56,309 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_0" received at simulation time 5000000000 ns (subscribe=true)
+2025-06-04 14:57:56,309 INFO  SumoAmbassador - VehicleRegistration from RTI "veh_1" received at simulation time 5000000000 ns (subscribe=true)
+2025-06-04 14:57:56,309 INFO  SumoAmbassador - Adding new vehicle "veh_0" at simulation time 5000000000 ns (type=Car, routeId=r_0, laneId=best, departPos=0.00)
+2025-06-04 14:57:56,311 INFO  SumoAmbassador - Adding new vehicle "veh_1" at simulation time 5000000000 ns (type=Car_0, routeId=r_1, laneId=best, departPos=0.00)
+2025-06-04 14:57:56,342 INFO  SumoAmbassador - Closing SUMO connection
+2025-06-04 14:57:56,342 INFO  SumoAmbassador - Process sumo: Step #0.00 (0ms ?*RT. ?UPS, TraCI: 65ms, vehicles TOT 0 ACT 0 BUF 0)                      
+2025-06-04 14:57:56,342 INFO  SumoAmbassador - Process sumo: Step #10.00 (0ms ?*RT. ?UPS, TraCI: 8ms, vehicles TOT 2 ACT 2 BUF 0)                       
+2025-06-04 14:57:56,342 INFO  SumoAmbassador - Process sumo: Simulation ended at time: 10.00
+2025-06-04 14:57:56,342 INFO  SumoAmbassador - Process sumo: Reason: TraCI requested termination.
+2025-06-04 14:57:56,342 INFO  SumoAmbassador - Process sumo: Performance: 
+2025-06-04 14:57:56,342 INFO  SumoAmbassador - Process sumo:  Duration: 0.13s
+2025-06-04 14:57:56,342 INFO  SumoAmbassador - Process sumo:  TraCI-Duration: 0.12s
+2025-06-04 14:57:56,342 INFO  SumoAmbassador - Process sumo:  Real time factor: 76.3359
+2025-06-04 14:57:56,342 INFO  SumoAmbassador - Process sumo:  UPS: 76.335878
+2025-06-04 14:57:56,342 INFO  SumoAmbassador - Process sumo: Vehicles: 
+2025-06-04 14:57:56,342 INFO  SumoAmbassador - Process sumo:  Inserted: 2
+2025-06-04 14:57:56,342 INFO  SumoAmbassador - Process sumo:  Running: 2
+2025-06-04 14:57:56,342 INFO  SumoAmbassador - Process sumo:  Waiting: 0
+2025-06-04 14:57:56,342 INFO  SumoAmbassador - Process sumo: 
+2025-06-04 14:57:56,347 INFO  SumoAmbassador - Finished simulation
