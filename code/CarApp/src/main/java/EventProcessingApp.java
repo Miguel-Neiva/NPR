@@ -1,4 +1,4 @@
-package src.main.java;
+
 
 import org.eclipse.mosaic.fed.application.app.AbstractApplication;
 import org.eclipse.mosaic.fed.application.app.api.os.VehicleOperatingSystem;

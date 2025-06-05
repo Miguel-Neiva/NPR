@@ -1,4 +1,3 @@
-package src.main.java;
 
 import org.eclipse.mosaic.fed.application.ambassador.simulation.communication.AdHocModuleConfiguration;
 import org.eclipse.mosaic.fed.application.ambassador.simulation.communication.CamBuilder;
@@ -18,110 +17,93 @@ import org.eclipse.mosaic.lib.objects.vehicle.VehicleData;
 import org.eclipse.mosaic.lib.util.scheduling.Event;
 
 
-import java.util.List;
+// ...existing imports...
+
+import java.util.HashSet;
+import java.util.Set;
 import java.util.Objects;
 
 public class CarSendsCamAPP extends AbstractApplication<VehicleOperatingSystem> implements VehicleApplication, CommunicationApplication {
 
-    //Used for choosing a RAND id for the message that is sent intra-vehicle.
-    private final static int MAX_ID = 1000;
+    private static final int MAX_ID = 200;
+    private static final long BROADCAST_INTERVAL = 5 * 1000L; // só envia a cada 5 segundos
+    private long lastBroadcastTime = 0;
 
-    /*
-    ##########################################################################################################################################3
-    */
+    // Cache para evitar processar mensagens duplicadas
+    private final Set<String> processedMsgIds = new HashSet<>();
 
     @Override
     public void onStartup() {
-        getLog().infoSimTime(this, "-------------------------------------------------------------------------------------");
-
         getLog().infoSimTime(this, "Initialize {} application", getOs().getId());
         getOs().getAdHocModule().enable(new AdHocModuleConfiguration()
                 .addRadio()
                 .channel(AdHocChannel.CCH)
                 .power(16)
                 .create());
-        getLog().infoSimTime(this, "Activated AdHoc Module");
-
-        getLog().infoSimTime(this, "-------------------------------------------------------------------------------------");
     }
 
-    /*
-    ##########################################################################################################################################3
-    */
 
     @Override
-    public void onVehicleUpdated(VehicleData previousVehicleData, VehicleData updatedVehicleData) {
-        final List<? extends Application> applications = getOs().getApplications();
+    public void onVehicleUpdated(VehicleData previousVehicleData, @org.jetbrains.annotations.Nullable VehicleData updatedVehicleData) {
+        long now = getOs().getSimulationTime();
+        if (now - lastBroadcastTime >= BROADCAST_INTERVAL) {
+            lastBroadcastTime = now;
 
-        final IntraVehicleMsg message = new IntraVehicleMsg(getOs().getId(), getRandom().nextInt(0, MAX_ID));
+            VehicleData data = getOs().getVehicleData();
+            if (data == null) return;
+            String name = data.getName();
+            CartesianPoint position = getOs().getVehicleData().getPosition().toCartesian();
+            double x = position.getX();
+            double y = position.getY();
 
-        // Example usage for how to detect sensor readings
+            final MessageRouting routing = getOperatingSystem()
+                    .getAdHocModule()
+                    .createMessageRouting()
+                    .topoBroadCast();
+
+            InterVehicleMsg msg = new InterVehicleMsg(routing, name, x, y);
+            String msgId = name + "|" + x + "|" + y;
+            if (!processedMsgIds.contains(msgId)) {
+                getOs().getAdHocModule().sendV2xMessage(msg);
+                processedMsgIds.add(msgId);
+                double speed = data.getSpeed();
+                getLog().infoSimTime(this, "Sent InterVehicleMsg: {} | {} | {} m/s", name, position, String.format("%.2f", speed));
+            }
+        }
+
+        // Só faz log se detetar obstáculo
         if (getOs().getStateOfEnvironmentSensor(SensorType.OBSTACLE) > 0) {
-            getLog().infoSimTime(this, "Reading sensor");
+            getLog().infoSimTime(this, "Obstacle detected by {}", getOs().getId());
         }
-
-        for (Application application : applications) {
-            final Event event = new Event(getOs().getSimulationTime() + 10, application, message);
-            this.getOs().getEventManager().addEvent(event);
-        }
-
-        final MessageRouting routing = getOperatingSystem()
-                .getAdHocModule()
-                .createMessageRouting()
-                .topoBroadCast();
-
-        String name = Objects.requireNonNull(getOs().getVehicleData()).getName();
-        CartesianPoint position = getOs().getVehicleData().getPosition().toCartesian();
-
-        double x = position.getX();
-        double y = position.getY();
-
-        getLog().infoSimTime(this, "Sent message to others cars = '{} | {}'", name, position);
-
-        getOs().getAdHocModule().sendV2xMessage(new InterVehicleMsg(routing, name, x, y));
-
-        /*------------------------------------------------------------------------------------------*/
     }
-
-    /*
-    ##########################################################################################################################################3
-    */
 
     @Override
     public void onMessageReceived(ReceivedV2xMessage receivedV2xMessage) {
-        //nop
+        // Só processa se necessário
+        // Exemplo: evitar processar mensagens duplicadas
+        if (receivedV2xMessage.getMessage() instanceof InterVehicleMsg) {
+            InterVehicleMsg msg = (InterVehicleMsg) receivedV2xMessage.getMessage();
+            String msgId = msg.getID() + "|" + msg.getx() + "|" + msg.gety();
+            if (processedMsgIds.contains(msgId)) return;
+            processedMsgIds.add(msgId);
+            // ...processamento adicional se necessário...
+        }
     }
-
-    /*
-    ##########################################################################################################################################3
-    */
 
     @Override
     public void processEvent(Event event) throws Exception {
-        getLog().infoSimTime(this, "Received event: {}", getOs().getSimulationTimeMs(), event.getResourceClassSimpleName());
+        // Só faz log de eventos importantes
     }
 
     @Override
     public void onShutdown() {
-        getLog().infoSimTime(this, "-------------------------------------------------------------------------------------");
         getLog().infoSimTime(this, "Shutdown application");
-        getLog().infoSimTime(this, "-------------------------------------------------------------------------------------");
     }
 
     @Override
-    public void onAcknowledgementReceived(ReceivedAcknowledgement acknowledgedMessage) {
-    }
-
+    public void onAcknowledgementReceived(ReceivedAcknowledgement acknowledgedMessage) {}
     @Override
-    public void onCamBuilding(CamBuilder camBuilder) {
-    }
-
+    public void onCamBuilding(CamBuilder camBuilder) {}
     @Override
-    public void onMessageTransmitted(V2xMessageTransmission v2xMessageTransmission) {
-    }
-
-    /*
-    ##########################################################################################################################################3
-    */
-
+    public void onMessageTransmitted(V2xMessageTransmission v2xMessageTransmission) {}
 }

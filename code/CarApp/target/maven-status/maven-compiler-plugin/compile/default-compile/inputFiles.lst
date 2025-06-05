@@ -1,9 +1,12 @@
-/home/miguel-neiva/Documents/NPR/code/CarApp/src/main/java/RSU_Program.java
 /home/miguel-neiva/Documents/NPR/code/CarApp/src/main/java/EventProcessingApp.java
 /home/miguel-neiva/Documents/NPR/code/CarApp/src/main/java/CarSendsCamAPP.java
 /home/miguel-neiva/Documents/NPR/code/CarApp/src/main/java/InterVehicleMsg.java
 /home/miguel-neiva/Documents/NPR/code/CarApp/src/main/java/IntraVehicleMsg.java
+/home/miguel-neiva/Documents/NPR/code/CarApp/src/main/java/FogMetricsMsg.java
 /home/miguel-neiva/Documents/NPR/code/CarApp/src/main/java/RSUMsg.java
+/home/miguel-neiva/Documents/NPR/code/CarApp/src/main/java/FogNodeApp.java
 /home/miguel-neiva/Documents/NPR/code/CarApp/src/main/java/TrafficLightApp.java
+/home/miguel-neiva/Documents/NPR/code/CarApp/src/main/java/AggregatedTrafficMsg.java
+/home/miguel-neiva/Documents/NPR/code/CarApp/src/main/java/RSUProgram.java
 /home/miguel-neiva/Documents/NPR/code/CarApp/src/main/java/MainCarApp.java
 /home/miguel-neiva/Documents/NPR/code/CarApp/src/main/java/GreenWaveMsg.java

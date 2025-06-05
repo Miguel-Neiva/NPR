@@ -1,4 +1,3 @@
-package src.main.java;
 
 import org.apache.commons.lang3.Validate;
 import org.eclipse.mosaic.fed.application.ambassador.simulation.communication.CamBuilder;
@@ -8,11 +7,12 @@ import org.eclipse.mosaic.fed.application.app.AbstractApplication;
 import org.eclipse.mosaic.fed.application.app.api.CommunicationApplication;
 import org.eclipse.mosaic.fed.application.app.api.os.TrafficLightOperatingSystem;
 import org.eclipse.mosaic.interactions.communication.V2xMessageTransmission;
+import org.eclipse.mosaic.lib.objects.v2x.MessageRouting;
 import org.eclipse.mosaic.lib.util.scheduling.Event;
 import org.eclipse.mosaic.rti.TIME;
 
 public final class TrafficLightApp extends AbstractApplication<TrafficLightOperatingSystem> implements CommunicationApplication {
-    public final static String SECRET = "ABRE!";
+    public final static String SECRET = "OPEN!";
     private final static short GREEN_DURATION = 10;
 
     static final String DEFAULT_PROGRAM = "3";
@@ -88,21 +88,31 @@ public final class TrafficLightApp extends AbstractApplication<TrafficLightOpera
     ##########################################################################################################################################3
     */
 
-    private void setRed() {
-        getLog().infoSimTime(this, "-------------------------------------------------------------------------------------");
+  private void setRed() {
+    getLog().infoSimTime(this, "-------------------------------------------------------------------------------------");
 
-        getOs().switchToProgram(DEFAULT_PROGRAM);
-        getLog().infoSimTime(this, "Setting traffic lights to RED");
+    getOs().switchToProgram(DEFAULT_PROGRAM);
+    getLog().infoSimTime(this, "Setting traffic lights to RED");
 
-        getLog().infoSimTime(this, "-------------------------------------------------------------------------------------");
-    }
+    // Notifica o RSU que voltou a vermelho
+    MessageRouting routing = getOs().getAdHocModule().createMessageRouting().topoBroadCast();
+    RSUMsg msg = new RSUMsg(routing, "RED", "RSU");
+    getOs().getAdHocModule().sendV2xMessage(msg);
 
+    getLog().infoSimTime(this, "-------------------------------------------------------------------------------------");
+}
     /*
     ##########################################################################################################################################3
     */
 
     @Override
     public void onMessageReceived(ReceivedV2xMessage receivedV2xMessage) {
+
+    if (!(receivedV2xMessage.getMessage() instanceof RSUMsg)) return;
+    RSUMsg msg = (RSUMsg) receivedV2xMessage.getMessage();
+
+    if (!msg.getId_final_receiver().equals(getOs().getId()) && !msg.getId_final_receiver().equals("TrafficLight")) return;
+
 
         if (!(receivedV2xMessage.getMessage() instanceof RSUMsg)) {
             return;
@@ -114,6 +124,7 @@ public final class TrafficLightApp extends AbstractApplication<TrafficLightOpera
 
         Validate.notNull(receivedV2xMessage.getMessage().getRouting().getSource().getSourcePosition(),
                 "The source position of the sender cannot be null");
+                
         if (!(receivedV2xMessage.getMessage().getRouting().getSource().getSourcePosition()
                 .distanceTo(getOs().getPosition()) <= MIN_DISTANCE)) {
             getLog().infoSimTime(this, "Vehicle that sent message is too far away.");

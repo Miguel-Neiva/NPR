@@ -1,4 +1,3 @@
-package src.main.java;
 
 /**
  * Example class used to demonstrate the communication
@@ -17,15 +16,15 @@ public final class IntraVehicleMsg {
      * Arbitrary id for that message which can be assigned according
      * to the actual needs of the application.
      */
-    private final int id;
+    private final int vehicleid;
 
     public IntraVehicleMsg(String origin, int id) {
         this.origin = origin;
-        this.id = id;
+        this.vehicleid = id;
     }
 
     public int getId() {
-        return id;
+        return vehicleid;
     }
 
     public String getOrigin() {
@@ -36,7 +35,7 @@ public final class IntraVehicleMsg {
     public String toString() {
         final StringBuffer sb = new StringBuffer("IntraVehicleMsg{");
         sb.append("origin='").append(origin).append('\'');
-        sb.append(", id=").append(id);
+        sb.append(", id=").append(vehicleid);
         sb.append('}');
         return sb.toString();
     }
