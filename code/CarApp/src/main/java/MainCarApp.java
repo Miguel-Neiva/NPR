@@ -22,7 +22,7 @@ public final class MainCarApp extends AbstractApplication<VehicleOperatingSystem
 
     private MutableCartesianPoint rsuPos = null;
 
-    public static final double MIN_DISTANCE_RSU = 100.0;
+    public static final double MIN_DISTANCE_RSU = 70.0;
 
     private static final long GREENWAVE_INTERVAL = 5 * TIME.SECOND;
     private long lastGreenWaveSent = 0L;
@@ -51,41 +51,45 @@ public final class MainCarApp extends AbstractApplication<VehicleOperatingSystem
     }
 
     private void sendMsgToRSU(String segredo, String rota, String id_Carro) {
-        double velocidade = Objects.requireNonNull(getOs().getVehicleData()).getSpeed();
+    double velocidade = Objects.requireNonNull(getOs().getVehicleData()).getSpeed();
+    CartesianPoint myPos = Objects.requireNonNull(getOs().getVehicleData()).getPosition().toCartesian();
+    final MessageRouting routing = getOperatingSystem()
+            .getAdHocModule()
+            .createMessageRouting()
+            .topoBroadCast();
+    GreenWaveMsg message_to_send = new GreenWaveMsg(routing, segredo, rota, id_Carro, velocidade, myPos.getX(), myPos.getY());
+    getOs().getAdHocModule().sendV2xMessage(message_to_send);
+    getLog().infoSimTime(this, "Sent to RSU = '{}'", message_to_send.toString());
+}
+
+public void sendMsgToCars(String segredo, String rota, String id_Carro) {
+    if (this.vizinhos.isEmpty()) {
+        getLog().infoSimTime(this, "I have no neighbours to send!");
+        return;
+    }
+    double temp = Double.MAX_VALUE;
+    String carro_para_enviar = "";
+    for (Map.Entry<String, CartesianPoint> e : this.vizinhos.entrySet()) {
+        double dist = distanceToRSU(e.getValue());
+        if (dist <= temp) {
+            temp = dist;
+            carro_para_enviar = e.getKey();
+        }
+    }
+    double velocidade = Objects.requireNonNull(getOs().getVehicleData()).getSpeed();
+    CartesianPoint myPos = Objects.requireNonNull(getOs().getVehicleData()).getPosition().toCartesian();
+    if (!carro_para_enviar.equals("")) {
         final MessageRouting routing = getOperatingSystem()
                 .getAdHocModule()
                 .createMessageRouting()
-                .topoBroadCast();
-        GreenWaveMsg message_to_send = new GreenWaveMsg(routing, segredo, rota, id_Carro, velocidade);
+                .topoCast(carro_para_enviar, 4);
+        GreenWaveMsg message_to_send = new GreenWaveMsg(routing, segredo, rota, id_Carro, velocidade, myPos.getX(), myPos.getY());
         getOs().getAdHocModule().sendV2xMessage(message_to_send);
-        getLog().infoSimTime(this, "Sent to RSU = '{}'", message_to_send.toString());
+        getLog().infoSimTime(this, "Resent to {} - GreenWaveMsg origin in {}", carro_para_enviar, id_Carro);
     }
+}
 
-    public void sendMsgToCars(String segredo, String rota, String id_Carro) {
-        if (this.vizinhos.isEmpty()) {
-            getLog().infoSimTime(this, "I have no neighbours to send!");
-            return;
-        }
-        double temp = Double.MAX_VALUE;
-        String carro_para_enviar = "";
-        for (Map.Entry<String, CartesianPoint> e : this.vizinhos.entrySet()) {
-            double dist = distanceToRSU(e.getValue());
-            if (dist <= temp) {
-                temp = dist;
-                carro_para_enviar = e.getKey();
-            }
-        }
-        double velocidade = Objects.requireNonNull(getOs().getVehicleData()).getSpeed();
-        if (!carro_para_enviar.equals("")) {
-            final MessageRouting routing = getOperatingSystem()
-                    .getAdHocModule()
-                    .createMessageRouting()
-                    .topoCast(carro_para_enviar, 4);
-            GreenWaveMsg message_to_send = new GreenWaveMsg(routing, segredo, rota, id_Carro, velocidade);
-            getOs().getAdHocModule().sendV2xMessage(message_to_send);
-            getLog().infoSimTime(this, "Resent to {} - GreenWaveMsg origin in {}", carro_para_enviar, id_Carro);
-        }
-    }
+// Removed misplaced code block and duplicate sendMsgToCars method
 
     public void resendACK(String final_receiver, String message) {
         if (!final_receiver.equals("")) {
@@ -133,10 +137,13 @@ public final class MainCarApp extends AbstractApplication<VehicleOperatingSystem
             String id = ((GreenWaveMsg) receivedV2xMessage.getMessage()).getId_carro();
             String msgId = segredo + "|" + rota + "|" + id;
 
-            // *** FILTRO: só processa mensagens da minha rota ***
+            if (!TrafficLightApp.SECRET.equals(segredo)) {
+                getLog().infoSimTime(this, "Ignored GreenWaveMsg with invalid secret: {}", segredo);
+                return; 
+            }
             VehicleRoute myRoute = getOs().getNavigationModule().getCurrentRoute();
             if (myRoute == null || !rota.equals(myRoute.getId())) {
-                return; // Ignora mensagens de outras rotas
+                return; 
             }
 
             if (processedGreenWaveIds.contains(msgId)) return;
@@ -150,11 +157,11 @@ public final class MainCarApp extends AbstractApplication<VehicleOperatingSystem
                     sendMsgToCars(segredo, rota, id);
                 }
             }
-              if (receivedV2xMessage.getMessage() instanceof FogMetricsMsg) {
-        FogMetricsMsg metrics = (FogMetricsMsg) receivedV2xMessage.getMessage();
-        getLog().infoSimTime(this, "Received metrics from FogNode: avgR0={}, avgR1={}", metrics.getAvgR0(), metrics.getAvgR1());
-    }
+        }
 
+        if (receivedV2xMessage.getMessage() instanceof FogMetricsMsg) {
+            FogMetricsMsg metrics = (FogMetricsMsg) receivedV2xMessage.getMessage();
+            getLog().infoSimTime(this, "Received metrics from FogNode: avgR0={}, avgR1={}", metrics.getAvgR0(), metrics.getAvgR1());
         }
 
         if (receivedV2xMessage.getMessage() instanceof InterVehicleMsg) {
@@ -213,7 +220,8 @@ public final class MainCarApp extends AbstractApplication<VehicleOperatingSystem
                         .createMessageRouting()
                         .topoBroadCast();
                 double velocidade = data.getSpeed();
-                GreenWaveMsg msg = new GreenWaveMsg(routing, segredo, route_id, id_carro, velocidade);
+                CartesianPoint myPos = Objects.requireNonNull(getOs().getVehicleData()).getPosition().toCartesian();
+                GreenWaveMsg msg = new GreenWaveMsg(routing, segredo, route_id, id_carro, velocidade, myPos.getX(), myPos.getY());
                 getOs().getAdHocModule().sendV2xMessage(msg);
                 getLog().infoSimTime(this, "Sent periodic GreenWaveMsg: {} on route {}", id_carro, route_id);
             }

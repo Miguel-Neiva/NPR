@@ -7,6 +7,7 @@ import org.eclipse.mosaic.fed.application.app.AbstractApplication;
 import org.eclipse.mosaic.fed.application.app.api.CommunicationApplication;
 import org.eclipse.mosaic.fed.application.app.api.os.TrafficLightOperatingSystem;
 import org.eclipse.mosaic.interactions.communication.V2xMessageTransmission;
+import org.eclipse.mosaic.lib.objects.v2x.MessageRouting;
 import org.eclipse.mosaic.lib.util.scheduling.Event;
 import org.eclipse.mosaic.rti.TIME;
 
@@ -87,15 +88,19 @@ public final class TrafficLightApp extends AbstractApplication<TrafficLightOpera
     ##########################################################################################################################################3
     */
 
-    private void setRed() {
-        getLog().infoSimTime(this, "-------------------------------------------------------------------------------------");
+  private void setRed() {
+    getLog().infoSimTime(this, "-------------------------------------------------------------------------------------");
 
-        getOs().switchToProgram(DEFAULT_PROGRAM);
-        getLog().infoSimTime(this, "Setting traffic lights to RED");
+    getOs().switchToProgram(DEFAULT_PROGRAM);
+    getLog().infoSimTime(this, "Setting traffic lights to RED");
 
-        getLog().infoSimTime(this, "-------------------------------------------------------------------------------------");
-    }
+    // Notifica o RSU que voltou a vermelho
+    MessageRouting routing = getOs().getAdHocModule().createMessageRouting().topoBroadCast();
+    RSUMsg msg = new RSUMsg(routing, "RED", "RSU");
+    getOs().getAdHocModule().sendV2xMessage(msg);
 
+    getLog().infoSimTime(this, "-------------------------------------------------------------------------------------");
+}
     /*
     ##########################################################################################################################################3
     */

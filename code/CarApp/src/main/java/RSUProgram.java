@@ -14,10 +14,14 @@ import java.util.*;
 public final class RSUProgram extends AbstractApplication<RoadSideUnitOperatingSystem> implements CommunicationApplication {
 
     // Constants
-    private static final int LIMIAR_CONGESTIONAMENTO = 6;
+    private static final int LIMIAR_CONGESTIONAMENTO = 15;
     private static final long SAMPLE_INTERVAL = 2 * TIME.SECOND;
     private static final long FOG_SEND_INTERVAL = 10 * TIME.SECOND;
     private static final String SECRET_KEY = "OPEN!";
+    private String lastProgramSent = "3"; 
+    private boolean waitingForRed = false;
+
+    public static final double MIN_DISTANCE_RSU = 40.0;
 
     private CartesianPoint rsuPosition;
 
@@ -53,46 +57,65 @@ public final class RSUProgram extends AbstractApplication<RoadSideUnitOperatingS
     }
 
     @Override
-    public void onMessageReceived(ReceivedV2xMessage receivedMessage) {
-        // Recebe dados dos carros
-        if (receivedMessage.getMessage() instanceof GreenWaveMsg) {
-            GreenWaveMsg msg = (GreenWaveMsg) receivedMessage.getMessage();
+public void onMessageReceived(ReceivedV2xMessage receivedMessage) {
+    // Recebe dados dos carros
+    if (receivedMessage.getMessage() instanceof GreenWaveMsg) {
+        GreenWaveMsg msg = (GreenWaveMsg) receivedMessage.getMessage();
 
-            // Verifica o segredo antes de processar
-            if (!SECRET_KEY.equals(msg.getSegredo())) {
-                log("Message Ignored Invalid Secret: " + msg.getSegredo());
+        // Usa a posição recebida na mensagem para calcular a distância ao RSU
+        if (msg.getPosX() != 0.0 || msg.getPosY() != 0.0) {
+            CartesianPoint senderPos = CartesianPoint.xy(msg.getPosX(), msg.getPosY());
+            double distance = rsuPosition.distanceTo(senderPos);
+            if (distance > MIN_DISTANCE_RSU) {
+                log("Ignored message from " + msg.getId_carro() + " (distance " + String.format("%.2f", distance) + " > " + MIN_DISTANCE_RSU + ")");
                 return;
             }
-
-            // Adiciona o carro à rota
-            vehicleRoutes.computeIfAbsent(msg.getRota(), k -> new HashSet<>()).add(msg.getId_carro());
-            // Guarda a velocidade do veículo
-            vehicleSpeeds.put(msg.getId_carro(), msg.getVelocidade());
-
-            Set<String> carrosNaRota = vehicleRoutes.get(msg.getRota());
-            if (carrosNaRota.size() >= LIMIAR_CONGESTIONAMENTO) {
-                String program = msg.getRota().equals("r_0") ? "0" : "2";
-                MessageRouting routing = getOs().getAdHocModule()
-                    .createMessageRouting()
-                    .topoBroadCast();
-                getOs().getAdHocModule().sendV2xMessage(new RSUMsg(routing, program, "TrafficLight"));
-                carrosNaRota.forEach(vehicleSpeeds::remove); // Limpa velocidades dos carros dessa rota
-                carrosNaRota.clear();
-            }
-
-            // Envia ACK normalmente
-            sendAck(msg.getId_carro(), msg.getRouting().getSource().getSourceName());
         }
 
-        // Recebe métricas do FogNode e envia para veículos
-        if (receivedMessage.getMessage() instanceof FogMetricsMsg) {
-            FogMetricsMsg metrics = (FogMetricsMsg) receivedMessage.getMessage();
-            MessageRouting routing = getOs().getAdHocModule().createMessageRouting().topoBroadCast();
-            String metricsPayload = "METRICS|" + metrics.getAvgR0() + "|" + metrics.getAvgR1();
-            getOs().getAdHocModule().sendV2xMessage(new RSUMsg(routing, metricsPayload, "FogNode"));
-            log("Forwarded metrics to vehicles: avgR0=" + metrics.getAvgR0() + ", avgR1=" + metrics.getAvgR1());
+        // Verifica o segredo antes de processar
+        if (!SECRET_KEY.equals(msg.getSegredo())) {
+            log("Message Ignored Invalid Secret: " + msg.getSegredo());
+            return;
+        }
+
+        vehicleRoutes.computeIfAbsent(msg.getRota(), k -> new HashSet<>()).add(msg.getId_carro());
+        log("Received GreenWaveMsg from " + msg.getId_carro() + " on route " + msg.getRota() + " with speed " + msg.getVelocidade());
+        vehicleSpeeds.put(msg.getId_carro(), msg.getVelocidade());
+
+        Set<String> carrosNaRota = vehicleRoutes.get(msg.getRota());
+        // Só envia comando se não estiver à espera do vermelho
+        if (carrosNaRota.size() >= LIMIAR_CONGESTIONAMENTO && !waitingForRed) {
+            String program = msg.getRota().equals("r_0") ? "0" : "2";
+            MessageRouting routing = getOs().getAdHocModule()
+                .createMessageRouting()
+                .topoBroadCast();
+            getOs().getAdHocModule().sendV2xMessage(new RSUMsg(routing, program, "TrafficLight"));
+            log("Sent program " + program + " to TrafficLight");
+            waitingForRed = true;
+            carrosNaRota.forEach(vehicleSpeeds::remove); // Limpa velocidades dos carros dessa rota
+            carrosNaRota.clear();
+        }
+
+        sendAck(msg.getId_carro(), msg.getRouting().getSource().getSourceName());
+    }
+
+    // Recebe confirmação do semáforo que voltou a vermelho
+    if (receivedMessage.getMessage() instanceof RSUMsg) {
+        RSUMsg msg = (RSUMsg) receivedMessage.getMessage();
+        if ("RED".equals(msg.getMessage())) {
+            waitingForRed = false;
+            log("TrafficLight voltou a vermelho, pronto para novo comando.");
         }
     }
+
+    if (receivedMessage.getMessage() instanceof FogMetricsMsg) {
+        FogMetricsMsg metrics = (FogMetricsMsg) receivedMessage.getMessage();
+        MessageRouting routing = getOs().getAdHocModule().createMessageRouting().topoBroadCast();
+        String metricsPayload = "METRICS|" + metrics.getAvgR0() + "|" + metrics.getAvgR1();
+        getOs().getAdHocModule().sendV2xMessage(new RSUMsg(routing, metricsPayload, "FogNode"));
+        log("Forwarded metrics to vehicles: avgR0=" + metrics.getAvgR0() + ", avgR1=" + metrics.getAvgR1());
+    }
+}
 
     // Envia ACK normalmente
     private void sendAck(String carId, String recipientName) {
