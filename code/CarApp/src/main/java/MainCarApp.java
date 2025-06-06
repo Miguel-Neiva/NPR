@@ -51,45 +51,48 @@ public final class MainCarApp extends AbstractApplication<VehicleOperatingSystem
     }
 
     private void sendMsgToRSU(String segredo, String rota, String id_Carro) {
-    double velocidade = Objects.requireNonNull(getOs().getVehicleData()).getSpeed();
-    CartesianPoint myPos = Objects.requireNonNull(getOs().getVehicleData()).getPosition().toCartesian();
-    final MessageRouting routing = getOperatingSystem()
-            .getAdHocModule()
-            .createMessageRouting()
-            .topoBroadCast();
-    GreenWaveMsg message_to_send = new GreenWaveMsg(routing, segredo, rota, id_Carro, velocidade, myPos.getX(), myPos.getY());
-    getOs().getAdHocModule().sendV2xMessage(message_to_send);
-    getLog().infoSimTime(this, "Sent to RSU = '{}'", message_to_send.toString());
-}
-
-public void sendMsgToCars(String segredo, String rota, String id_Carro) {
-    if (this.vizinhos.isEmpty()) {
-        getLog().infoSimTime(this, "I have no neighbours to send!");
-        return;
-    }
-    double temp = Double.MAX_VALUE;
-    String carro_para_enviar = "";
-    for (Map.Entry<String, CartesianPoint> e : this.vizinhos.entrySet()) {
-        double dist = distanceToRSU(e.getValue());
-        if (dist <= temp) {
-            temp = dist;
-            carro_para_enviar = e.getKey();
-        }
-    }
-    double velocidade = Objects.requireNonNull(getOs().getVehicleData()).getSpeed();
-    CartesianPoint myPos = Objects.requireNonNull(getOs().getVehicleData()).getPosition().toCartesian();
-    if (!carro_para_enviar.equals("")) {
+        double velocidade = Objects.requireNonNull(getOs().getVehicleData()).getSpeed();
+        CartesianPoint myPos = Objects.requireNonNull(getOs().getVehicleData()).getPosition().toCartesian();
         final MessageRouting routing = getOperatingSystem()
                 .getAdHocModule()
                 .createMessageRouting()
-                .topoCast(carro_para_enviar, 4);
+                .topoBroadCast();
         GreenWaveMsg message_to_send = new GreenWaveMsg(routing, segredo, rota, id_Carro, velocidade, myPos.getX(), myPos.getY());
         getOs().getAdHocModule().sendV2xMessage(message_to_send);
-        getLog().infoSimTime(this, "Resent to {} - GreenWaveMsg origin in {}", carro_para_enviar, id_Carro);
+        getLog().infoSimTime(this, "Sent to RSU = '{}'", message_to_send.toString());
     }
-}
 
-// Removed misplaced code block and duplicate sendMsgToCars method
+    // Multi-hop real: não reencaminha para quem enviou nem para si próprio
+    public void sendMsgToCars(String segredo, String rota, String id_Carro, String lastSender) {
+        if (this.vizinhos.isEmpty()) {
+            getLog().infoSimTime(this, "I have no neighbours to send!");
+            return;
+        }
+        double temp = Double.MAX_VALUE;
+        String carro_para_enviar = "";
+        String myId = getOs().getId();
+        for (Map.Entry<String, CartesianPoint> e : this.vizinhos.entrySet()) {
+            String neighborId = e.getKey();
+            if (neighborId.equals(myId) || neighborId.equals(lastSender)) continue; // não envia para si nem para quem enviou
+            double dist = distanceToRSU(e.getValue());
+            if (dist < temp) {
+                temp = dist;
+                carro_para_enviar = neighborId;
+            }
+        }
+        double velocidade = Objects.requireNonNull(getOs().getVehicleData()).getSpeed();
+        CartesianPoint myPos = Objects.requireNonNull(getOs().getVehicleData()).getPosition().toCartesian();
+        
+        if (!carro_para_enviar.equals("")) {
+            final MessageRouting routing = getOperatingSystem()
+                    .getAdHocModule()
+                    .createMessageRouting()
+                    .topoCast(carro_para_enviar, 4);
+            GreenWaveMsg message_to_send = new GreenWaveMsg(routing, segredo, rota, id_Carro, velocidade, myPos.getX(), myPos.getY());
+            getOs().getAdHocModule().sendV2xMessage(message_to_send);
+            getLog().infoSimTime(this, "Resent to {} - GreenWaveMsg origin in {}", carro_para_enviar, id_Carro);
+        }
+    }
 
     public void resendACK(String final_receiver, String message) {
         if (!final_receiver.equals("")) {
@@ -132,9 +135,10 @@ public void sendMsgToCars(String segredo, String rota, String id_Carro) {
         }
 
         if (receivedV2xMessage.getMessage() instanceof GreenWaveMsg) {
-            String segredo = ((GreenWaveMsg) receivedV2xMessage.getMessage()).getSegredo();
-            String rota = ((GreenWaveMsg) receivedV2xMessage.getMessage()).getRota();
-            String id = ((GreenWaveMsg) receivedV2xMessage.getMessage()).getId_carro();
+            GreenWaveMsg gwMsg = (GreenWaveMsg) receivedV2xMessage.getMessage();
+            String segredo = gwMsg.getSegredo();
+            String rota = gwMsg.getRota();
+            String id = gwMsg.getId_carro();
             String msgId = segredo + "|" + rota + "|" + id;
 
             if (!TrafficLightApp.SECRET.equals(segredo)) {
@@ -149,13 +153,14 @@ public void sendMsgToCars(String segredo, String rota, String id_Carro) {
             if (processedGreenWaveIds.contains(msgId)) return;
             processedGreenWaveIds.add(msgId);
 
+            String lastSender = gwMsg.getRouting().getSource().getSourceName();
+
             if (inRangeRSU()) {
                 sendMsgToRSU(segredo, rota, id);
                 getLog().infoSimTime(this, "Resent to RSU - GreenWaveMsg origin in {}", id);
             } else {
-                if (!id.equals(getOs().getId())) {
-                    sendMsgToCars(segredo, rota, id);
-                }
+                // Multi-hop: reencaminha sempre que não está em alcance do RSU
+                sendMsgToCars(segredo, rota, id, lastSender);
             }
         }
 
@@ -189,7 +194,8 @@ public void sendMsgToCars(String segredo, String rota, String id_Carro) {
             if (inRangeRSU()) {
                 sendMsgToRSU(segredo, route_id, id_carro);
             } else {
-                sendMsgToCars(segredo, route_id, id_carro);
+                // Envia para o vizinho mais próximo do RSU (primeiro salto, lastSender é "")
+                sendMsgToCars(segredo, route_id, id_carro, "");
             }
         }
     }
